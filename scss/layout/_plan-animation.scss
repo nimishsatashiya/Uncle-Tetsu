@@ -1,0 +1,49 @@
+.svg-path{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    height: 100%;
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 60vh;
+    z-index: -1;
+    overflow-y: hidden;
+    overflow-x: visible;
+    @media screen and (max-width: 1680px) {
+        width: 100%;
+      }
+      @media screen and (max-width: 1480px) {
+        padding-top: 0;
+      }
+      @media screen and (max-width: 1199px) {
+        display: none;
+      }
+    svg {
+        opacity: 0.25;
+        width: 90%;    
+        @media screen and (max-width: 1399px) {
+            width: 95%; 
+          }
+    }
+}
+#rec {
+    height: 100px;
+    width: 150px;
+    position: absolute;
+    top: 60vh;
+    left: 0px;
+    @media screen and (max-width: 1480px) {
+        top: 0;
+      }
+}
+.circle{ 
+    height: 100%;
+    width: 100%;
+    background: url('../images/UT-Blades-FOR-AE04.gif') no-repeat center / 100%;
+    transform: rotate(-24deg) scaleX(-1);
+}
+.reverse .circle{
+    transform: rotate(150deg) scaleX(-1);
+}

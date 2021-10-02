@@ -1,0 +1,27 @@
+@import 'abstracts/fonts';
+@import "abstracts/veraible";
+
+@import "vendors/bootstrap/bootstrap"; 
+@import 'vendors/OwlCarousel2/owlcarousel'; 
+
+@import "layout/header";   
+@import "layout/plan-animation";  
+@import "layout/banner-section";
+
+// Home page
+@import "layout/home-who-uncle-tetsu-section";  
+@import "layout/home-our-philosophy-section";  
+@import "layout/home-our-products-section";
+@import "layout/home-blog-section"; 
+@import "layout/home-store-section";  
+@import "layout/home-franchising-section"; 
+@import "layout/home-uncle-tetsu-global-section"; 
+
+// Other pages
+@import "layout/global-contact-page";
+@import "layout/franchising-page";
+@import "layout/our-product-page";
+@import "layout/footer"; 
+@import "common/common";
+
+

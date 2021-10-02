@@ -1,0 +1,200 @@
+.banner-section {
+  position: relative;
+  min-height: 100vh;
+  z-index: 2;
+  @media screen and (max-width: 991px) {
+    min-height: 95vh;
+  }
+  @media screen and (max-width: 767px) {
+    min-height: 100vh;
+  }
+  @media only screen and (min-width : 810px) and (max-device-height : 927px) {
+    min-height: 100vh;
+  }
+  @media screen and (max-width: 575px) {
+    min-height: 92vh;
+  }
+  .marquee {
+    top: -90px;
+    @media screen and (max-width: 1199px) {
+      top: -50px;
+    }
+    @media screen and (max-width: 991px) {
+      top: 0;
+    }
+  }
+  &::before {
+    content: "";
+    background: rgba(var(--color-black-rgb), 0.05);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    min-height: 50vh;
+    z-index: -1;
+  }
+  .banner-slider {
+    padding-top: 15.5vh;
+    position: relative;
+    border-radius: 20px;
+    @media screen and (max-width: 767px) {
+      padding-top: 30vh;
+    }
+    @media screen and (max-width: 575px) {
+      padding-top: 12vh;
+    }
+    .down-arrow {
+      width: 100px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: var(--color-white);
+      border-radius: 100%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      text-align: center;
+      margin: 0 auto;
+      bottom: -50px;
+      z-index: 3;
+      @media screen and (max-width: 1400px) {
+        width: 70px;
+        height: 70px;
+      }
+      @media screen and (max-width: 1199px) {
+        bottom: -30px;
+      }
+      img {
+        width: auto;
+        height: 45px;
+        -moz-animation: bounce 2s infinite;
+        -webkit-animation: bounce 2s infinite;
+        animation: bounce 2s infinite;
+        @media screen and (max-width: 1400px) {
+          height: 25px;
+        }
+        @keyframes bounce {
+          0%,
+          20%,
+          50%,
+          80%,
+          100% {
+            transform: translateY(0);
+          }
+          40% {
+            transform: translateY(-20px);
+          }
+          60% {
+            transform: translateY(-10px);
+          }
+        }
+      }
+    }
+    .owl-carousel {
+      max-height: 100%;
+      overflow: unset;
+      border-radius: 20px;
+      box-shadow: -40px 40px 60px 0px rgba(77, 24, 24, 0.2);
+      -webkit-box-shadow: -40px 40px 60px 0px rgba(77, 24, 24, 0.2);
+      -moz-box-shadow: -40px 40px 60px 0px rgba(77, 24, 24, 0.2);
+      .owl-item {
+        img {
+          overflow: hidden;
+          object-fit: cover;
+          object-position: center;
+          height: 70vh;
+          border-radius: 20px;
+          background: transparent;
+          &.slider-center-icon {
+            width: 15%;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+    }
+  }
+  .single-img {
+    padding-top: 15.5vh;
+    position: relative;
+    border-radius: 20px;
+    @media screen and (max-width: 767px) {
+      padding-top: 30vh;
+    }
+    @media screen and (max-width: 575px) {
+      padding-top: 12vh;
+    }
+    .down-arrow {
+      width: 100px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: var(--color-white);
+      border-radius: 100%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      text-align: center;
+      margin: 0 auto;
+      bottom: -50px;
+      z-index: 3;
+      @media screen and (max-width: 1400px) {
+        width: 70px;
+        height: 70px;
+      }
+      @media screen and (max-width: 1199px) {
+        bottom: -30px;
+      }
+      img {
+        width: auto;
+        height: 45px;
+        -moz-animation: bounce 2s infinite;
+        -webkit-animation: bounce 2s infinite;
+        animation: bounce 2s infinite;
+        @media screen and (max-width: 1400px) {
+          height: 25px;
+        }
+        @keyframes bounce {
+          0%,
+          20%,
+          50%,
+          80%,
+          100% {
+            transform: translateY(0);
+          }
+          40% {
+            transform: translateY(-20px);
+          }
+          60% {
+            transform: translateY(-10px);
+          }
+        }
+      }
+    }
+    .item {
+      position: relative;
+      img {
+        overflow: hidden;
+        object-fit: cover;
+        object-position: center;
+        height: 70vh;
+        border-radius: 20px;
+        background: transparent;
+        &.slider-center-icon {
+          width: 15%;
+          height: auto;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+}

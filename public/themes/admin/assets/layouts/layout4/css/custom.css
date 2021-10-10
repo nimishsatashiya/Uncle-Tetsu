@@ -1,0 +1,52 @@
+/* here you can put your own css to customize and override the theme */
+#calendar 
+{
+width: 100%;
+margin: 0 auto;
+}
+.fc-sun 
+{
+background-color: #fbb6b6;
+}
+.fc-sun .fc-day-number
+{
+color:#fff;
+}
+.fc-day-number
+{
+font-size: 18px;
+}
+#divLoading
+{
+    display : none;
+}
+#divLoading.showLoader
+{
+    display : block;
+    position : fixed;
+    z-index: 100;
+    background-color:#666;
+    background-repeat : no-repeat;
+    background-position : center;
+    opacity : 0.8;    
+    left : 0;
+    bottom : 0;
+    right : 0;
+    top : 0;   
+    background-image: url('../img/ajax-loader.gif');
+    
+}     
+span.select2.select2-container.select2-container--bootstrap.select2-container--below.select2-container--focus,
+span.select2.select2-container.select2-container--bootstrap{
+	    width: 100% !important;
+}
+.portlet .portlet-title>.tools>a.expand {
+    background-image: url(../img/portlet-expand-icon-white.png);
+    
+}
+.portlet .portlet-title>.tools>a.collapse{
+    background-image: url(../img/portlet-collapse-icon-white.png);
+}
+.mrgleft10{
+    margin-left: 10px;
+}

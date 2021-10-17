@@ -29,7 +29,7 @@
             <!-- BEGIN LOGO -->
             <div class="logo">
                 <a href="{{ route('admin_login') }}">
-                    <img src=" {{ asset('themes/admin/assets/pages/img/logo-big.png') }}" alt="" />
+                    <img src="{{asset('themes/frontend/images/logo.svg')}}" alt="" />
                 </a>
             </div>
 

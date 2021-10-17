@@ -6,12 +6,12 @@
     <div class="page-header-inner ">
         <div class="page-logo">
             <a href="{{ url('admin/dashboard') }}">
-            <img src="{{ asset('themes/admin/assets/layouts/layout4/img/logo-light.png')}}" alt="logo" class="logo-default" /> </a>
+            <img src="{{ asset('themes/admin/assets/layouts/layout4/img/admin-logo.png')}}" alt="logo" class="logo-default" /> </a>
             <div class="menu-toggler sidebar-toggler">
             </div>
         </div>
         <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse"> </a>
-        <div class="page-actions">
+        <!-- <div class="page-actions">
             <div class="btn-group">
                 <button type="button" class="btn red-haze btn-sm dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
                     <span class="hidden-sm hidden-xs">Actions&nbsp;</span>
@@ -26,9 +26,9 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </div> -->
         <div class="page-top">
-            <form class="search-form" action="#" method="GET">
+            <!-- <form class="search-form" action="#" method="GET">
                 <div class="input-group">
                     <input type="text" class="form-control input-sm" placeholder="Search..." name="query">
                     <span class="input-group-btn">
@@ -37,10 +37,10 @@
                         </a>
                     </span>
                 </div>
-            </form>
+            </form> -->
             <div class="top-menu">
                 <ul class="nav navbar-nav pull-right">
-                    <li class="separator hide"> </li>
+                    <!-- <li class="separator hide"> </li>
                     <li class="dropdown dropdown-extended dropdown-notification dropdown-dark" id="header_notification_bar">
                         <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
                             <i class="icon-bell"></i>
@@ -138,7 +138,7 @@
                                 </ul>
                             </li>
                         </ul>
-                    </li>
+                    </li> -->
                     <li class="separator hide"> </li>
                     <li class="separator hide"> </li>
                     <li class="dropdown dropdown-user dropdown-dark">

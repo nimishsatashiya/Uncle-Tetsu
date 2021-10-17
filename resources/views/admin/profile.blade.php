@@ -59,32 +59,33 @@ $user_id = \Auth::user()->id;
                 </div>
                 <!-- END SIDEBAR USER TITLE -->
                 <!-- SIDEBAR BUTTONS -->
-                <div class="profile-userbuttons">
+                <!-- <div class="profile-userbuttons">
                     <button type="button" class="btn btn-circle green btn-sm">Follow</button>
                     <button type="button" class="btn btn-circle red btn-sm">Message</button>
-                </div>
+                </div> -->
                 <!-- END SIDEBAR BUTTONS -->
                 <!-- SIDEBAR MENU -->
                 <div class="profile-usermenu">
                     <ul class="nav">
-                        <li>
+                        <!-- <li>
                             <a href="#">
                                 <i class="icon-home"></i> Overview </a>
-                        </li>
-                        <li class="active">
+                        </li> -->
+                        <!-- <li class="active">
                             <a href="#">
                                 <i class="icon-settings"></i> Account Settings </a>
-                        </li>
-                        <li>
+                        </li> -->
+                        <!-- <li>
                             <a href="#">
                                 <i class="icon-info"></i> Help </a>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
                 <!-- END MENU -->
             </div>
             <!-- END PORTLET MAIN -->
             <!-- PORTLET MAIN -->
+            <?php /*
             <div class="portlet light bordered">
                 <!-- STAT -->
                 <div class="row list-separated profile-stat">
@@ -119,6 +120,8 @@ $user_id = \Auth::user()->id;
                     </div>
                 </div>
             </div>
+            */ 
+            ?>
             <!-- END PORTLET MAIN -->
         </div>
         <!-- END BEGIN PROFILE SIDEBAR -->
@@ -142,9 +145,9 @@ $user_id = \Auth::user()->id;
                                 <li>
                                     <a href="#tab_1_3" data-toggle="tab">Change Password</a>
                                 </li>
-                                <li>
+                                <!-- <li>
                                     <a href="#tab_1_4" data-toggle="tab">Privacy Settings</a>
-                                </li>
+                                </li> -->
                             </ul>
                         </div>
                         <div class="portlet-body">

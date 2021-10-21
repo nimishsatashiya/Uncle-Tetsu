@@ -7,10 +7,7 @@
   text-align: center;
 
   .marquee {
-    top: 4%;
-    @media screen and (max-width: 1400px) {
-      top: 5%;
-    }
+    top: 60px;
     @media screen and (max-width: 1199px) {
       top: 5%;
     }
@@ -36,9 +33,9 @@
       color: var(--color-black);
       font-family: var(--font-primary);
       margin-bottom: 0;
-      margin-top: 16px;
+      margin-top: 42px ;
       display: block;
-      @media screen and (max-width: 1400px) {
+     @media screen and (max-width: 1699px) {
         font-size: 17px;
       }
       @media screen and (max-width: 1299px) {
@@ -57,6 +54,9 @@
         }
         @media screen and (max-width: 767px) {
           margin:20px 0;
+          flex-wrap: nowrap;
+          overflow: auto;
+          justify-content: flex-start;
         }
         li {
           a {
@@ -75,7 +75,7 @@
             @media screen and (max-width: 1599px) {
               padding: 19px 30px;
             }
-            @media screen and (max-width: 1400px) {
+           @media screen and (max-width: 1699px) {
               font-size: 20px;
             }
             @media screen and (max-width: 1299px) {
@@ -85,7 +85,8 @@
               padding: 16px;
             }
             @media screen and (max-width: 767px) {
-              padding: 16px 10px;
+              padding: 8px;
+              white-space: nowrap;
             }
             &.active {
               color: var(--color-primary);
@@ -100,6 +101,9 @@
                 text-align: center;
                 bottom: 0;
                 margin: 0 auto;
+                @media screen and (max-width: 767px) {
+                  width: 95%;
+                }
               }
             }
           }
@@ -113,6 +117,7 @@
         width: 100%;  
         @media screen and (max-width: 1599px) {
           align-items: center;
+          padding: 0 10px;
         }
         @media screen and (max-width: 767px) {
           flex-direction: column;
@@ -155,7 +160,7 @@
           text-align: left;
           @media screen and (max-width: 767px) {
             width: 100%;
-            padding: 0 16px 16px;
+            padding: 0 10px 10px;
           }
           p {
             margin-bottom: 20px;
@@ -173,7 +178,7 @@
             text-align: left;
             padding: 0;
             margin-bottom: 20px;
-            @media screen and (max-width: 1400px) {
+           @media screen and (max-width: 1699px) {
               font-size: 28px;
               line-height: 38px;
             }
@@ -186,6 +191,11 @@
             display: flex;
               align-items: center;
               @media screen and (max-width: 767px) {
+                // align-items: flex-start;
+                // flex-direction: column;
+                justify-content: flex-start;
+              }
+              @media screen and (max-width: 359px) {
                 align-items: flex-start;
                 flex-direction: column;
               }
@@ -193,12 +203,31 @@
               display: flex;
               align-items: center;
               padding-right: 16px;
+              font-size: 16px;
+              line-height: 25px;
+              font-weight: 300;
+              color: var(--color-black);
+              font-family: var(--font-primary);
+              margin-bottom: 0;
+             @media screen and (max-width: 1699px) {
+                font-size: 15px;
+              }
+             @media screen and (max-width: 1299px) {
+                font-size: 14px;
+              }
               @media screen and (max-width: 767px) {
-                padding-right: 0;
-                margin-bottom: 10px;
+                padding-right: 10px;
+                margin-bottom: 0;
+                font-size: 10px;
               }
               img {
                 margin-right: 5px;
+                width: 20px;
+                @media screen and (max-width: 767px) {
+                  padding-right: 0;
+                  margin-bottom: 0;
+                  width: 12px;
+                }
               }
               &:last-child {
                 padding-right: 0;
@@ -216,9 +245,16 @@
 }
 .custom-products-slider {
   margin: 5% 0 10%;
+  @media screen and (max-width: 767px) {
+    margin: 65px 0 120px;
+   }
  &:before {
+  min-height: 100%;
+    @media screen and (max-width: 1299px) {
+      min-height: 93%;
+  }
   @media screen and (max-width: 991px) {
-    min-height: 104vh;
+    min-height: 100%;
    }
  }
 }

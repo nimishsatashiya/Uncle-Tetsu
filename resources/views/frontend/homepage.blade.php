@@ -14,7 +14,7 @@
       <!-- Page active section end -->
       <!-- Social group section start -->
       <ul class="social-group">
-         <li><a href="javascript:void(0);" class="social-icon active">
+         <li><a href="javascript:void(0);" class="social-icon"> 
                <img class="img-red" src="{{asset('themes/frontend/images/facebook.svg')}}" alt="">
                <img class="img-hover" src="{{asset('themes/frontend/images/facebook-active.svg')}}" alt="">
             </a></li>

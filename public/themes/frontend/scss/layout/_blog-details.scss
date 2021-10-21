@@ -7,7 +7,7 @@
     text-align: center;
     .marquee {
         top: 4%;
-        @media screen and (max-width: 1400px) {
+       @media screen and (max-width: 1699px) {
             top: 5%;
         }
         @media screen and (max-width: 1199px) {
@@ -38,7 +38,7 @@
             text-transform: uppercase;
             text-align: left;
             display: flex;
-            @media screen and (max-width: 1400px) {
+           @media screen and (max-width: 1699px) {
                 font-size: 18px;
             }
             @media screen and (max-width: 1299px) {
@@ -58,7 +58,7 @@
             text-transform: uppercase;
             text-align: left;
             width: 95%;
-            @media screen and (max-width: 1400px) {
+           @media screen and (max-width: 1699px) {
                 font-size: 28px;
                 line-height: 38px;
             }
@@ -190,7 +190,7 @@
                     text-transform: uppercase;
                     text-align: left;
                     display: flex;
-                    @media screen and (max-width: 1400px) {
+                   @media screen and (max-width: 1699px) {
                         font-size: 18px;
                     }
                     @media screen and (max-width: 1299px) {
@@ -210,7 +210,7 @@
                     text-transform: uppercase;
                     text-align: left;
                     width: 95%;
-                    @media screen and (max-width: 1400px) {
+                   @media screen and (max-width: 1699px) {
                         font-size: 28px;
                         line-height: 38px;
                     }

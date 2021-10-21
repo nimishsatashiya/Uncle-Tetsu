@@ -26,19 +26,19 @@ body {
     overflow: hidden;
     position: absolute;
     z-index: -1;
-    @media screen and (max-width: 1400px) {
+   @media screen and (max-width: 1699px) {
       min-height: 200px;
     }
     @media screen and (max-width: 991px) {
       min-height:80px; 
     }
     .watermark-text {
-      position: absolute;
-      top: 0;
+      position: absolute;  
+      top: 0; 
       left: 0;
-      right: 0;
+      right: 0; 
       text-align: center;
-      margin: 0 auto;
+      margin: 0 auto;  
       font-size: 282px;
       line-height: 282px;
       color: rgba(var(--color-black-rgb), 0.03);
@@ -49,7 +49,7 @@ body {
       display: block;
       width: 200%;
       animation: marquee 5s linear infinite;
-      @media screen and (max-width: 1400px) {
+     @media screen and (max-width: 1699px) {
         font-size: 200px;
         line-height: 200px;
         font-weight: 800;
@@ -88,7 +88,7 @@ body {
       font-family: var(--font-pupcat);
       text-transform: uppercase;
       margin-bottom: 0;
-      @media screen and (max-width: 1400px) {
+     @media screen and (max-width: 1699px) {
         font-size: 60px;
         line-height: 78px;
       }
@@ -108,10 +108,10 @@ body {
       color: var(--color-black);
       font-family: var(--font-primary);
       margin-bottom: 1rem;
-      @media screen and (max-width: 1400px) {
+     @media screen and (max-width: 1699px) {
         font-size: 15px;
       }
-      @media screen and (max-width: 1400px) {
+     @media screen and (max-width: 1299px) {
         font-size: 14px;
       }
     }
@@ -124,7 +124,7 @@ body {
       margin-top: 2.5rem;
       display: flex;
       align-items: center;
-      @media screen and (max-width: 1400px) {
+     @media screen and (max-width: 1699px) {
         font-size: 18px;
       }
       @media screen and (max-width: 1299px) {
@@ -221,7 +221,7 @@ body {
       margin: 0;
       padding: 0;
       margin-bottom: 20px;
-      @media screen and (max-width: 1400px) {
+     @media screen and (max-width: 1699px) {
         margin-bottom: 12px;
       }
       &:last-child {
@@ -236,7 +236,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        @media screen and (max-width: 1400px) {
+       @media screen and (max-width: 1699px) {
           width: 35px;
           height: 35px;
         }
@@ -312,7 +312,7 @@ body {
       height: 295px;
       width: 2px;
       position: relative;
-      @media screen and (max-width: 1400px) {
+     @media screen and (max-width: 1699px) {
         height: 200px;
       }
       .line-main {
@@ -331,7 +331,7 @@ body {
         -moz-animation: bounce1 5s infinite;
         -webkit-animation: bounce1 5s infinite;
         animation: bounce1 5s infinite;
-        @media screen and (max-width: 1400px) {
+       @media screen and (max-width: 1699px) {
           height: 100px;
         }
         @keyframes bounce1 {

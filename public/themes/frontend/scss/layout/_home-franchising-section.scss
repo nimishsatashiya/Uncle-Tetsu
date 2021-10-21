@@ -3,6 +3,16 @@
   min-height: 100vh;
   margin-top: 8vh;
   z-index: 2;
+  @media screen and (max-width: 1400px) {
+    margin-top: 8%;
+  }
+  @media screen and (max-width: 1399px) {
+    min-height: 800px;
+  }
+  @media screen and (max-width: 1299px) {
+    margin-top: 5%;
+    min-height: 770px;
+  }
   @media screen and (max-width: 1199px) {
     margin-top: 0;
   }
@@ -16,8 +26,14 @@
   }
   .marquee {
     top: 83%;
-    @media screen and (max-width: 1400px) {
+   @media screen and (max-width: 1699px) {
       top: 88%;
+    }
+    @media screen and (max-width: 1400px) {
+      top: 75%;
+    }
+    @media screen and (max-width: 1299px) {
+      top: 74%;
     }
     @media screen and (max-width: 1199px) {
       top: 72%;
@@ -94,10 +110,10 @@
       font-family: var(--font-primary);
       margin-bottom: 2rem;
       text-transform: uppercase;
-      @media screen and (max-width: 1400px) {
+     @media screen and (max-width: 1699px) {
         font-size: 15px;
       }
-      @media screen and (max-width: 1400px) {
+     @media screen and (max-width: 1699px) {
         font-size: 14px;
       }
     }
@@ -123,7 +139,10 @@
     min-height: 115vh;
     z-index: -1;
     @media screen and (max-width: 1680px) {
-      min-height: 123vh;
+      min-height: 115vh;
+    }
+    @media screen and (max-width: 1400px)  {
+      min-height: 100%;
     }
     @media screen and (max-width: 1199px) {
       min-height: 100vh;

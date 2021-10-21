@@ -16,7 +16,7 @@
         <!-- Social group section start -->
         <ul class="social-group">
             <li>
-                <a href="javascript:void(0);" class="social-icon active">
+                <a href="javascript:void(0);" class="social-icon">
                     <img class="img-red" src="{{asset('themes/frontend/images/')}}/facebook.svg" alt="">
                     <img class="img-hover" src="{{asset('themes/frontend/images/')}}/facebook-active.svg" alt="">
                 </a>
@@ -63,14 +63,14 @@
         </section>
         <!-- Plean Root end -->
         <!-- Banner section  start -->
-        <section id="bannerWrap" class="banner-section">
+        <section id="bannerWrap" class="banner-section single-banner">
             <div class="marquee">
                 <span class="watermark-text">Uncle Tetsu's Blog</span>
             </div>
             <div class="custom-padding-x">
                 <div class="single-img">
                     <div class="item">
-                        <img class="w-100" src="{{asset('themes/frontend/images/')}}/blog-detail-banner.png" alt="">
+                        <img class="w-100" src="{{asset('themes/frontend/images/')}}/blog-list.png" alt="">
                     </div>
                     <a class="down-arrow" href="#BlogDetail">
                         <img class="w-100" src="{{asset('themes/frontend/images/')}}/down-arrow.svg" alt="">
@@ -121,13 +121,13 @@
                             </div>
                             <div class="blog_card blog_card_reverse">
                                 <div class="blog_card-imgbox">
-                                    <img src="{{asset('themes/frontend/images/')}}/blog-card-thumb.png" alt="" class="img-fluid">
+                                    <img src="{{asset('themes/frontend/images/')}}/blog-card-thumb-01.png" alt="" class="img-fluid">
                                 </div>
                                 <div class="blog_card-contentbox">
                                     <div class="common-style">
-                                        <span>A NEW SHOP OPENS · 16th July 2019</span>
-                                        <h3>Uncle Tetsu New York officially opens on Wednesday, July 17th.</h3>
-                                        <p>The announcement is finally here for Uncle Tetsu’s grand opening in New York City!</p>
+                                        <span>BEHIND THE SCENES · 11th July 2019</span>
+                                        <h3>What exactly is Uncle Tetsu’s Japanese Cheesecake?</h3>
+                                        <p>Japanese Cheesecake lies at the heart of everything Uncle Tetsu.</p>
                                         <a href="./blog-details.html">Read More
                                             <svg xmlns="http://www.w3.org/2000/svg" width="37.646" height="19.65" viewBox="0 0 37.646 19.65">
                                                 <g id="Group_511" data-name="Group 511" transform="translate(-989.5 1063.162) rotate(-90)">
@@ -139,37 +139,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="blog-before">
-            <div class="custom-padding-x ">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="blog_wrapper">
                             <div class="blog_card">
-                                <div class="blog_card-imgbox">
-                                    <img src="{{asset('themes/frontend/images/')}}/blog-card-thumb.png" alt="" class="img-fluid">
-                                </div>
-                                <div class="blog_card-contentbox">
-                                    <div class="common-style">
-                                        <span>A NEW SHOP OPENS · 16th July 2019</span>
-                                        <h3>Uncle Tetsu New York officially opens on Wednesday, July 17th.</h3>
-                                        <p>The announcement is finally here for Uncle Tetsu’s grand opening in New York City!</p>
-                                        <a href="./blog-details.html">Read More
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="37.646" height="19.65" viewBox="0 0 37.646 19.65">
-                                                <g id="Group_511" data-name="Group 511" transform="translate(-989.5 1063.162) rotate(-90)">
-                                                    <line id="Line_2" data-name="Line 2" y1="35.142" transform="translate(1053.337 990.5)" fill="none" stroke-linecap="round" stroke-width="2" />
-                                                    <path id="Path_4660" data-name="Path 4660" d="M2513.136,1023.974l8.411,8.411,8.411-8.411" transform="translate(-1468.209 -6.239)" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-                                                </g>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="blog_card blog_card_reverse">
                                 <div class="blog_card-imgbox">
                                     <img src="{{asset('themes/frontend/images/')}}/blog-card-thumb.png" alt="" class="img-fluid">
                                 </div>
@@ -199,15 +169,15 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="blog_wrapper">
-                            <div class="blog_card">
+                        <div class="blog_card blog_card_reverse">
                                 <div class="blog_card-imgbox">
-                                    <img src="{{asset('themes/frontend/images/')}}/blog-card-thumb.png" alt="" class="img-fluid">
+                                    <img src="{{asset('themes/frontend/images/')}}/blog-card-thumb-03.png" alt="" class="img-fluid">
                                 </div>
                                 <div class="blog_card-contentbox">
                                     <div class="common-style">
-                                        <span>A NEW SHOP OPENS · 16th July 2019</span>
-                                        <h3>Uncle Tetsu New York officially opens on Wednesday, July 17th.</h3>
-                                        <p>The announcement is finally here for Uncle Tetsu’s grand opening in New York City!</p>
+                                        <span>A NEW SHOP OPENS · 01 July 2019</span>
+                                        <h3>The recent Uncle Tetsu craze leading up to this New York City launch.</h3>
+                                        <p>Uncle Tetsu’s dreams of opening in the west have come true,</p>
                                         <a href="./blog-details.html">Read More
                                             <svg xmlns="http://www.w3.org/2000/svg" width="37.646" height="19.65" viewBox="0 0 37.646 19.65">
                                                 <g id="Group_511" data-name="Group 511" transform="translate(-989.5 1063.162) rotate(-90)">
@@ -219,15 +189,35 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="blog_card blog_card_reverse">
+                            <div class="blog_card">
                                 <div class="blog_card-imgbox">
-                                    <img src="{{asset('themes/frontend/images/')}}/blog-card-thumb.png" alt="" class="img-fluid">
+                                    <img src="{{asset('themes/frontend/images/')}}/blog-card-thumb-02.png" alt="" class="img-fluid">
                                 </div>
                                 <div class="blog_card-contentbox">
                                     <div class="common-style">
                                         <span>A NEW SHOP OPENS · 16th July 2019</span>
-                                        <h3>Uncle Tetsu New York officially opens on Wednesday, July 17th.</h3>
-                                        <p>The announcement is finally here for Uncle Tetsu’s grand opening in New York City!</p>
+                                        <h3>Moments away from Uncle Tetsu’s Grand Opening in New York City</h3>
+                                        <p>The era of fluffy Japanese cheesecakes in New York City is near as the shop’s construction reaches its final stages.</p>
+                                        <a href="./blog-details.html">Read More
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="37.646" height="19.65" viewBox="0 0 37.646 19.65">
+                                                <g id="Group_511" data-name="Group 511" transform="translate(-989.5 1063.162) rotate(-90)">
+                                                    <line id="Line_2" data-name="Line 2" y1="35.142" transform="translate(1053.337 990.5)" fill="none" stroke-linecap="round" stroke-width="2" />
+                                                    <path id="Path_4660" data-name="Path 4660" d="M2513.136,1023.974l8.411,8.411,8.411-8.411" transform="translate(-1468.209 -6.239)" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <div class="blog_card blog_card_reverse">
+                                <div class="blog_card-imgbox">
+                                    <img src="{{asset('themes/frontend/images/')}}/blog-card-thumb-02.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="blog_card-contentbox">
+                                    <div class="common-style">
+                                        <span>A NEW SHOP OPENS · 16th July 2019</span>
+                                        <h3>Moments away from Uncle Tetsu’s Grand Opening in New York City</h3>
+                                        <p>The era of fluffy Japanese cheesecakes in New York City is near as the shop’s construction reaches its final stages.</p>
                                         <a href="./blog-details.html">Read More
                                             <svg xmlns="http://www.w3.org/2000/svg" width="37.646" height="19.65" viewBox="0 0 37.646 19.65">
                                                 <g id="Group_511" data-name="Group 511" transform="translate(-989.5 1063.162) rotate(-90)">
@@ -251,6 +241,76 @@
                         <div class="blog_wrapper">
                             <div class="blog_card">
                                 <div class="blog_card-imgbox">
+                                    <img src="{{asset('themes/frontend/images/')}}/blog-card-thumb-04.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="blog_card-contentbox">
+                                    <div class="common-style">
+                                        <span>A NEW SHOP OPENS · 30th June 2019</span>
+                                        <h3>The Real Uncle Tetsu visits the soon-to-be New York Shop in May</h3>
+                                        <p>For the first time since construction began, the Real Uncle Tetsu visits the shop in New York during its early stages.</p>
+                                        <a href="./blog-details.html">Read More
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="37.646" height="19.65" viewBox="0 0 37.646 19.65">
+                                                <g id="Group_511" data-name="Group 511" transform="translate(-989.5 1063.162) rotate(-90)">
+                                                    <line id="Line_2" data-name="Line 2" y1="35.142" transform="translate(1053.337 990.5)" fill="none" stroke-linecap="round" stroke-width="2" />
+                                                    <path id="Path_4660" data-name="Path 4660" d="M2513.136,1023.974l8.411,8.411,8.411-8.411" transform="translate(-1468.209 -6.239)" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog_card blog_card_reverse">
+                                <div class="blog_card-imgbox">
+                                    <img src="{{asset('themes/frontend/images/')}}/blog-card-thumb-05.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="blog_card-contentbox">
+                                    <div class="common-style">
+                                        <span>A NEW SHOP OPENS ·28th June 2019</span>
+                                        <h3>Uncle Tetsu is opening in New York City!!</h3>
+                                        <p>It was exactly one year ago today that the search for the perfect location of our first store in New York began.</p>
+                                        <a href="./blog-details.html">Read More
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="37.646" height="19.65" viewBox="0 0 37.646 19.65">
+                                                <g id="Group_511" data-name="Group 511" transform="translate(-989.5 1063.162) rotate(-90)">
+                                                    <line id="Line_2" data-name="Line 2" y1="35.142" transform="translate(1053.337 990.5)" fill="none" stroke-linecap="round" stroke-width="2" />
+                                                    <path id="Path_4660" data-name="Path 4660" d="M2513.136,1023.974l8.411,8.411,8.411-8.411" transform="translate(-1468.209 -6.239)" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog_card">
+                                <div class="blog_card-imgbox">
+                                    <img src="{{asset('themes/frontend/images/')}}/blog-card-thumb-04.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="blog_card-contentbox">
+                                    <div class="common-style">
+                                        <span>A NEW SHOP OPENS · 30th June 2019</span>
+                                        <h3>The Real Uncle Tetsu visits the soon-to-be New York Shop in May</h3>
+                                        <p>For the first time since construction began, the Real Uncle Tetsu visits the shop in New York during its early stages.</p>
+                                        <a href="./blog-details.html">Read More
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="37.646" height="19.65" viewBox="0 0 37.646 19.65">
+                                                <g id="Group_511" data-name="Group 511" transform="translate(-989.5 1063.162) rotate(-90)">
+                                                    <line id="Line_2" data-name="Line 2" y1="35.142" transform="translate(1053.337 990.5)" fill="none" stroke-linecap="round" stroke-width="2" />
+                                                    <path id="Path_4660" data-name="Path 4660" d="M2513.136,1023.974l8.411,8.411,8.411-8.411" transform="translate(-1468.209 -6.239)" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="blog-before">
+            <div class="custom-padding-x ">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="blog_wrapper">
+                            <div class="blog_card blog_card_reverse">
+                                <div class="blog_card-imgbox">
                                     <img src="{{asset('themes/frontend/images/')}}/blog-card-thumb.png" alt="" class="img-fluid">
                                 </div>
                                 <div class="blog_card-contentbox">
@@ -269,9 +329,30 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="blog_card">
+                                <div class="blog_card-imgbox">
+                                    <img src="{{asset('themes/frontend/images/')}}/blog-card-thumb-01.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="blog_card-contentbox">
+                                    <div class="common-style">
+                                        <span>A NEW SHOP OPENS · 16th July 2019</span>
+                                        <h3>Uncle Tetsu New York officially opens on Wednesday, July 17th.</h3>
+                                        <p>The announcement is finally here for Uncle Tetsu’s grand opening in New York City!</p>
+                                        <a href="./blog-details.html">Read More
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="37.646" height="19.65" viewBox="0 0 37.646 19.65">
+                                                <g id="Group_511" data-name="Group 511" transform="translate(-989.5 1063.162) rotate(-90)">
+                                                    <line id="Line_2" data-name="Line 2" y1="35.142" transform="translate(1053.337 990.5)" fill="none" stroke-linecap="round" stroke-width="2" />
+                                                    <path id="Path_4660" data-name="Path 4660" d="M2513.136,1023.974l8.411,8.411,8.411-8.411" transform="translate(-1468.209 -6.239)" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
                             <div class="blog_card blog_card_reverse">
                                 <div class="blog_card-imgbox">
-                                    <img src="{{asset('themes/frontend/images/')}}/blog-card-thumb.png" alt="" class="img-fluid">
+                                    <img src="{{asset('themes/frontend/images/')}}/blog-card-thumb-01.png" alt="" class="img-fluid">
                                 </div>
                                 <div class="blog_card-contentbox">
                                     <div class="common-style">
@@ -293,7 +374,11 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>        
+        <div class="marquee blog-bottom">
+            <span class="watermark-text">Our Philosophy</span>
+            <h4>Loading . . .</h4>
+         </div>
         <!-- Franchising Page end -->
 </main>
 @endsection

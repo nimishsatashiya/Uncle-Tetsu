@@ -5,9 +5,16 @@
   width: 100%;
   margin: 15vh auto 0;
   text-align: center;
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1699px) {
     height: 700px;
-    margin: 0 auto 0;
+  }
+  @media screen and (max-width: 1400px) {
+    margin: 10% auto 0;
+    height: 680px;
+  }
+  @media screen and (max-width: 1400px) {
+    margin: 8% auto 0;
+    height: 500px;
   }
   @media screen and (max-width: 991px) {    
     height: 600px;
@@ -17,14 +24,17 @@
    }
   .marquee {
     top: 16%;
-    @media screen and (max-width: 1400px) {
-      top: 23%;
+   @media screen and (max-width: 1699px) {
+      top: 12%;
+    }
+    @media screen and (max-width: 1299px) {
+      top: 0;
     }
     @media screen and (max-width: 1199px) {
       top: 12%;
     }
     @media screen and (max-width: 991px) {
-      top: 20%;
+      top: 20%; 
      }
   }
   .common-style {
@@ -73,7 +83,7 @@
         line-height: 25px;
         font-weight: 400;
         color: var(--color-black);
-        @media screen and (max-width: 1400px) {
+       @media screen and (max-width: 1699px) {
           font-size: 15px;
         }
         @media screen and (max-width: 1299px) {
@@ -87,7 +97,7 @@
         font-weight: 400;
         color: var(--color-black);
         font-family: var(--font-primary);
-        @media screen and (max-width: 1400px) {
+       @media screen and (max-width: 1699px) {
           font-size: 15px;
         }
         @media screen and (max-width: 1299px) {
@@ -111,7 +121,7 @@
         align-items: center;
         background: transparent;
         border: none;
-        @media screen and (max-width: 1400px) {
+       @media screen and (max-width: 1699px) {
           font-size: 18px;
         }
         @media screen and (max-width: 1299px) {

@@ -3,6 +3,18 @@
   min-height: 100vh;
   margin-top: 38vh;
   z-index: 2;
+  @media screen and (max-width: 1699px)  {
+    margin-top: 25vh;
+  }
+  @media screen and (max-width: 1400px) {
+    margin-top: 0;
+  }
+  @media screen and (max-width: 1399px) {
+    min-height: 900px;
+  }
+  @media screen and (max-width: 1299px)  {  
+    min-height: 760px; 
+  }
   @media screen and (max-width: 1199px) {
     margin-top: 15vh;
   }
@@ -36,8 +48,12 @@
     width: 35.52%;
     min-height: 130vh;
     z-index: -1;
+   @media screen and (max-width: 1699px) {
+      min-height: 120vh;
+    }
     @media screen and (max-width: 1400px) {
-      min-height: 135vh;
+      min-height: 100%;
+      top: 10%;
     }
     @media screen and (max-width: 1199px) {
       min-height: 100vh;
@@ -66,7 +82,7 @@
     @media screen and (max-width: 1680px) {
       top: 50px;
     }
-    @media screen and (max-width: 1400px) {
+   @media screen and (max-width: 1699px) {
       top: 00px;
     }
     @media screen and (max-width: 1299px) {
@@ -94,7 +110,7 @@
     box-shadow: -40px 40px 60px 0px rgba(77, 24, 24, 0.2);
     -webkit-box-shadow: -40px 40px 60px 0px rgba(77, 24, 24, 0.2);
     -moz-box-shadow: -40px 40px 60px 0px rgba(77, 24, 24, 0.2);
-    @media screen and (max-width: 1400px) {
+   @media screen and (max-width: 1699px) {
       top: 70px;
     }
     @media screen and (max-width: 991px) {
@@ -116,7 +132,7 @@
     @media screen and (max-width: 1680px) {
       top: 550px;
     }
-    @media screen and (max-width: 1400px) {
+   @media screen and (max-width: 1699px) {
       top: 480px;
     }
     @media screen and (max-width: 1299px) {
@@ -154,7 +170,7 @@
     @media screen and (max-width: 1680px) {
       top: 560px;
     }
-    @media screen and (max-width: 1400px) {
+   @media screen and (max-width: 1699px) {
       top: 510px;
     }
     @media screen and (max-width: 1299px) {

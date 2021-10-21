@@ -3,7 +3,10 @@
   min-height: 100vh;
   margin-top: 27vh;
   z-index: 2;
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1699px) {
+    margin-top: 17vh;
+  }
+  @media screen and (max-width: 1400px) {
     margin-top: 0;
   }
   @media screen and (max-width: 767px) {
@@ -20,7 +23,7 @@
   .marquee {
     top: 40%;
     @media screen and (max-width: 991px) {
-      top: 21%;
+      top: 45%;
     }
   }
   .common-style {
@@ -75,7 +78,7 @@
         top: 50%;
         transform: translateY(-50%);
         right: -80px;
-        @media screen and (max-width: 1400px) {
+       @media screen and (max-width: 1699px) {
           right: 0;
           width: 20%;
         }
@@ -91,14 +94,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        @media screen and (max-width: 1400px) {
+       @media screen and (max-width: 1699px) {
           width: 70px;
           height: 70px;
         }
         img {
           width: 67px;
           height: 56px;
-          @media screen and (max-width: 1400px) {
+         @media screen and (max-width: 1699px) {
             width: 45px;
             height: 38px;
           }
@@ -117,7 +120,7 @@
         font-family: var(--font-pupcat);
         text-transform: uppercase;
         margin-bottom: 0;
-        @media screen and (max-width: 1400px) {
+       @media screen and (max-width: 1699px) {
           font-size: 28px;
           line-height: 38px;
         }
@@ -146,13 +149,16 @@
     @media screen and (max-width: 1680px) {
       min-height: 135vh;
     }
+   @media screen and (max-width: 1699px) {
+      top: 0;
+      min-height: 121vh;
+    }
     @media screen and (max-width: 1400px) {
-      top: 7%;
-      min-height: 132vh;
+      min-height: 100%;
     }
     @media screen and (max-width: 1299px) {
       top: 7%;
-      min-height: 110vh;
+      min-height: 93%;
     }
     @media screen and (max-width: 1199px) {
       min-height: 100vh;
@@ -211,12 +217,18 @@
           color: var(--color-white);
         }
       }
-      &.owl-next {
-        
+      &.owl-next {        
         right: 16px;
+        &:hover, &:focus {
+          color: var(--color-black);
+        }
       }
       &.owl-prev {
         left: 16px;
+        color: var(--color-white);
+        &:hover, &:focus {
+          color: var(--color-white);
+        }
       }
     }
    }

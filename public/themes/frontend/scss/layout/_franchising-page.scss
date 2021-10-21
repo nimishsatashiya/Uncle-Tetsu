@@ -8,7 +8,7 @@
 
   .marquee {
     top: 4%;
-    @media screen and (max-width: 1400px) {
+   @media screen and (max-width: 1699px) {
       top: 5%;
     }
     @media screen and (max-width: 1199px) {
@@ -77,7 +77,7 @@
             color: var(--color-black);
             font-family: var(--font-primary);
             text-align: left;
-            @media screen and (max-width: 1400px) {
+           @media screen and (max-width: 1699px) {
               font-size: 13px;
             }
             @media screen and (max-width: 1299px) {
@@ -119,7 +119,7 @@
       color: var(--color-black);
       font-family: var(--font-primary);
       margin-bottom: 0;
-      @media screen and (max-width: 1400px) {
+     @media screen and (max-width: 1699px) {
         font-size: 17px;
       }
       @media screen and (max-width: 1299px) {
@@ -159,7 +159,7 @@
         align-items: center;
         background: transparent;
         border: none;
-        @media screen and (max-width: 1400px) {
+       @media screen and (max-width: 1699px) {
           font-size: 15px;
         }
         @media screen and (max-width: 1299px) {

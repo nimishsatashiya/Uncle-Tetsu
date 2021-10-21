@@ -2,6 +2,11 @@
   position: relative;
   min-height: 100vh;
   z-index: 2;
+  @media screen and (max-width: 1680px) {
+    &.single-banner {
+      min-height: 90vh;
+    }
+  }
   @media screen and (max-width: 991px) {
     min-height: 95vh;
   }
@@ -35,9 +40,12 @@
     z-index: -1;
   }
   .banner-slider {
-    padding-top: 15.5vh;
+    padding-top: 90px;
     position: relative;
     border-radius: 20px;
+    @media screen and (max-width: 1680px) {
+      padding-top: 90px;
+    }
     @media screen and (max-width: 767px) {
       padding-top: 30vh;
     }
@@ -59,7 +67,7 @@
       margin: 0 auto;
       bottom: -50px;
       z-index: 3;
-      @media screen and (max-width: 1400px) {
+      @media screen and (max-width: 1699px) {
         width: 70px;
         height: 70px;
       }
@@ -72,7 +80,7 @@
         -moz-animation: bounce 2s infinite;
         -webkit-animation: bounce 2s infinite;
         animation: bounce 2s infinite;
-        @media screen and (max-width: 1400px) {
+        @media screen and (max-width: 1699px) {
           height: 25px;
         }
         @keyframes bounce {
@@ -120,9 +128,12 @@
     }
   }
   .single-img {
-    padding-top: 15.5vh;
+    padding-top: 160px;
     position: relative;
     border-radius: 20px;
+    @media screen and (max-width: 1680px) {
+      padding-top: 90px;
+    }
     @media screen and (max-width: 767px) {
       padding-top: 30vh;
     }
@@ -140,13 +151,14 @@
       position: absolute;
       left: 0;
       right: 0;
-      text-align: center;
+      text-align: center; 
       margin: 0 auto;
-      bottom: -50px;
+      bottom: -50px;  
       z-index: 3;
-      @media screen and (max-width: 1400px) {
+      @media screen and (max-width: 1699px) { 
         width: 70px;
         height: 70px;
+        bottom: -35px;  
       }
       @media screen and (max-width: 1199px) {
         bottom: -30px;
@@ -157,10 +169,10 @@
         -moz-animation: bounce 2s infinite;
         -webkit-animation: bounce 2s infinite;
         animation: bounce 2s infinite;
-        @media screen and (max-width: 1400px) {
+        @media screen and (max-width: 1699px) {
           height: 25px;
         }
-        @keyframes bounce {
+        @keyframes bounce { 
           0%,
           20%,
           50%,

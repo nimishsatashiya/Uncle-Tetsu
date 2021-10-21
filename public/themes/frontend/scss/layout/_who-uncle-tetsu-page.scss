@@ -5,15 +5,21 @@
   width: 100%;
   margin: 0 auto 20%;
   text-align: center;
+  @media screen and (max-width: 1699px) {
+    margin: 0 auto 10%;
+  }
+  @media screen and (max-width: 1199px) {
+    margin: 0 auto 120px;
+  }
   @media screen and (max-width: 767px) {
-    margin: 10% auto 30%;
+    margin: 10% auto 120px;
   }
   @media screen and (max-width: 575px) {
-    margin: 0 auto 40%;
+    margin: 0 auto 120px;
   }
   .marquee {
     top: 4%;
-    @media screen and (max-width: 1400px) {
+   @media screen and (max-width: 1699px) {
       top: 5%;
     }
     @media screen and (max-width: 1199px) {
@@ -58,6 +64,7 @@
     margin-bottom: 5.5%;
     display: block;
     width: 100%;
+    min-height: 1216px; 
     &::before {
       content: "";
       background: rgba(var(--color-black-rgb), 0.05);
@@ -68,13 +75,27 @@
       width: 35.52%;
       min-height: 110%;
       z-index: -1;
+      @media screen and (max-width: 1699px) { 
+        min-height: 100%;
+      }
       @media screen and (max-width: 1199px) {
         width: 50%;    
         min-height: 105%;    
       }     
     }
+    @media screen and (max-width: 1699px) { 
+      margin-bottom: 0;
+    }
+    @media screen and (max-width: 1399px) {
+      min-height: 1150px;
+    }
+    @media screen and (max-width: 1299px) {
+      min-height: 1070px;
+    }
     @media screen and (max-width: 1199px) {
       padding-top: 30px;
+      margin-bottom: 55px;
+      min-height: auto;
     }
     .section-one {
       display: flex;
@@ -119,6 +140,7 @@
           -moz-box-shadow: -40px 40px 60px 0px rgba(77, 24, 24, 0.2);
           @media screen and (max-width: 1199px) {
             width: 50%;
+            border-radius: 10px;
           }
         }
         span {
@@ -139,6 +161,9 @@
           position: absolute;
           bottom: -12%;
           left: 44%;
+          @media screen and (max-width: 1699px) {
+            bottom: -35px;
+          }
           img {
             @media screen and (max-width: 1199px) {
               width: 100%;
@@ -146,6 +171,7 @@
           }
           @media screen and (max-width: 1599px) {
             width: 40%;
+            bottom: 65px;
           }
           @media screen and (max-width: 1399px) {
             width: 38%;
@@ -155,6 +181,9 @@
           }
           @media screen and (max-width: 1199px) {
             width: 56%;
+            bottom: -10%;
+          }
+          @media screen and (max-width: 767px) {
             bottom: -20%;
           }
           span {
@@ -172,6 +201,7 @@
     display: block;
     width: 100%;
     padding-top: 10%;
+    min-height: 1035px;
     &::before {
       content: "";
       background: rgba(var(--color-black-rgb), 0.05);
@@ -182,10 +212,23 @@
       width: 35.52%;
       min-height: 120%;
       z-index: -1;
+      @media screen and (max-width: 1699px) {
+        min-height: 100%;
+      }
       @media screen and (max-width: 1199px) {
-        min-height: 110%;
+        min-height: 100%;
         width: 50%;
       }     
+    }
+    @media screen and (max-width: 1399px) {
+      min-height: 985px;
+    }
+    @media screen and (max-width: 1299px) {
+      min-height: 900px;
+    }
+    @media screen and (max-width: 1199px) {
+      min-height: auto;
+      padding-bottom: 10%;
     }
     @media screen and (max-width: 767px) {
       margin-top: 15%;
@@ -234,7 +277,7 @@
         @media screen and (max-width: 1199px) {
           width: 100%;
           position: relative;
-          margin-bottom: 100px;
+          margin-bottom: 50px;
           order: 2;
         }
         @media screen and (max-width: 767px) {         
@@ -277,20 +320,29 @@
           position: absolute;
           bottom: 5%;
           right: 42%;
+          width: 41.35%;
+          @media screen and (max-width: 1699px) {
+            bottom: 200px;
+          }
           @media screen and (max-width: 1599px) {
             right: 45%;
             width: 39%;
-            bottom: 3%;
+            bottom:225px;
+          }
+          @media screen and (max-width: 1399px) {
+            bottom: 180px;
           }
           @media screen and (max-width: 1199px) {
             width: 58%;
             right: 44%;
+            bottom: 50px;
           }
           @media screen and (max-width: 991px) {
             width: 56%;
             bottom: 10%;
           }
-          @media screen and (max-width: 374px) {
+          
+          @media screen and (max-width: 767px) {
             bottom: 20%;
           }
           span {

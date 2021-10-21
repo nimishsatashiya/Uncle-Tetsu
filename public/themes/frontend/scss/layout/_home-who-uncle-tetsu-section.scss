@@ -2,6 +2,13 @@
   position: relative;
   min-height: 100vh;
   z-index: 2;
+  @media screen and (max-width: 1399px)  {  
+    margin-top: 5%;
+    min-height: 900px;
+  }
+  @media screen and (max-width: 1299px)  {  
+    min-height: 850px;
+  }
   @media screen and (max-width: 767px) {
     min-height: 100%;
     margin-top: 20%;
@@ -27,6 +34,13 @@
     width: 35.52%;
     min-height: 125vh;
     z-index: -1;
+    @media screen and (max-width: 1699px) {
+      min-height: 110vh;
+    }
+    @media screen and (max-width: 1400px) {
+      min-height: 90%;
+      top: 5%;
+    }
     @media screen and (max-width: 1199px) {
       min-height: 100vh;
     }
@@ -46,7 +60,7 @@
     padding-top: 200px;
     position: relative;
     z-index: 4;
-    @media screen and (max-width: 1400px) {
+   @media screen and (max-width: 1699px) {
       padding-top: 100px;
     }
     @media screen and (max-width: 991px) {
@@ -81,7 +95,7 @@
     @media screen and (max-width: 1680px) {
       top: 100px;
     }
-    @media screen and (max-width: 1400px) {
+   @media screen and (max-width: 1699px) {
       top: 60px;
     }
     @media screen and (max-width: 1199px) {
@@ -107,7 +121,7 @@
     @media screen and (max-width: 1680px) {
       top: 550px;
     }
-    @media screen and (max-width: 1400px) {
+   @media screen and (max-width: 1699px) {
       top: 450px;
     }
     @media screen and (max-width: 1299px) {

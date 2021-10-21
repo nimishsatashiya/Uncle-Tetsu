@@ -12,5 +12,11 @@ class BlogsController extends Controller
 		$data = array();
     	return view('frontend.blogs',$data);
    }
+
+   public function blog_details()
+   {
+		$data = array();
+    	return view('frontend.blogs_details',$data);
+   }
    
 }

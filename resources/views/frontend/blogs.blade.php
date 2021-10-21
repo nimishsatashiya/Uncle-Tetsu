@@ -108,7 +108,7 @@
                                         <span>A NEW SHOP OPENS · 16th July 2019</span>
                                         <h3>Uncle Tetsu New York officially opens on Wednesday, July 17th.</h3>
                                         <p>The announcement is finally here for Uncle Tetsu’s grand opening in New York City!</p>
-                                        <a href="./blog-details.html">Read More
+                                        <a href="/blog-details">Read More
                                             <svg xmlns="http://www.w3.org/2000/svg" width="37.646" height="19.65" viewBox="0 0 37.646 19.65">
                                                 <g id="Group_511" data-name="Group 511" transform="translate(-989.5 1063.162) rotate(-90)">
                                                     <line id="Line_2" data-name="Line 2" y1="35.142" transform="translate(1053.337 990.5)" fill="none" stroke-linecap="round" stroke-width="2" />
@@ -128,7 +128,7 @@
                                         <span>BEHIND THE SCENES · 11th July 2019</span>
                                         <h3>What exactly is Uncle Tetsu’s Japanese Cheesecake?</h3>
                                         <p>Japanese Cheesecake lies at the heart of everything Uncle Tetsu.</p>
-                                        <a href="./blog-details.html">Read More
+                                        <a href="/blog-details">Read More
                                             <svg xmlns="http://www.w3.org/2000/svg" width="37.646" height="19.65" viewBox="0 0 37.646 19.65">
                                                 <g id="Group_511" data-name="Group 511" transform="translate(-989.5 1063.162) rotate(-90)">
                                                     <line id="Line_2" data-name="Line 2" y1="35.142" transform="translate(1053.337 990.5)" fill="none" stroke-linecap="round" stroke-width="2" />
@@ -148,7 +148,7 @@
                                         <span>A NEW SHOP OPENS · 16th July 2019</span>
                                         <h3>Uncle Tetsu New York officially opens on Wednesday, July 17th.</h3>
                                         <p>The announcement is finally here for Uncle Tetsu’s grand opening in New York City!</p>
-                                        <a href="./blog-details.html">Read More
+                                        <a href="/blog-details">Read More
                                             <svg xmlns="http://www.w3.org/2000/svg" width="37.646" height="19.65" viewBox="0 0 37.646 19.65">
                                                 <g id="Group_511" data-name="Group 511" transform="translate(-989.5 1063.162) rotate(-90)">
                                                     <line id="Line_2" data-name="Line 2" y1="35.142" transform="translate(1053.337 990.5)" fill="none" stroke-linecap="round" stroke-width="2" />
@@ -178,7 +178,7 @@
                                         <span>A NEW SHOP OPENS · 01 July 2019</span>
                                         <h3>The recent Uncle Tetsu craze leading up to this New York City launch.</h3>
                                         <p>Uncle Tetsu’s dreams of opening in the west have come true,</p>
-                                        <a href="./blog-details.html">Read More
+                                        <a href="/blog-details">Read More
                                             <svg xmlns="http://www.w3.org/2000/svg" width="37.646" height="19.65" viewBox="0 0 37.646 19.65">
                                                 <g id="Group_511" data-name="Group 511" transform="translate(-989.5 1063.162) rotate(-90)">
                                                     <line id="Line_2" data-name="Line 2" y1="35.142" transform="translate(1053.337 990.5)" fill="none" stroke-linecap="round" stroke-width="2" />
@@ -198,7 +198,7 @@
                                         <span>A NEW SHOP OPENS · 16th July 2019</span>
                                         <h3>Moments away from Uncle Tetsu’s Grand Opening in New York City</h3>
                                         <p>The era of fluffy Japanese cheesecakes in New York City is near as the shop’s construction reaches its final stages.</p>
-                                        <a href="./blog-details.html">Read More
+                                        <a href="/blog-details">Read More
                                             <svg xmlns="http://www.w3.org/2000/svg" width="37.646" height="19.65" viewBox="0 0 37.646 19.65">
                                                 <g id="Group_511" data-name="Group 511" transform="translate(-989.5 1063.162) rotate(-90)">
                                                     <line id="Line_2" data-name="Line 2" y1="35.142" transform="translate(1053.337 990.5)" fill="none" stroke-linecap="round" stroke-width="2" />
@@ -218,7 +218,7 @@
                                         <span>A NEW SHOP OPENS · 16th July 2019</span>
                                         <h3>Moments away from Uncle Tetsu’s Grand Opening in New York City</h3>
                                         <p>The era of fluffy Japanese cheesecakes in New York City is near as the shop’s construction reaches its final stages.</p>
-                                        <a href="./blog-details.html">Read More
+                                        <a href="/blog-details">Read More
                                             <svg xmlns="http://www.w3.org/2000/svg" width="37.646" height="19.65" viewBox="0 0 37.646 19.65">
                                                 <g id="Group_511" data-name="Group 511" transform="translate(-989.5 1063.162) rotate(-90)">
                                                     <line id="Line_2" data-name="Line 2" y1="35.142" transform="translate(1053.337 990.5)" fill="none" stroke-linecap="round" stroke-width="2" />
@@ -248,7 +248,7 @@
                                         <span>A NEW SHOP OPENS · 30th June 2019</span>
                                         <h3>The Real Uncle Tetsu visits the soon-to-be New York Shop in May</h3>
                                         <p>For the first time since construction began, the Real Uncle Tetsu visits the shop in New York during its early stages.</p>
-                                        <a href="./blog-details.html">Read More
+                                        <a href="/blog-details">Read More
                                             <svg xmlns="http://www.w3.org/2000/svg" width="37.646" height="19.65" viewBox="0 0 37.646 19.65">
                                                 <g id="Group_511" data-name="Group 511" transform="translate(-989.5 1063.162) rotate(-90)">
                                                     <line id="Line_2" data-name="Line 2" y1="35.142" transform="translate(1053.337 990.5)" fill="none" stroke-linecap="round" stroke-width="2" />
@@ -268,7 +268,7 @@
                                         <span>A NEW SHOP OPENS ·28th June 2019</span>
                                         <h3>Uncle Tetsu is opening in New York City!!</h3>
                                         <p>It was exactly one year ago today that the search for the perfect location of our first store in New York began.</p>
-                                        <a href="./blog-details.html">Read More
+                                        <a href="/blog-details">Read More
                                             <svg xmlns="http://www.w3.org/2000/svg" width="37.646" height="19.65" viewBox="0 0 37.646 19.65">
                                                 <g id="Group_511" data-name="Group 511" transform="translate(-989.5 1063.162) rotate(-90)">
                                                     <line id="Line_2" data-name="Line 2" y1="35.142" transform="translate(1053.337 990.5)" fill="none" stroke-linecap="round" stroke-width="2" />
@@ -288,7 +288,7 @@
                                         <span>A NEW SHOP OPENS · 30th June 2019</span>
                                         <h3>The Real Uncle Tetsu visits the soon-to-be New York Shop in May</h3>
                                         <p>For the first time since construction began, the Real Uncle Tetsu visits the shop in New York during its early stages.</p>
-                                        <a href="./blog-details.html">Read More
+                                        <a href="/blog-details">Read More
                                             <svg xmlns="http://www.w3.org/2000/svg" width="37.646" height="19.65" viewBox="0 0 37.646 19.65">
                                                 <g id="Group_511" data-name="Group 511" transform="translate(-989.5 1063.162) rotate(-90)">
                                                     <line id="Line_2" data-name="Line 2" y1="35.142" transform="translate(1053.337 990.5)" fill="none" stroke-linecap="round" stroke-width="2" />
@@ -318,7 +318,7 @@
                                         <span>A NEW SHOP OPENS · 16th July 2019</span>
                                         <h3>Uncle Tetsu New York officially opens on Wednesday, July 17th.</h3>
                                         <p>The announcement is finally here for Uncle Tetsu’s grand opening in New York City!</p>
-                                        <a href="./blog-details.html">Read More
+                                        <a href="/blog-details">Read More
                                             <svg xmlns="http://www.w3.org/2000/svg" width="37.646" height="19.65" viewBox="0 0 37.646 19.65">
                                                 <g id="Group_511" data-name="Group 511" transform="translate(-989.5 1063.162) rotate(-90)">
                                                     <line id="Line_2" data-name="Line 2" y1="35.142" transform="translate(1053.337 990.5)" fill="none" stroke-linecap="round" stroke-width="2" />
@@ -338,7 +338,7 @@
                                         <span>A NEW SHOP OPENS · 16th July 2019</span>
                                         <h3>Uncle Tetsu New York officially opens on Wednesday, July 17th.</h3>
                                         <p>The announcement is finally here for Uncle Tetsu’s grand opening in New York City!</p>
-                                        <a href="./blog-details.html">Read More
+                                        <a href="/blog-details">Read More
                                             <svg xmlns="http://www.w3.org/2000/svg" width="37.646" height="19.65" viewBox="0 0 37.646 19.65">
                                                 <g id="Group_511" data-name="Group 511" transform="translate(-989.5 1063.162) rotate(-90)">
                                                     <line id="Line_2" data-name="Line 2" y1="35.142" transform="translate(1053.337 990.5)" fill="none" stroke-linecap="round" stroke-width="2" />
@@ -359,7 +359,7 @@
                                         <span>A NEW SHOP OPENS · 16th July 2019</span>
                                         <h3>Uncle Tetsu New York officially opens on Wednesday, July 17th.</h3>
                                         <p>The announcement is finally here for Uncle Tetsu’s grand opening in New York City!</p>
-                                        <a href="./blog-details.html">Read More
+                                        <a href="/blog-details">Read More
                                             <svg xmlns="http://www.w3.org/2000/svg" width="37.646" height="19.65" viewBox="0 0 37.646 19.65">
                                                 <g id="Group_511" data-name="Group 511" transform="translate(-989.5 1063.162) rotate(-90)">
                                                     <line id="Line_2" data-name="Line 2" y1="35.142" transform="translate(1053.337 990.5)" fill="none" stroke-linecap="round" stroke-width="2" />

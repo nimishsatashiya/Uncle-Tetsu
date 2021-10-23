@@ -9,16 +9,9 @@ define("TBL_ADMIN_ACTION","admin_actions");
 define("TBL_ADMIN_LOG","admin_logs");
 define("TBL_USER_TYPES", "user_types");
 define("TBL_USERS","users");
-define("TBL_PROPERTIES","listings");
-define("TBL_CITIES","cities");
-define("TBL_MLS_MASTER","mls_master");
-define("TBL_STATES","states");
-define("TBL_LATLONG","latlong");
-define("TBL_BUILDINGS","buildings");
-define("TBL_PROPERTY_IMAGES","property_images");
 define("TBL_BANNERS","banners");
-define("TBL_TASKS_ATTACHMENT","tasks_attachment");
-define("TBL_TEMP_ATTACHMENT","temp_attachment");
+define("TBL_WHO_UNCLE_TESTU","who_uncle_tetsu");
+define("TBL_OUR_PHILOSOPHY","our_philosophy");
 define("TBL_TASK_STATUS_LIST","task_status_list");
 define("TBL_TASK_STATUS","task_status");
 

@@ -77,6 +77,10 @@ Route::group(['prefix' => $ADMIN_PREFIX, 'middleware' => 'admin_auth'], function
 	Route::any('banner/data', 'admin\BannerController@data')->name('banner.data');
 	Route::resource('banner', 'admin\BannerController');
 
+//Pages
+	Route::any('pages/data', 'admin\PagesController@data')->name('pages.data');
+	Route::resource('pages', 'admin\PagesController');
+
 
 //CRM
 	Route::any('leads/data', 'admin\CrmController@data')->name('leads.data');

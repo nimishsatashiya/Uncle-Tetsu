@@ -73,32 +73,15 @@ Route::group(['prefix' => $ADMIN_PREFIX, 'middleware' => 'admin_auth'], function
 	Route::any('actions/data', 'admin\AdminActionController@data')->name('actions.data');
 	Route::resource('actions', 'admin\AdminActionController');
 
-	Route::get('get-city-list', 'admin\PropertiesController@getCityList');
-	Route::any('properties/data', 'admin\PropertiesController@data')->name('properties.data');
-	Route::any('properties/view', 'admin\PropertiesController@view');
-	Route::resource('properties', 'admin\PropertiesController');
-//Tasks
-	Route::any('tasks/data', 'admin\TasksController@data')->name('tasks.data');
-	Route::resource('tasks', 'admin\TasksController');
-	Route::any('tasks_view', 'admin\TasksController@view')->name('tasks_view');
-	Route::any('tasks/media', 'admin\TasksController@storeMedia')->name('tasks.storeMedia');
-	Route::post('tasks/updateMedia/{task_id?}', 'admin\TasksController@updateServerMedia')->name('tasks.updateMedia');
-	Route::post('tasks/delelteUpdatedMedia/{task_id?}', 'admin\TasksController@deleteupdatedMedia')->name('tasks.delelteUpdatedMedia');
-	Route::post('tasks/statusUpdate/{task_id?}', 'admin\TasksController@statusUpdate')->name('tasks.statusUpdate');
-	Route::post('tasks/statusUpdate/{task_id?}', 'admin\TasksController@statusUpdate')->name('tasks.statusUpdate');
-	Route::post('tasks/listTasksStatus/{task_id?}', 'admin\TasksController@listTasksStatus')->name('tasks.listTasksStatus');
-	Route::any('tasks/deletemedia', 'admin\TasksController@deleteMedia')->name('tasks.deleteMedia');
-	
+//Banners
+	Route::any('banner/data', 'admin\BannerController@data')->name('banner.data');
+	Route::resource('banner', 'admin\BannerController');
+
 
 //CRM
 	Route::any('leads/data', 'admin\CrmController@data')->name('leads.data');
 	Route::get('contact', 'admin\CrmController@contactData')->name('contact');
 	Route::resource('leads', 'admin\CrmController');
-	
-//24/7 support 
-	Route::get('new_ticket', 'admin\AppSupportsController@index')->name('new_ticket');
-	Route::get('replay_ticket', 'admin\AppSupportsController@replayTicket')->name('replay_ticket');
-	Route::get('support_ticket', 'admin\AppSupportsController@supportTicket')->name('support_ticket');
 	
 //Email
 	Route::get('app_inbox_compose', 'admin\EmailSmaTextController@inboxCompose')->name('app_inbox_compose');

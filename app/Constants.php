@@ -16,7 +16,7 @@ define("TBL_STATES","states");
 define("TBL_LATLONG","latlong");
 define("TBL_BUILDINGS","buildings");
 define("TBL_PROPERTY_IMAGES","property_images");
-define("TBL_TASKS","tasks");
+define("TBL_BANNERS","banners");
 define("TBL_TASKS_ATTACHMENT","tasks_attachment");
 define("TBL_TEMP_ATTACHMENT","temp_attachment");
 define("TBL_TASK_STATUS_LIST","task_status_list");

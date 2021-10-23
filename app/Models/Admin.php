@@ -20,7 +20,6 @@ class Admin extends Authenticatable
     ];
 
     // Admin Group Pages Variable
-    public static $PROPERTY_STATUS = 1001;
 
     public static $error_msg = "You are not authorised to view this page.";
    
@@ -53,10 +52,10 @@ class Admin extends Authenticatable
 
     public static $USER_LOGS = 22;
 
-    public static $LIST_PROPERTIES = 23;
-    public static $ADD_PROPERTIES = 24;
-    public static $EDIT_PROPERTIES = 25;
-    public static $DETELE_PROPERTIES = 26;
+    public static $LIST_BANNER = 23;
+    public static $ADD_BANNER = 24;
+    public static $EDIT_BANNER = 25;
+    public static $DETELE_BANNER = 26;
     
     public static $LIST_ADMIN_MODULE_TITLE = 27;
     public static $ADD_ADMIN_MODULE_TITLE = 28;

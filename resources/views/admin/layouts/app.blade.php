@@ -26,10 +26,10 @@
         <link href="{{ asset('themes/admin/assets/global/plugins/datatables/datatables.min.css')}}" rel="stylesheet" type="text/css" />
         <link href="{{ asset('themes/admin/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css')}}" rel="stylesheet" type="text/css" />
         <link href="{{ asset('themes/admin/assets/global/css/components.min.css')}}" rel="stylesheet" id="style_components" type="text/css" />
-        <link href="{{ asset('themes/admin/assets/global/css/plugins.min.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('themes/admin/assets/global/css/plugins.min.css?v=123')}}" rel="stylesheet" type="text/css" />
         <link href="{{ asset('themes/admin/assets/apps/css/todo.min.css')}}" rel="stylesheet" type="text/css" />
         <link href="{{ asset('themes/admin/assets/layouts/layout4/css/layout.min.css')}}" rel="stylesheet" type="text/css" />
-        <link href="{{ asset('themes/admin/assets/layouts/layout4/css/themes/default.min.css')}}" rel="stylesheet" type="text/css" id="style_color" />
+        <link href="{{ asset('themes/admin/assets/layouts/layout4/css/themes/default.min.css?v=1234')}}" rel="stylesheet" type="text/css" id="style_color" />
         <link href="{{ asset('themes/admin/assets/layouts/layout4/css/custom.min.css')}}" rel="stylesheet" type="text/css" />
          <link href="{{ asset('themes/admin/assets/global/plugins/select2/css/select2.min.css')}}" rel="stylesheet" type="text/css" />
         <link href="{{ asset('themes/admin/assets/global/plugins/select2/css/select2-bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
@@ -122,7 +122,7 @@
         <script src="{{ asset('/js/jquery-ui.js') }}"></script>
         <script src="{{ asset('themes/admin/assets/global/fancybox/jquery.fancybox.pack.js') }}" type="text/javascript"></script>
         <link href="{{ asset('themes/admin/assets/global/fancybox/jquery.fancybox.css') }}" rel="stylesheet">
-        <script src="{{ asset('js/admin/custom.js?1145454') }}" type="text/javascript"></script>
+        <script src="{{ asset('js/admin/custom.js?23102021') }}" type="text/javascript"></script>
         
          <!--- Data picker -->
         

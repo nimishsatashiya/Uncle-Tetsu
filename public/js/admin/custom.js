@@ -117,7 +117,7 @@ $(document).ready(function() {
   $("#files").on("change", handleFileSelect);
 
   selDiv = $("#selectedFiles");
-  $("#main-frm").on("submit", handleForm);
+  // $("#main-frm").on("submit", handleForm);
 
   $("body").on("click", ".selFile", removeFile);
 
@@ -161,18 +161,6 @@ function handleForm(e) {
   for (var i = 0, len = storedFiles.length; i < len; i++) {
     data.append('files', storedFiles[i]);
   }
-
-  var xhr = new XMLHttpRequest();
-  xhr.open('POST', 'handler.cfm', true);
-
-  xhr.onload = function(e) {
-    if (this.status == 200) {
-      console.log(e.currentTarget.responseText);
-      alert(e.currentTarget.responseText + ' items uploaded.');
-    }
-  }
-
-  xhr.send(data);
 }
 
 function removeFile(e) {

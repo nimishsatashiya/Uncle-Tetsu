@@ -46,10 +46,9 @@ class AdminAction extends Model
     public $DELETE_PROPERTIES = 25;
 
 
-    public $ADD_TASK = 27;
-    public $EDIT_TASK = 28;
-    public $DELETE_TASK = 29;
-    public $CHANGE_TASK_STATUS = 30;
+    public $ADD_BANNER = 27;
+    public $EDIT_BANNER = 28;
+    public $DELETE_BANNER = 29;
 
     public $ADD_ADMIN_MODULE_TITLE = 31;
     public $EDIT_ADMIN_MODULE_TITLE = 32;

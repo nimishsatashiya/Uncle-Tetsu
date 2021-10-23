@@ -116,7 +116,7 @@
                   <p>Tetsushi learned how to bake from a very young age by helping his parents who owned a cake
                      shop
                      as a way to spend more time with them.</p>
-                  <a href="javascript:void(0);">Read More <svg xmlns="http://www.w3.org/2000/svg" width="37.646"
+                  <a href="{{ route('who-uncle-tetsu')}}">Read More <svg xmlns="http://www.w3.org/2000/svg" width="37.646"
                         height="19.65" viewBox="0 0 37.646 19.65">
                         <g id="Group_511" data-name="Group 511"
                            transform="translate(-989.5 1063.162) rotate(-90)">

@@ -4,6 +4,11 @@
     <i class="fa fa-edit"></i>
 </a>         
 @endif
+@if(isset($isPageEdit) && $isPageEdit)
+<a href="{{ route($currentRoute.'.edit',['id' => $row->page_slug]) }}" class="btn btn-xs btn-primary" title="edit">
+    <i class="fa fa-edit"></i>
+</a>         
+@endif
 
 @if(isset($isDelete) && $isDelete)
 <a data-id="{{ $row->id }}" href="{{ route($currentRoute.'.destroy',['id' => $row->id]) }}" class="btn btn-xs btn-danger btn-delete-record" title="delete">

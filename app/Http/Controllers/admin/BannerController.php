@@ -301,9 +301,8 @@ class BannerController extends Controller
      */
     public function destroy($id, Request $request)
     {
-
-        $checkrights = \App\Models\Admin::checkPermission(\App\Models\Admin::$DELETE_ADMIN_LOG_ACTIONS);
-        
+        prd($id);
+        $checkrights = \App\Models\Admin::checkPermission(\App\Models\Admin::$DETELE_BANNER);
         if($checkrights) 
         {
             return $checkrights;
@@ -326,7 +325,7 @@ class BannerController extends Controller
                 $params['adminuserid']  = \Auth::user()->id;
                 $params['actionid']     = $this->adminAction->DELETE_ADMIN_ACTION;
                 $params['actionvalue']  = $id;
-                $params['remark']       = "Delete Admin Action::".$id;
+                $params['remark']       = "Delete Banner::".$id;
                                         
                 $logs=\App\Models\AdminLog::writeadminlog($params); 
 

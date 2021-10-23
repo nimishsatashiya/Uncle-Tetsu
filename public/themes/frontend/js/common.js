@@ -141,6 +141,15 @@ $(document).ready(function () {
     $(".fullscreen").removeClass("active").toggleClass("reverse_anim");
     $("body").removeClass("menu-active");
   });
+  $(".map_flags a").on("click", () => {
+    if ($(".city_list").hasClass("active")) {
+      $(".city_list").removeClass("active");
+    }
+    $(".city_list").addClass("active");
+  });
+  $(".box-close").on("click", () => {    
+    $(".city_list").removeClass("active");
+  });
   // ------------------------------------------------------------------------------------plan js ---------------------------------------------------------------------------------------
   gsap.registerPlugin(MotionPathPlugin);
 

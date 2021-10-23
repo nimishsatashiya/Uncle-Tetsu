@@ -36,6 +36,82 @@ $(document).ready(function () {
     }
   });
 
+  $("#JapaneseCheesecakesCarousel").owlCarousel({
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 7000,
+    smartSpeed: 800,
+    nav: false,
+    dots: true,
+    items: 1,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            nav:true,
+            dots: false,
+        },
+        767:{
+            nav:false
+        },
+    }
+  });
+  $("#MadeleinesCarousel").owlCarousel({
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 7000,
+    smartSpeed: 800,
+    nav: false,
+    dots: true,
+    items: 1,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            nav:true,
+            dots: false,
+        },
+        767:{
+            nav:false
+        },
+    }
+  });  
+  $("#CheesetartsCarousel").owlCarousel({
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 7000,
+    smartSpeed: 800,
+    nav: false,
+    dots: true,
+    items: 1,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            nav:true,
+            dots: false,
+        },
+        767:{
+            nav:false
+        },
+    }
+  }); 
+  $("#AngelHatsCarousel").owlCarousel({
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 7000,
+    smartSpeed: 800,
+    nav: false,
+    dots: true,
+    items: 1,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            nav:true,
+            dots: false,
+        },
+        767:{
+            nav:false
+        },
+    }
+  });
   $("#blogCarousel").owlCarousel({
     loop: true,
     autoplay: true,
@@ -50,12 +126,11 @@ $(document).ready(function () {
             nav:true,
             dots: false,
         },
-        992:{
+        767:{
             nav:false
         },
     }
   });
-
   // --------------------------------------------------------------------------------------menu -----------------------------------------------------------------------------------------
   $(".hambergur").on("click", () => {
     $(".fullscreen").toggleClass("active").removeClass("reverse_anim");

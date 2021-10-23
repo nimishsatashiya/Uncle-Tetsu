@@ -13,7 +13,7 @@ gulp.task('sass', function () {
     .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest('./css'));
 });
- 
+// ./public/themes/frontend
 gulp.task('watch', function () {
   gulp.watch('./scss/**/*.scss', gulp.series('sass'));
 });

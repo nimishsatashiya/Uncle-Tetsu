@@ -21,7 +21,7 @@
       padding-right: 6%;
     }
     @media screen and (max-width: 991px) {
-      padding-left:16px;
+      padding-left: 16px;
       padding-right: 16px;
     }
   }
@@ -33,27 +33,27 @@
       color: var(--color-black);
       font-family: var(--font-primary);
       margin-bottom: 0;
-      margin-top: 42px ;
+      margin-top: 42px;
       display: block;
-     @media screen and (max-width: 1699px) {
+      @media screen and (max-width: 1699px) {
         font-size: 17px;
       }
       @media screen and (max-width: 1299px) {
         font-size: 15px;
       }
     }
-    .product-tabs {     
+    .product-tabs {
       .nav-tabs {
         border-bottom: none;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin:50px 0 80px;
+        margin: 50px 0 80px;
         @media screen and (max-width: 991px) {
-          margin:30px 0 50px;
+          margin: 30px 0 50px;
         }
         @media screen and (max-width: 767px) {
-          margin:20px 0;
+          margin: 20px 0;
           flex-wrap: nowrap;
           overflow: auto;
           justify-content: flex-start;
@@ -75,7 +75,7 @@
             @media screen and (max-width: 1599px) {
               padding: 19px 30px;
             }
-           @media screen and (max-width: 1699px) {
+            @media screen and (max-width: 1699px) {
               font-size: 20px;
             }
             @media screen and (max-width: 1299px) {
@@ -114,7 +114,7 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        width: 100%;  
+        width: 100%;
         @media screen and (max-width: 1599px) {
           align-items: center;
           padding: 0 10px;
@@ -125,7 +125,7 @@
           justify-content: center;
         }
         &::before {
-          content: '';
+          content: "";
           width: 100%;
           height: 300px;
           background: rgba(var(--color-black-rgb), 0.05);
@@ -135,11 +135,11 @@
           top: 13%;
           z-index: -1;
           @media screen and (max-width: 767px) {
-            height: 85%;           
+            height: 85%;
             top: auto;
             bottom: 0;
           }
-        }   
+        }
         .product-tab-img {
           width: 38%;
           display: flex;
@@ -172,13 +172,13 @@
             font-size: 36px;
             line-height: 48px;
             font-weight: 700;
-            color:var(--color-black);
+            color: var(--color-black);
             font-family: var(--font-pupcat);
             text-transform: uppercase;
             text-align: left;
             padding: 0;
             margin-bottom: 20px;
-           @media screen and (max-width: 1699px) {
+            @media screen and (max-width: 1699px) {
               font-size: 28px;
               line-height: 38px;
             }
@@ -189,16 +189,16 @@
           }
           .ingredient-impo {
             display: flex;
-              align-items: center;
-              @media screen and (max-width: 767px) {
-                // align-items: flex-start;
-                // flex-direction: column;
-                justify-content: flex-start;
-              }
-              @media screen and (max-width: 359px) {
-                align-items: flex-start;
-                flex-direction: column;
-              }
+            align-items: center;
+            @media screen and (max-width: 767px) {
+              // align-items: flex-start;
+              // flex-direction: column;
+              justify-content: flex-start;
+            }
+            @media screen and (max-width: 359px) {
+              align-items: flex-start;
+              flex-direction: column;
+            }
             span {
               display: flex;
               align-items: center;
@@ -209,10 +209,10 @@
               color: var(--color-black);
               font-family: var(--font-primary);
               margin-bottom: 0;
-             @media screen and (max-width: 1699px) {
+              @media screen and (max-width: 1699px) {
                 font-size: 15px;
               }
-             @media screen and (max-width: 1299px) {
+              @media screen and (max-width: 1299px) {
                 font-size: 14px;
               }
               @media screen and (max-width: 767px) {
@@ -242,19 +242,85 @@
       }
     }
   }
+  .product-category-slider {
+    padding-top: 0;
+    position: relative;
+    border-radius: 0;
+    .owl-carousel {
+      max-height: 100%;
+      overflow: unset;
+     
+    }
+    .owl-nav {
+      button {
+        &.owl-next,
+        &.owl-prev {
+          font-size: 3rem;
+          top: 50%;
+          transform: translateY(-50%);
+          position: absolute;
+          color: var(--color-black);
+          &:hover,
+          &:focus {
+            color: var(--color-white);
+          }
+        }
+        &.owl-next {
+          right: 16px;
+          @media screen and (max-width: 767px) {
+            right: 0px;
+          }
+          @media screen and (max-width: 575px) {
+            right: -8px;
+          }
+        }
+        &.owl-prev {
+          left: 16px;
+          @media screen and (max-width: 767px) {
+            left: 0px;
+          }
+          @media screen and (max-width: 575px) {
+            left: -8px;
+          }
+        }
+      }
+    }
+    .owl-dots {
+      margin-top: 0;
+      height: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 3;
+      @media screen and (max-width: 1680px) {
+        margin-top: 50px;
+      }
+      .owl-dot {
+        width: 4px;
+        height: 4px;
+        border-radius: 100%;
+        background: var(--color-primary);
+        margin: 0 10px;
+        &.active {
+          width: 18px;
+          height: 18px;
+        }
+      }
+    }
+  }
 }
 .custom-products-slider {
   margin: 5% 0 10%;
   @media screen and (max-width: 767px) {
     margin: 65px 0 120px;
-   }
- &:before {
-  min-height: 100%;
+  }
+  &:before {
+    min-height: 100%;
     @media screen and (max-width: 1299px) {
       min-height: 93%;
+    }
+    @media screen and (max-width: 991px) {
+      min-height: 100%;
+    }
   }
-  @media screen and (max-width: 991px) {
-    min-height: 100%;
-   }
- }
 }

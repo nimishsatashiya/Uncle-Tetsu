@@ -1,4 +1,4 @@
-.blog__page {
+.blog_details_page {
     position: relative;
     height: auto;
     z-index: 2;
@@ -6,16 +6,16 @@
     margin: 0 auto 12%;
     text-align: center;
     .marquee {
-        top: 4%;
-       @media screen and (max-width: 1699px) {
-            top: 5%;
-        }
-        @media screen and (max-width: 1199px) {
-            top: 5%;
-        }
-        @media screen and (max-width: 991px) {
-            top: 4%;
-        }
+        top: 90px;
+    //    @media screen and (max-width: 1699px) {
+    //         top: 5%;
+    //     }
+    //     @media screen and (max-width: 1199px) {
+    //         top: 5%;
+    //     }
+    //     @media screen and (max-width: 991px) {
+    //         top: 4%;
+    //     }
     }
     p {
         font-size: 18px;
@@ -24,6 +24,15 @@
         font-weight: 300;
         text-align: left;
         padding-right: 30px;
+        @media screen and (max-width: 767px) {
+            font-size: 16px;
+            line-height: 24px;
+            padding-right: 0;
+        }
+        @media screen and (max-width: 567px) {
+            font-size: 15px;
+            line-height: 22px;
+        }
     }
     .common-style {
         z-index: 4;
@@ -38,17 +47,23 @@
             text-transform: uppercase;
             text-align: left;
             display: flex;
-           @media screen and (max-width: 1699px) {
+            @media screen and (max-width: 1699px) {
+                font-size: 28px;
+                line-height: 38px;
+              }
+              @media screen and (max-width: 1299px) {
+                font-size: 26px;
+                line-height: 36px;
+              }
+              @media screen and (max-width: 767px) {
                 font-size: 18px;
-            }
-            @media screen and (max-width: 1299px) {
-                font-size: 16px;
-            }
+                line-height: 24px;
+              }
             @media screen and (max-width: 575px) {
                 margin-bottom: 1rem;
             }
         }
-        h3 {
+        h1 {
             font-size: 80px;
             line-height: 98px;
             font-weight: 700;
@@ -57,14 +72,28 @@
             margin-bottom: 0;
             text-transform: uppercase;
             text-align: left;
-            width: 95%;
+            width: 90%;
            @media screen and (max-width: 1699px) {
-                font-size: 28px;
-                line-height: 38px;
+                font-size: 70px;
+                line-height: 89px;
+                
+            }
+            @media screen and (max-width: 1399px) {
+                font-size: 65px;
+                line-height: 80px;
+                width: 100%;
             }
             @media screen and (max-width: 1299px) {
-                font-size: 26px;
-                line-height: 36px;
+                font-size: 60px;
+                line-height: 78px;
+            }
+            @media screen and (max-width: 1199px) {
+                font-size: 50px;
+                line-height: 68px;
+            }
+            @media screen and (max-width: 767px) {
+                font-size: 30px;
+                line-height: 32px;
             }
         }
     }
@@ -155,7 +184,7 @@
         padding: 0;
         margin-bottom: 0;
         @media (max-width: 768px) {
-            margin-bottom: 40px;
+            margin-bottom: 20px;
         }
         .blog-card-img {
             display: block;
@@ -179,6 +208,9 @@
                 }
                 a {
                     margin-top: 59px;
+                    @media screen and (max-width: 767px) {
+                        margin-top: 10px;
+                    }
                 }
                 span {
                     font-size: 20px;
@@ -218,6 +250,9 @@
                         font-size: 26px;
                         line-height: 36px;
                     }
+                    @media screen and (max-width: 1199px) {
+                        width: 100%;
+                    }
                 }
             }
         }
@@ -234,5 +269,24 @@
                 }
             }
         }
+    }    
+}
+.video-modal{
+     iframe { 
+        width: 100% !important;
+        height: 80vh !important;
+        @media screen and (max-width: 567px) {
+            height: 90vh !important;
+        }
+    }
+    .close {
+        position: absolute;
+        top: 0px;
+        right: 2px;
+    }
+}
+@media (min-width: 992px) {
+    .video-modal  .modal-lg,.video-modal .modal-xl {
+        max-width: 80vw;
     }
 }

@@ -54,16 +54,13 @@
             <div id="rec">
                 <div class="circle"></div>
             </div>
-            <svg fill="none" width="1445" height="8653" viewBox="0 0 1445 8653">
-				<path id="path" class="path" data-name="Path 4746"
-					d="M12428.7,679.353s-243.437-42.818-243.437,237.351S13626.3,956.236,13630,1237.75s-1363,112.36-1363,428.221,1363-7.043,1363,340.228-1363,165.271-1363,469.968,1363,76.258,1363,399.668-1363,133.359-1363,373.938,1363,242.763,1363,489.792-1367.8,223.855-1363,458.356,1363,209.257,1363,471.565-1359.75,85.289-1363,366.217,1363.21,215.314,1363,506.682-1359.59,75.875-1363,375.621,1363,48.483,1363,341.767-1363,195.644-1363,506.682,1363,120.2,1363,361.2-1363,185.6-1363,481.6,1363,84.838,1363,386.286-1363,182.49-1363,465.041,1363,75.116,1363,384.778-1363,165.674-1363,494.167,1363,69.5,1363,398.078-1361.17,406.635-1363,681.008,1362.73,275.917,1363,396.317"
-					transform="translate(-12184.746 -676.507)" fill="none" stroke="#000" stroke-linecap="round"
-					stroke-width="1" stroke-dasharray="3 5" />
-			</svg>
+           <svg fill="none"width="1446.761" height="10139.941" viewBox="0 0 1446.761 10139.941">
+                <path id="path" class="path" data-name="Path 4746" d="M12428.684,679.353s-243.437-42.818-243.437,237.351S13626.331,956.236,13630,1237.754s-1363,112.36-1363,428.221,1363-7.043,1363,340.228-1363,199.715-1363,504.412,1363,41.814,1363,365.224-1363,133.359-1363,373.938,1363,242.763,1363,489.792-1367.8,223.855-1363,458.356,1363,209.257,1363,471.565-1359.75,85.289-1363,366.217,1363.214,215.314,1363,506.682-1359.592,75.875-1363,375.621,1363,48.483,1363,341.767-1363,195.644-1363,506.682,1363,120.2,1363,361.2-1363,185.6-1363,481.6,1363,84.838,1363,386.286-1363,182.49-1363,465.041,1363,75.116,1363,384.778-1363,165.674-1363,494.167,1363,69.5,1363,398.078-1361.166,406.635-1363,681.008,1362.732,275.917,1363,396.317" transform="translate(-12184.246 -675.997)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="2" stroke-dasharray="3 5"/>
+            </svg>
         </section>
         <!-- Plean Root end -->
         <!-- Banner section  start -->
-        <section id="bannerWrap" class="banner-section">
+        <section id="bannerWrap" class="banner-section single-banner">
             <div class="marquee">
                 <span class="watermark-text">uncle Tetsu</span>
             </div>
@@ -79,8 +76,8 @@
             </div>
         </section>
         <!-- Banner section  end -->
-        <!-- Franchising Page start -->
-        <section id="BlogDetail" class="blog__page">
+        <!-- Blog Detail Page start -->
+        <section id="BlogDetail" class="blog_details_page">
             <div class="marquee">
                 <span class="watermark-text">Uncle Tetsu's Blog</span>
             </div>
@@ -90,7 +87,7 @@
                         <div class="blog__head">
                             <div class="common-style">
                                 <span>A NEW SHOP OPENS · 16th July 2019</span>
-                                <h3>Uncle Tetsu New York officially opens on Wednesday, July 17th.</h3>
+                                <h1>Uncle Tetsu flies to New York City in search for what will be the first shop in Eastern USA!</h1>
                             </div>
                         </div>
                     </div>
@@ -121,7 +118,7 @@
                     <p class=""> Now Uncle Tetsu lands in New York to begin the exploration of the city’s busiest and most fitting districts, starting with some expert advice from our corporate real estate agents.</p>
                     <div class="blog__video">
                         <img src="{{asset('themes/frontend/images/')}}/blog-video-thumbnail.png" alt="" class="img-fluid">
-                        <a class="video-link" href="javascript:void(0);"><img src="{{asset('themes/frontend/images/')}}/blog-video-icon.svg" alt="" class="img-fluid"></a>
+                        <a class="video-link" href="javascript:void(0);"  data-toggle="modal" data-target="#videoModal"><img src="{{asset('themes/frontend/images/')}}/blog-video-icon.svg" alt="" class="img-fluid"></a>
                     </div>
                     <p>With only a few days in NYC this time, Uncle Tetsu and the team head out into the thick of the city. The first stop is one that needs no introduction…</p>
                     <div class="row">
@@ -254,6 +251,18 @@
                 </div>
             </div>
         </section>
-        <!-- Franchising Page end -->
+        <!-- Blog Detail Page end -->
+        <!-- Video modal -->
+        <div class="modal fade video-modal" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">              
+                    <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                        <iframe src="https://www.youtube.com/embed/owsfdh4gxyc" frameborder="0" allowfullscreen></iframe>
+                    </div>              
+                </div>
+            </div>
+        </div>
+        <!-- Video modal -->
     </main>
 @endsection

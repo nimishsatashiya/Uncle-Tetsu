@@ -16,7 +16,7 @@ $(document).ready(function () {
 
   $("#productCarousel").owlCarousel({
     loop: true,
-    autoplay: true,
+    autoplay: false,
     autoplayTimeout: 7000,
     smartSpeed: 800,
     nav: false,
@@ -31,83 +31,6 @@ $(document).ready(function () {
         },
         992:{
             items:2,
-            nav:false
-        },
-    }
-  });
-
-  $("#JapaneseCheesecakesCarousel").owlCarousel({
-    loop: true,
-    autoplay: true,
-    autoplayTimeout: 7000,
-    smartSpeed: 800,
-    nav: false,
-    dots: true,
-    items: 1,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            nav:true,
-            dots: false,
-        },
-        767:{
-            nav:false
-        },
-    }
-  });
-  $("#MadeleinesCarousel").owlCarousel({
-    loop: true,
-    autoplay: true,
-    autoplayTimeout: 7000,
-    smartSpeed: 800,
-    nav: false,
-    dots: true,
-    items: 1,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            nav:true,
-            dots: false,
-        },
-        767:{
-            nav:false
-        },
-    }
-  });  
-  $("#CheesetartsCarousel").owlCarousel({
-    loop: true,
-    autoplay: true,
-    autoplayTimeout: 7000,
-    smartSpeed: 800,
-    nav: false,
-    dots: true,
-    items: 1,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            nav:true,
-            dots: false,
-        },
-        767:{
-            nav:false
-        },
-    }
-  }); 
-  $("#AngelHatsCarousel").owlCarousel({
-    loop: true,
-    autoplay: true,
-    autoplayTimeout: 7000,
-    smartSpeed: 800,
-    nav: false,
-    dots: true,
-    items: 1,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            nav:true,
-            dots: false,
-        },
-        767:{
             nav:false
         },
     }

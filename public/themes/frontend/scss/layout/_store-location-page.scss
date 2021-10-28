@@ -36,10 +36,10 @@
   }
   .map_box {
     @media (max-width: 1024px) {
-      flex-basis: 100%;
+      flex-basis: 100%; 
       margin-bottom: 28px;
     }
-    .map_box-img {
+    .map_box-img {  
       position: relative;
       a {
         width: 1.65%;

@@ -91,397 +91,97 @@
                   </ul>
 
                   <div class="tab-content">
-                     <div id="JapaneseCheesecakes" class="tab-pane fade in active show">
-                        <div class="owl-slider product-category-slider">
-                           <div id="JapaneseCheesecakesCarousel" class="owl-carousel">
-                              <div class="item">
-                                 <div class="product-tab-main">
-                                    <div class="product-tab-img">
-                                       <img class="" src="{{asset('themes/frontend/images/')}}/OriginalSignatureJapaneseCheesecake.png" alt="">
-                                    </div>
-                                    <div class="product-tab-text">
-                                       <h4>Original Signature Japanese Cheesecake</h4>
-                                       <p>Uncle Tetsu's Japanese Cheesecakes are soft & fluffy, not too sweet, easy to
-                                          eat, and great for everyone!</p>
-                                       <p>The Original Signature Cheesecake is the world-famous staple of everything
-                                          Uncle Tetsu and is enjoyed in counties all over the world.</p>
-                                       <p>When enjoyed warm, it is fluffy like a cloud and may jiggle and dance. When
-                                          enjoyed cool, it is soft with a more cream cheese flavour.</p>
-                                       <p>Ingredients: 1. cream cheese 2. butter 3. milk 4. sugar 5. plain white flour
-                                          6. egg (pasteurized), and 7. LOVE </p>
-                                       <div class="ingredient-impo">
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/true.svg" alt="">Peanut-free</span>
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/true.svg" alt="">Gelatine-free</span>
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/star.svg" alt="">Contains gluten</span>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="item">
-                                 <div class="product-tab-main">
-                                    <div class="product-tab-img">
-                                       <img class="" src="{{asset('themes/frontend/images/')}}/OriginalSignatureJapaneseCheesecake.png" alt="">
-                                    </div>
-                                    <div class="product-tab-text">
-                                       <h4>Original Signature Japanese Cheesecake</h4>
-                                       <p>Uncle Tetsu's Japanese Cheesecakes are soft & fluffy, not too sweet, easy to
-                                          eat, and great for everyone!</p>
-                                       <p>The Original Signature Cheesecake is the world-famous staple of everything
-                                          Uncle Tetsu and is enjoyed in counties all over the world.</p>
-                                       <p>When enjoyed warm, it is fluffy like a cloud and may jiggle and dance. When
-                                          enjoyed cool, it is soft with a more cream cheese flavour.</p>
-                                       <p>Ingredients: 1. cream cheese 2. butter 3. milk 4. sugar 5. plain white flour
-                                          6. egg (pasteurized), and 7. LOVE </p>
-                                       <div class="ingredient-impo">
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/true.svg" alt="">Peanut-free</span>
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/true.svg" alt="">Gelatine-free</span>
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/star.svg" alt="">Contains gluten</span>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="item">
-                                 <div class="product-tab-main">
-                                    <div class="product-tab-img">
-                                       <img class="" src="{{asset('themes/frontend/images/')}}/OriginalSignatureJapaneseCheesecake.png" alt="">
-                                    </div>
-                                    <div class="product-tab-text">
-                                       <h4>Original Signature Japanese Cheesecake</h4>
-                                       <p>Uncle Tetsu's Japanese Cheesecakes are soft & fluffy, not too sweet, easy to
-                                          eat, and great for everyone!</p>
-                                       <p>The Original Signature Cheesecake is the world-famous staple of everything
-                                          Uncle Tetsu and is enjoyed in counties all over the world.</p>
-                                       <p>When enjoyed warm, it is fluffy like a cloud and may jiggle and dance. When
-                                          enjoyed cool, it is soft with a more cream cheese flavour.</p>
-                                       <p>Ingredients: 1. cream cheese 2. butter 3. milk 4. sugar 5. plain white flour
-                                          6. egg (pasteurized), and 7. LOVE </p>
-                                       <div class="ingredient-impo">
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/true.svg" alt="">Peanut-free</span>
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/true.svg" alt="">Gelatine-free</span>
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/star.svg" alt="">Contains gluten</span>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="item">
-                                 <div class="product-tab-main">
-                                    <div class="product-tab-img">
-                                       <img class="" src="{{asset('themes/frontend/images/')}}/OriginalSignatureJapaneseCheesecake.png" alt="">
-                                    </div>
-                                    <div class="product-tab-text">
-                                       <h4>Original Signature Japanese Cheesecake</h4>
-                                       <p>Uncle Tetsu's Japanese Cheesecakes are soft & fluffy, not too sweet, easy to
-                                          eat, and great for everyone!</p>
-                                       <p>The Original Signature Cheesecake is the world-famous staple of everything
-                                          Uncle Tetsu and is enjoyed in counties all over the world.</p>
-                                       <p>When enjoyed warm, it is fluffy like a cloud and may jiggle and dance. When
-                                          enjoyed cool, it is soft with a more cream cheese flavour.</p>
-                                       <p>Ingredients: 1. cream cheese 2. butter 3. milk 4. sugar 5. plain white flour
-                                          6. egg (pasteurized), and 7. LOVE </p>
-                                       <div class="ingredient-impo">
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/true.svg" alt="">Peanut-free</span>
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/true.svg" alt="">Gelatine-free</span>
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/star.svg" alt="">Contains gluten</span>
-                                       </div>
-                                    </div>
-                                 </div>
+                     <div id="JapaneseCheesecakes" class="tab-pane fade in active show">                       
+                        <div class="product-tab-main">
+                           <div class="product-tab-img">
+                              <img class="" src="{{asset('themes/frontend/images/')}}/OriginalSignatureJapaneseCheesecake.png" alt="">
+                           </div>
+                           <div class="product-tab-text">
+                              <h4>Original Signature Japanese Cheesecake</h4>
+                              <p>Uncle Tetsu's Japanese Cheesecakes are soft & fluffy, not too sweet, easy to
+                                 eat, and great for everyone!</p>
+                              <p>The Original Signature Cheesecake is the world-famous staple of everything
+                                 Uncle Tetsu and is enjoyed in counties all over the world.</p>
+                              <p>When enjoyed warm, it is fluffy like a cloud and may jiggle and dance. When
+                                 enjoyed cool, it is soft with a more cream cheese flavour.</p>
+                              <p>Ingredients: 1. cream cheese 2. butter 3. milk 4. sugar 5. plain white flour
+                                 6. egg (pasteurized), and 7. LOVE </p>
+                              <div class="ingredient-impo">
+                                 <span><img class="" src="{{asset('themes/frontend/images/')}}/true.svg" alt="">Peanut-free</span>
+                                 <span><img class="" src="{{asset('themes/frontend/images/')}}/true.svg" alt="">Gelatine-free</span>
+                                 <span><img class="" src="{{asset('themes/frontend/images/')}}/star.svg" alt="">Contains gluten</span>
                               </div>
                            </div>
-                        </div>
+                        </div>                             
                      </div>
-                     <div id="Madeleines" class="tab-pane fade">
-                        <div class="owl-slider product-category-slider">
-                           <div id="MadeleinesCarousel" class="owl-carousel">
-                              <div class="item">
-                                 <div class="product-tab-main">
-                                    <div class="product-tab-img">
-                                       <img class="" src="{{asset('themes/frontend/images/')}}/OriginalSignatureJapaneseCheesecake.png" alt="">
-                                    </div>
-                                    <div class="product-tab-text">
-                                       <h4>Original Signature Japanese Cheesecake</h4>
-                                       <p>Uncle Tetsu's Japanese Cheesecakes are soft & fluffy, not too sweet, easy to
-                                          eat, and great for everyone!</p>
-                                       <p>The Original Signature Cheesecake is the world-famous staple of everything
-                                          Uncle Tetsu and is enjoyed in counties all over the world.</p>
-                                       <p>When enjoyed warm, it is fluffy like a cloud and may jiggle and dance. When
-                                          enjoyed cool, it is soft with a more cream cheese flavour.</p>
-                                       <p>Ingredients: 1. cream cheese 2. butter 3. milk 4. sugar 5. plain white flour
-                                          6. egg (pasteurized), and 7. LOVE </p>
-                                       <div class="ingredient-impo">
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/true.svg" alt="">Peanut-free</span>
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/true.svg" alt="">Gelatine-free</span>
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/star.svg" alt="">Contains gluten</span>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="item">
-                                 <div class="product-tab-main">
-                                    <div class="product-tab-img">
-                                       <img class="" src="{{asset('themes/frontend/images/')}}/OriginalSignatureJapaneseCheesecake.png" alt="">
-                                    </div>
-                                    <div class="product-tab-text">
-                                       <h4>Original Signature Japanese Cheesecake</h4>
-                                       <p>Uncle Tetsu's Japanese Cheesecakes are soft & fluffy, not too sweet, easy to
-                                          eat, and great for everyone!</p>
-                                       <p>The Original Signature Cheesecake is the world-famous staple of everything
-                                          Uncle Tetsu and is enjoyed in counties all over the world.</p>
-                                       <p>When enjoyed warm, it is fluffy like a cloud and may jiggle and dance. When
-                                          enjoyed cool, it is soft with a more cream cheese flavour.</p>
-                                       <p>Ingredients: 1. cream cheese 2. butter 3. milk 4. sugar 5. plain white flour
-                                          6. egg (pasteurized), and 7. LOVE </p>
-                                       <div class="ingredient-impo">
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/true.svg" alt="">Peanut-free</span>
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/true.svg" alt="">Gelatine-free</span>
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/star.svg" alt="">Contains gluten</span>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="item">
-                                 <div class="product-tab-main">
-                                    <div class="product-tab-img">
-                                       <img class="" src="{{asset('themes/frontend/images/')}}/OriginalSignatureJapaneseCheesecake.png" alt="">
-                                    </div>
-                                    <div class="product-tab-text">
-                                       <h4>Original Signature Japanese Cheesecake</h4>
-                                       <p>Uncle Tetsu's Japanese Cheesecakes are soft & fluffy, not too sweet, easy to
-                                          eat, and great for everyone!</p>
-                                       <p>The Original Signature Cheesecake is the world-famous staple of everything
-                                          Uncle Tetsu and is enjoyed in counties all over the world.</p>
-                                       <p>When enjoyed warm, it is fluffy like a cloud and may jiggle and dance. When
-                                          enjoyed cool, it is soft with a more cream cheese flavour.</p>
-                                       <p>Ingredients: 1. cream cheese 2. butter 3. milk 4. sugar 5. plain white flour
-                                          6. egg (pasteurized), and 7. LOVE </p>
-                                       <div class="ingredient-impo">
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/true.svg" alt="">Peanut-free</span>
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/true.svg" alt="">Gelatine-free</span>
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/star.svg" alt="">Contains gluten</span>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="item">
-                                 <div class="product-tab-main">
-                                    <div class="product-tab-img">
-                                       <img class="" src="{{asset('themes/frontend/images/')}}/OriginalSignatureJapaneseCheesecake.png" alt="">
-                                    </div>
-                                    <div class="product-tab-text">
-                                       <h4>Original Signature Japanese Cheesecake</h4>
-                                       <p>Uncle Tetsu's Japanese Cheesecakes are soft & fluffy, not too sweet, easy to
-                                          eat, and great for everyone!</p>
-                                       <p>The Original Signature Cheesecake is the world-famous staple of everything
-                                          Uncle Tetsu and is enjoyed in counties all over the world.</p>
-                                       <p>When enjoyed warm, it is fluffy like a cloud and may jiggle and dance. When
-                                          enjoyed cool, it is soft with a more cream cheese flavour.</p>
-                                       <p>Ingredients: 1. cream cheese 2. butter 3. milk 4. sugar 5. plain white flour
-                                          6. egg (pasteurized), and 7. LOVE </p>
-                                       <div class="ingredient-impo">
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/true.svg" alt="">Peanut-free</span>
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/true.svg" alt="">Gelatine-free</span>
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/star.svg" alt="">Contains gluten</span>
-                                       </div>
-                                    </div>
-                                 </div>
+                     <div id="Madeleines" class="tab-pane fade">                       
+                        <div class="product-tab-main">
+                           <div class="product-tab-img">
+                              <img class="" src="{{asset('themes/frontend/images/')}}/OriginalSignatureJapaneseCheesecake.png" alt="">
+                           </div>
+                           <div class="product-tab-text">
+                              <h4>Original Signature Japanese Cheesecake</h4>
+                              <p>Uncle Tetsu's Japanese Cheesecakes are soft & fluffy, not too sweet, easy to
+                                 eat, and great for everyone!</p>
+                              <p>The Original Signature Cheesecake is the world-famous staple of everything
+                                 Uncle Tetsu and is enjoyed in counties all over the world.</p>
+                              <p>When enjoyed warm, it is fluffy like a cloud and may jiggle and dance. When
+                                 enjoyed cool, it is soft with a more cream cheese flavour.</p>
+                              <p>Ingredients: 1. cream cheese 2. butter 3. milk 4. sugar 5. plain white flour
+                                 6. egg (pasteurized), and 7. LOVE </p>
+                              <div class="ingredient-impo">
+                                 <span><img class="" src="{{asset('themes/frontend/images/')}}/true.svg" alt="">Peanut-free</span>
+                                 <span><img class="" src="{{asset('themes/frontend/images/')}}/true.svg" alt="">Gelatine-free</span>
+                                 <span><img class="" src="{{asset('themes/frontend/images/')}}/star.svg" alt="">Contains gluten</span>
                               </div>
                            </div>
-                        </div>
+                        </div> 
                      </div>
                      <div id="Cheesetarts" class="tab-pane fade">
-                        <div class="owl-slider product-category-slider">
-                           <div id="CheesetartsCarousel" class="owl-carousel">
-                              <div class="item">
-                                 <div class="product-tab-main">
-                                    <div class="product-tab-img">
-                                       <img class="" src="{{asset('themes/frontend/images/')}}/OriginalSignatureJapaneseCheesecake.png" alt="">
-                                    </div>
-                                    <div class="product-tab-text">
-                                       <h4>Original Signature Japanese Cheesecake</h4>
-                                       <p>Uncle Tetsu's Japanese Cheesecakes are soft & fluffy, not too sweet, easy to
-                                          eat, and great for everyone!</p>
-                                       <p>The Original Signature Cheesecake is the world-famous staple of everything
-                                          Uncle Tetsu and is enjoyed in counties all over the world.</p>
-                                       <p>When enjoyed warm, it is fluffy like a cloud and may jiggle and dance. When
-                                          enjoyed cool, it is soft with a more cream cheese flavour.</p>
-                                       <p>Ingredients: 1. cream cheese 2. butter 3. milk 4. sugar 5. plain white flour
-                                          6. egg (pasteurized), and 7. LOVE </p>
-                                       <div class="ingredient-impo">
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/true.svg" alt="">Peanut-free</span>
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/true.svg" alt="">Gelatine-free</span>
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/star.svg" alt="">Contains gluten</span>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="item">
-                                 <div class="product-tab-main">
-                                    <div class="product-tab-img">
-                                       <img class="" src="{{asset('themes/frontend/images/')}}/OriginalSignatureJapaneseCheesecake.png" alt="">
-                                    </div>
-                                    <div class="product-tab-text">
-                                       <h4>Original Signature Japanese Cheesecake</h4>
-                                       <p>Uncle Tetsu's Japanese Cheesecakes are soft & fluffy, not too sweet, easy to
-                                          eat, and great for everyone!</p>
-                                       <p>The Original Signature Cheesecake is the world-famous staple of everything
-                                          Uncle Tetsu and is enjoyed in counties all over the world.</p>
-                                       <p>When enjoyed warm, it is fluffy like a cloud and may jiggle and dance. When
-                                          enjoyed cool, it is soft with a more cream cheese flavour.</p>
-                                       <p>Ingredients: 1. cream cheese 2. butter 3. milk 4. sugar 5. plain white flour
-                                          6. egg (pasteurized), and 7. LOVE </p>
-                                       <div class="ingredient-impo">
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/true.svg" alt="">Peanut-free</span>
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/true.svg" alt="">Gelatine-free</span>
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/star.svg" alt="">Contains gluten</span>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="item">
-                                 <div class="product-tab-main">
-                                    <div class="product-tab-img">
-                                       <img class="" src="{{asset('themes/frontend/images/')}}/OriginalSignatureJapaneseCheesecake.png" alt="">
-                                    </div>
-                                    <div class="product-tab-text">
-                                       <h4>Original Signature Japanese Cheesecake</h4>
-                                       <p>Uncle Tetsu's Japanese Cheesecakes are soft & fluffy, not too sweet, easy to
-                                          eat, and great for everyone!</p>
-                                       <p>The Original Signature Cheesecake is the world-famous staple of everything
-                                          Uncle Tetsu and is enjoyed in counties all over the world.</p>
-                                       <p>When enjoyed warm, it is fluffy like a cloud and may jiggle and dance. When
-                                          enjoyed cool, it is soft with a more cream cheese flavour.</p>
-                                       <p>Ingredients: 1. cream cheese 2. butter 3. milk 4. sugar 5. plain white flour
-                                          6. egg (pasteurized), and 7. LOVE </p>
-                                       <div class="ingredient-impo">
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/true.svg" alt="">Peanut-free</span>
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/true.svg" alt="">Gelatine-free</span>
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/star.svg" alt="">Contains gluten</span>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="item">
-                                 <div class="product-tab-main">
-                                    <div class="product-tab-img">
-                                       <img class="" src="{{asset('themes/frontend/images/')}}/OriginalSignatureJapaneseCheesecake.png" alt="">
-                                    </div>
-                                    <div class="product-tab-text">
-                                       <h4>Original Signature Japanese Cheesecake</h4>
-                                       <p>Uncle Tetsu's Japanese Cheesecakes are soft & fluffy, not too sweet, easy to
-                                          eat, and great for everyone!</p>
-                                       <p>The Original Signature Cheesecake is the world-famous staple of everything
-                                          Uncle Tetsu and is enjoyed in counties all over the world.</p>
-                                       <p>When enjoyed warm, it is fluffy like a cloud and may jiggle and dance. When
-                                          enjoyed cool, it is soft with a more cream cheese flavour.</p>
-                                       <p>Ingredients: 1. cream cheese 2. butter 3. milk 4. sugar 5. plain white flour
-                                          6. egg (pasteurized), and 7. LOVE </p>
-                                       <div class="ingredient-impo">
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/true.svg" alt="">Peanut-free</span>
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/true.svg" alt="">Gelatine-free</span>
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/star.svg" alt="">Contains gluten</span>
-                                       </div>
-                                    </div>
-                                 </div>
+                        <div class="product-tab-main">
+                           <div class="product-tab-img">
+                              <img class="" src="{{asset('themes/frontend/images/')}}/OriginalSignatureJapaneseCheesecake.png" alt="">
+                           </div>
+                           <div class="product-tab-text">
+                              <h4>Original Signature Japanese Cheesecake</h4>
+                              <p>Uncle Tetsu's Japanese Cheesecakes are soft & fluffy, not too sweet, easy to
+                                 eat, and great for everyone!</p>
+                              <p>The Original Signature Cheesecake is the world-famous staple of everything
+                                 Uncle Tetsu and is enjoyed in counties all over the world.</p>
+                              <p>When enjoyed warm, it is fluffy like a cloud and may jiggle and dance. When
+                                 enjoyed cool, it is soft with a more cream cheese flavour.</p>
+                              <p>Ingredients: 1. cream cheese 2. butter 3. milk 4. sugar 5. plain white flour
+                                 6. egg (pasteurized), and 7. LOVE </p>
+                              <div class="ingredient-impo">
+                                 <span><img class="" src="{{asset('themes/frontend/images/')}}/true.svg" alt="">Peanut-free</span>
+                                 <span><img class="" src="{{asset('themes/frontend/images/')}}/true.svg" alt="">Gelatine-free</span>
+                                 <span><img class="" src="{{asset('themes/frontend/images/')}}/star.svg" alt="">Contains gluten</span>
                               </div>
                            </div>
-                        </div>
+                        </div> 
                      </div>
                      <div id="AngelHats" class="tab-pane fade">
-                     <div class="owl-slider product-category-slider">
-                           <div id="AngelHatsCarousel" class="owl-carousel">
-                              <div class="item">
-                                 <div class="product-tab-main">
-                                    <div class="product-tab-img">
-                                       <img class="" src="{{asset('themes/frontend/images/')}}/OriginalSignatureJapaneseCheesecake.png" alt="">
-                                    </div>
-                                    <div class="product-tab-text">
-                                       <h4>Original Signature Japanese Cheesecake</h4>
-                                       <p>Uncle Tetsu's Japanese Cheesecakes are soft & fluffy, not too sweet, easy to
-                                          eat, and great for everyone!</p>
-                                       <p>The Original Signature Cheesecake is the world-famous staple of everything
-                                          Uncle Tetsu and is enjoyed in counties all over the world.</p>
-                                       <p>When enjoyed warm, it is fluffy like a cloud and may jiggle and dance. When
-                                          enjoyed cool, it is soft with a more cream cheese flavour.</p>
-                                       <p>Ingredients: 1. cream cheese 2. butter 3. milk 4. sugar 5. plain white flour
-                                          6. egg (pasteurized), and 7. LOVE </p>
-                                       <div class="ingredient-impo">
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/true.svg" alt="">Peanut-free</span>
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/true.svg" alt="">Gelatine-free</span>
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/star.svg" alt="">Contains gluten</span>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="item">
-                                 <div class="product-tab-main">
-                                    <div class="product-tab-img">
-                                       <img class="" src="{{asset('themes/frontend/images/')}}/OriginalSignatureJapaneseCheesecake.png" alt="">
-                                    </div>
-                                    <div class="product-tab-text">
-                                       <h4>Original Signature Japanese Cheesecake</h4>
-                                       <p>Uncle Tetsu's Japanese Cheesecakes are soft & fluffy, not too sweet, easy to
-                                          eat, and great for everyone!</p>
-                                       <p>The Original Signature Cheesecake is the world-famous staple of everything
-                                          Uncle Tetsu and is enjoyed in counties all over the world.</p>
-                                       <p>When enjoyed warm, it is fluffy like a cloud and may jiggle and dance. When
-                                          enjoyed cool, it is soft with a more cream cheese flavour.</p>
-                                       <p>Ingredients: 1. cream cheese 2. butter 3. milk 4. sugar 5. plain white flour
-                                          6. egg (pasteurized), and 7. LOVE </p>
-                                       <div class="ingredient-impo">
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/true.svg" alt="">Peanut-free</span>
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/true.svg" alt="">Gelatine-free</span>
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/star.svg" alt="">Contains gluten</span>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="item">
-                                 <div class="product-tab-main">
-                                    <div class="product-tab-img">
-                                       <img class="" src="{{asset('themes/frontend/images/')}}/OriginalSignatureJapaneseCheesecake.png" alt="">
-                                    </div>
-                                    <div class="product-tab-text">
-                                       <h4>Original Signature Japanese Cheesecake</h4>
-                                       <p>Uncle Tetsu's Japanese Cheesecakes are soft & fluffy, not too sweet, easy to
-                                          eat, and great for everyone!</p>
-                                       <p>The Original Signature Cheesecake is the world-famous staple of everything
-                                          Uncle Tetsu and is enjoyed in counties all over the world.</p>
-                                       <p>When enjoyed warm, it is fluffy like a cloud and may jiggle and dance. When
-                                          enjoyed cool, it is soft with a more cream cheese flavour.</p>
-                                       <p>Ingredients: 1. cream cheese 2. butter 3. milk 4. sugar 5. plain white flour
-                                          6. egg (pasteurized), and 7. LOVE </p>
-                                       <div class="ingredient-impo">
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/true.svg" alt="">Peanut-free</span>
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/true.svg" alt="">Gelatine-free</span>
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/star.svg" alt="">Contains gluten</span>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="item">
-                                 <div class="product-tab-main">
-                                    <div class="product-tab-img">
-                                       <img class="" src="{{asset('themes/frontend/images/')}}/OriginalSignatureJapaneseCheesecake.png" alt="">
-                                    </div>
-                                    <div class="product-tab-text">
-                                       <h4>Original Signature Japanese Cheesecake</h4>
-                                       <p>Uncle Tetsu's Japanese Cheesecakes are soft & fluffy, not too sweet, easy to
-                                          eat, and great for everyone!</p>
-                                       <p>The Original Signature Cheesecake is the world-famous staple of everything
-                                          Uncle Tetsu and is enjoyed in counties all over the world.</p>
-                                       <p>When enjoyed warm, it is fluffy like a cloud and may jiggle and dance. When
-                                          enjoyed cool, it is soft with a more cream cheese flavour.</p>
-                                       <p>Ingredients: 1. cream cheese 2. butter 3. milk 4. sugar 5. plain white flour
-                                          6. egg (pasteurized), and 7. LOVE </p>
-                                       <div class="ingredient-impo">
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/true.svg" alt="">Peanut-free</span>
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/true.svg" alt="">Gelatine-free</span>
-                                          <span><img class="" src="{{asset('themes/frontend/images/')}}/star.svg" alt="">Contains gluten</span>
-                                       </div>
-                                    </div>
-                                 </div>
+                        <div class="product-tab-main">
+                           <div class="product-tab-img">
+                              <img class="" src="{{asset('themes/frontend/images/')}}/OriginalSignatureJapaneseCheesecake.png" alt="">
+                           </div>
+                           <div class="product-tab-text">
+                              <h4>Original Signature Japanese Cheesecake</h4>
+                              <p>Uncle Tetsu's Japanese Cheesecakes are soft & fluffy, not too sweet, easy to
+                                 eat, and great for everyone!</p>
+                              <p>The Original Signature Cheesecake is the world-famous staple of everything
+                                 Uncle Tetsu and is enjoyed in counties all over the world.</p>
+                              <p>When enjoyed warm, it is fluffy like a cloud and may jiggle and dance. When
+                                 enjoyed cool, it is soft with a more cream cheese flavour.</p>
+                              <p>Ingredients: 1. cream cheese 2. butter 3. milk 4. sugar 5. plain white flour
+                                 6. egg (pasteurized), and 7. LOVE </p>
+                              <div class="ingredient-impo">
+                                 <span><img class="" src="{{asset('themes/frontend/images/')}}/true.svg" alt="">Peanut-free</span>
+                                 <span><img class="" src="{{asset('themes/frontend/images/')}}/true.svg" alt="">Gelatine-free</span>
+                                 <span><img class="" src="{{asset('themes/frontend/images/')}}/star.svg" alt="">Contains gluten</span>
                               </div>
                            </div>
-                        </div>
+                        </div> 
                      </div>
                   </div>
                </div>
@@ -506,7 +206,7 @@
                      <h3>Matcha Japanese<br> Cheesecake</h3>
                      <img class="product-line" src="{{asset('themes/frontend/images/')}}/product-line.png" alt="">
                   </div>
-                  <a href="javascript:void(0);">See All <svg xmlns="http://www.w3.org/2000/svg" width="37.646"
+                  <!-- <a href="javascript:void(0);">See All <svg xmlns="http://www.w3.org/2000/svg" width="37.646"
                         height="19.65" viewBox="0 0 37.646 19.65">
                         <g id="Group_511" data-name="Group 511"
                            transform="translate(-989.5 1063.162) rotate(-90)">
@@ -518,7 +218,7 @@
                               transform="translate(-1468.209 -6.239)" fill="none" stroke-linecap="round"
                               stroke-linejoin="round" stroke-width="2" />
                         </g>
-                     </svg></a>
+                     </svg></a> -->
                </div>
             </div>
          </div>
@@ -526,6 +226,30 @@
             <div class="owl-slider product-slider">
                <div id="productCarousel" class="owl-carousel">
                   <div class="item">
+                     <!-- <div class="common-style">
+                        <div class="osjc">
+                           <div class="cake-text">
+                              <div class="cake">
+                                 <img class="" src="{{asset('themes/frontend/images/')}}/sec-three-img-icon.svg" alt="">
+                              </div>
+                              <h3>Matcha Japanese<br> Cheesecake</h3>
+                              <img class="product-line" src="{{asset('themes/frontend/images/')}}/product-line.png" alt="">
+                           </div>
+                           <a href="javascript:void(0);">See All <svg xmlns="http://www.w3.org/2000/svg" width="37.646"
+                                 height="19.65" viewBox="0 0 37.646 19.65">
+                                 <g id="Group_511" data-name="Group 511"
+                                    transform="translate(-989.5 1063.162) rotate(-90)">
+                                    <line id="Line_2" data-name="Line 2" y1="35.142"
+                                       transform="translate(1053.337 990.5)" fill="none" stroke-linecap="round"
+                                       stroke-width="2" />
+                                    <path id="Path_4660" data-name="Path 4660"
+                                       d="M2513.136,1023.974l8.411,8.411,8.411-8.411"
+                                       transform="translate(-1468.209 -6.239)" fill="none" stroke-linecap="round"
+                                       stroke-linejoin="round" stroke-width="2" />
+                                 </g>
+                              </svg></a>
+                        </div>
+                     </div> -->
                      <img class="" src="{{asset('themes/frontend/images/')}}/product-slide.png" alt="">
                   </div>
                   <div class="item">

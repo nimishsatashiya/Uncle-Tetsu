@@ -70,7 +70,7 @@
             <div class="custom-padding-x">
                 <div class="single-img">
                     <div class="item">
-                        <img class="w-100" src="{{asset('themes/frontend/images/')}}/store-location.png" alt="">
+                        <img class="w-100" src="{{asset('uploads/store_location/'.$store_pages->banner_path)}}" alt="">
                     </div>
                     <a class="down-arrow" href="#StoreLocation">
                         <img class="w-100" src="{{asset('themes/frontend/images/')}}/down-arrow.svg" alt="">
@@ -82,7 +82,7 @@
         <!-- Franchising Page start -->
         <section id="StoreLocation" class="storelocation-page">
             <div class="marquee">
-                <span class="watermark-text">Store Locations</span>
+                <span class="watermark-text">{{$store_pages->title}}</span>
             </div>
             <div class="common-style head-top">
             <h2>Store Locations</h2>

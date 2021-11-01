@@ -166,8 +166,7 @@ return [
         Krlove\EloquentModelGenerator\Provider\GeneratorServiceProvider::class,
         Orangehill\Iseed\IseedServiceProvider::class,
         Cviebrock\EloquentSluggable\ServiceProvider::class,
-        Barryvdh\Debugbar\ServiceProvider::class,
-        Fobia\Database\SphinxConnection\SphinxServiceProvider::class,       
+        Barryvdh\Debugbar\ServiceProvider::class,     
 
         /*
          * Package Service Providers...

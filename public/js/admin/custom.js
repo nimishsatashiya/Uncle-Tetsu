@@ -1,9 +1,12 @@
 $(document).ready(function () {
-
     $('#main-frm').submit(function () {
-
+        
         if ($(this).parsley('isValid'))
         {
+            for (instance in CKEDITOR.instances) {
+                CKEDITOR.instances[instance].updateElement();
+            }
+
             $('#submitBtn').attr('disabled',true);
             $('#AjaxLoaderDiv').fadeIn('slow');
             $.ajax({

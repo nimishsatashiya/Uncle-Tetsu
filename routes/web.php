@@ -24,7 +24,8 @@ Route::get('clear-cache', function () {
  	Route::get('store-location','Frontend\StoreLocationController@index')->name('store-location');
  	Route::get('franchising','Frontend\FranchisingController@index')->name('franchising');
  	Route::get('global-contact','Frontend\GlobalContactController@index')->name('global-contact');
-
+ 	Route::any('newslatter-form','Frontend\HomeController@postNewslatter')->name('newslatter-form');
+ 	Route::any('load-products-images','Frontend\OurProductsController@loadProductsImage')->name('load-products-images');
 
 
 //*********************    ADMIN ROUTES  ******************************//
@@ -77,10 +78,21 @@ Route::group(['prefix' => $ADMIN_PREFIX, 'middleware' => 'admin_auth'], function
 	Route::any('banner/data', 'admin\BannerController@data')->name('banner.data');
 	Route::resource('banner', 'admin\BannerController');
 
+//Blogs
+	Route::any('blog/data', 'admin\BlogController@data')->name('blog.data');
+	Route::resource('blog', 'admin\BlogController');
+
+//Products
+	Route::any('products/data', 'admin\ProductsController@data')->name('products.data');
+	Route::resource('products', 'admin\ProductsController');
+
+//Product images
+	Route::any('products-images/data', 'admin\ProductImageController@data')->name('products-images.data');
+	Route::resource('products-images', 'admin\ProductImageController');
+
 //Pages
 	Route::any('pages/data', 'admin\PagesController@data')->name('pages.data');
 	Route::resource('pages', 'admin\PagesController');
-
 
 //CRM
 	Route::any('leads/data', 'admin\CrmController@data')->name('leads.data');

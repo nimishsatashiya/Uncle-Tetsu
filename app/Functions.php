@@ -370,3 +370,9 @@ function BridgeApiCAllCURL($strRequestURL = '', $method = '')
     }
     return $result;
 }
+
+function getCategories()
+{
+    $categoryList = \App\Models\Categories::orderBy("category_name")->pluck("category_name","id")->all();
+    return $categoryList;
+}

@@ -1,7 +1,10 @@
 //=========================================================================================================================
 
 $(document).ready(function () {
+  
 
+
+ 
 
   $("#bannerCarousel").owlCarousel({
     loop: true,
@@ -34,7 +37,14 @@ $(document).ready(function () {
             nav:false
         },
     }
+  }).on('changed.owl.carousel', function(e) {
+    
+     var title = $(this).find('.active').find('img').attr('alt');
+     $("#product-name").html(title);
+     
   });
+
+  
   $("#blogCarousel").owlCarousel({
     loop: true,
     autoplay: true,

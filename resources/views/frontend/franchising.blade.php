@@ -62,7 +62,7 @@
          <div class="custom-padding-x">
             <div class="single-img">
                <div class="item">
-                  <img class="w-100" src="{{asset('themes/frontend/images/')}}/franchising-page.png" alt="">
+                  <img class="w-100" src="{{asset('uploads/franchising/'.$franchising->banner_path)}}" alt="">
                </div>
                <a class="down-arrow" href="#FranchisingPage">
                   <img class="w-100" src="{{asset('themes/frontend/images/')}}/down-arrow.svg" alt="">
@@ -74,42 +74,18 @@
       <!-- Franchising Page start -->
       <section id="FranchisingPage" class="franchising-page">
          <div class="marquee">
-            <span class="watermark-text">Franchising</span>
+            <span class="watermark-text">{{$franchising->title}}</span>
          </div>
          <div class="common-style">
             <h2>Franchising</h2>
             <div class="text-wrap">
-               <p>Originating in Japan, Uncle Tetsu has since won the affection of people
-                  all over the world and with that has come many requests and opportunities for Franchising with
-                  Uncle Tetsu.</p>
-               <p class="custom-padding-b">So that our soft & fluffy Japanese Cheesecake Shops may continue to be enjoyed by people all over
-                  the world for years to come, we are establishing key partnerships with persons who understand
-                  and share our philosophy.</p>
+               <p>{!! $franchising->first_section_text !!}</p>
                <div class="franchising-step">
                   <div>
-                     <p>01. Information Request.
-                        APPLY NOW to be directed to a form for submitting
-                        your information.</p>
-
-                     <p>02. Confirmation of Submitted Information.</p>
-
-                     <p>03. Internet Meeting</p>
-
-                     <p>04. In-person Interview</p>
-
-                     <p>05. Consideration of Business Proposal and Terms of
-                        the Contract.</p>
-
-                     <p>06. Contractual agreement, site excavation, training,
-                        pre-open, and open.</p>
-
-                     <span>※ The above steps are an approximation.</span>
+                     {!! $franchising->second_section_text !!}
                   </div>
                   <div>
-                     <p>First, please click the APPLY NOW button above to submit the information & required
-                        documents of your application.</p>
-
-                     <p class="team">Uncle Tetsu Franchise Team</p>
+                     <p>{!! $franchising->third_section_text !!}</p>
                      <form class="custom-form ">
                         <div class="form-inline input-group">
                            <input type="text" class="form-control" required placeholder="NAME *">

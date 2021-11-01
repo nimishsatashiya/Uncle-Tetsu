@@ -1,4 +1,10 @@
 <header class="header">
+    <div id="AjaxLoaderDiv" style="display: none;z-index:99999 !important;">
+        <div style="width:100%; height:100%; left:0px; top:0px; bottom:0; right:0; position:fixed; opacity:0.8; filter:alpha(opacity=80); background:#fff; z-index:999999999;"> </div>
+        <div style="float:left;width:100%; left:0px; top:50%; text-align:center; position:fixed; padding:0px; z-index:999999999;    margin-top: -62.5px;">
+            <div class="dual-ring"><img src="{{asset('themes/frontend/images/loading-img.png')}}" alt="Uncke Tetsu" /></div>
+        </div>
+    </div>
     <div class="logo"><a href="{{ route('frontend-homepage')}}" title="Uncke Tetsu"><img src="{{asset('themes/frontend/images/logo.svg')}}" alt=""></a></div>
     <div class="hambergur">
         <span class="menu-text">Menu</span>

@@ -1,3 +1,4 @@
+
 @extends('frontend.layouts.app')
 @section('content')
 <main>
@@ -63,38 +64,12 @@
          <div class="custom-padding-x">
             <div class="owl-slider banner-slider">
                <div id="bannerCarousel" class="owl-carousel">
+                  @foreach($banners as $banner)
                   <div class="item">
-                     <img class="w-100" src="{{asset('themes/frontend/images/banner.jpg?v=1')}}" alt="">
+                     <img class="w-100" src="{{asset('uploads/banner/'.$banner->banner_path)}}" alt="">
                      <img class="slider-center-icon" src="{{asset('themes/frontend/images/slider-center-icon.svg')}}" alt="">
                   </div>
-                  <div class="item">
-                     <img class="w-100" src="{{asset('themes/frontend/images/banner.jpg')}}" alt="">
-                     <img class="slider-center-icon" src="{{asset('themes/frontend/images/slider-center-icon.svg')}}" alt="">
-                  </div>
-                  <div class="item">
-                     <img class="w-100" src="{{asset('themes/frontend/images/banner.jpg')}}" alt="">
-                     <img class="slider-center-icon" src="{{asset('themes/frontend/images/slider-center-icon.svg')}}" alt="">
-                  </div>
-                  <div class="item">
-                     <img class="w-100" src="{{asset('themes/frontend/images/banner.jpg')}}" alt="">
-                     <img class="slider-center-icon" src="{{asset('themes/frontend/images/slider-center-icon.svg')}}" alt="">
-                  </div>
-                  <div class="item">
-                     <img class="w-100" src="{{asset('themes/frontend/images/banner.jpg')}}" alt="">
-                     <img class="slider-center-icon" src="{{asset('themes/frontend/images/slider-center-icon.svg')}}" alt="">
-                  </div>
-                  <div class="item">
-                     <img class="w-100" src="{{asset('themes/frontend/images/banner.jpg')}}" alt="">
-                     <img class="slider-center-icon" src="{{asset('themes/frontend/images/slider-center-icon.svg')}}" alt="">
-                  </div>
-                  <div class="item">
-                     <img class="w-100" src="{{asset('themes/frontend/images/banner.jpg')}}" alt="">
-                     <img class="slider-center-icon" src="{{asset('themes/frontend/images/slider-center-icon.svg')}}" alt="">
-                  </div>
-                  <div class="item">
-                     <img class="w-100" src="{{asset('themes/frontend/images/banner.jpg')}}" alt="">
-                     <img class="slider-center-icon" src="{{asset('themes/frontend/images/slider-center-icon.svg')}}" alt="">
-                  </div>
+                  @endforeach
                </div>
                <a class="down-arrow" href="#WhoUncleTetsu">
                   <img class="w-100" src="{{asset('themes/frontend/images/down-arrow.svg')}}" alt="">
@@ -106,16 +81,13 @@
       <!-- Who is Uncle Tetsu  section start -->
       <section id="WhoUncleTetsu" class="who-uncle-tetsu-section">
          <div class="marquee">
-            <span class="watermark-text">Who is Uncle Tetsu?</span>
+            <span class="watermark-text">{{$who_uncle->home_title}}</span>
          </div>
          <div class="custom-padding-x">
             <div class="content-wrap">
                <div class="common-style">
-                  <h2>Who is Uncle Tetsu?</h2>
-                  <p>Uncle Tetsu, or Tetsushi Mizokami was born and raised in Fukuoka, Hakata, Japan.</p>
-                  <p>Tetsushi learned how to bake from a very young age by helping his parents who owned a cake
-                     shop
-                     as a way to spend more time with them.</p>
+                  <h2>{{$who_uncle->home_title}}</h2>
+                  <p>{!! $who_uncle->home_text !!}</p>
                   <a href="{{ route('who-uncle-tetsu')}}">Read More <svg xmlns="http://www.w3.org/2000/svg" width="37.646"
                         height="19.65" viewBox="0 0 37.646 19.65">
                         <g id="Group_511" data-name="Group 511"
@@ -130,8 +102,8 @@
                         </g>
                      </svg></a>
                </div>
-               <img class="sec-one-img-1" src="{{asset('themes/frontend/images/sec-one-img-1.jpg')}}" alt="">
-               <img class="sec-one-img-2" src="{{asset('themes/frontend/images/sec-one-img-2.jpg')}}" alt="">
+               <img class="sec-one-img-1" src="{{asset('uploads/who_uncle_tetsu/'.$who_uncle->who_uncle_home_img1)}}" alt="">
+               <img class="sec-one-img-2" src="{{asset('uploads/who_uncle_tetsu/'.$who_uncle->who_uncle_home_img2)}}" alt="">
 
             </div>
          </div>
@@ -145,10 +117,10 @@
          <div class="custom-padding-x">
             <div class="content-wrap">
                <div class="common-style">
-                  <h2>Our Philosophy</h2>
-                  <p>At Uncle Tetsu’s Shops, we make everything fresh before your eyes in an open-concept factory…
+                  <h2>{{$philosophy->home_title}}</h2>
+                  <p>{!! $philosophy->home_text !!}
                   </p>
-                  <a href="javascript:void(0);">Read More <svg xmlns="http://www.w3.org/2000/svg" width="37.646"
+                  <a href="{{ route('our-philosophy')}}">Read More <svg xmlns="http://www.w3.org/2000/svg" width="37.646"
                         height="19.65" viewBox="0 0 37.646 19.65">
                         <g id="Group_511" data-name="Group 511"
                            transform="translate(-989.5 1063.162) rotate(-90)">
@@ -162,9 +134,9 @@
                         </g>
                      </svg></a>
                </div>
-               <img class="sec-two-img-1" src="{{asset('themes/frontend/images/sec-two-img-1.jpg')}}" alt="">
-               <img class="sec-two-img-3" src="{{asset('themes/frontend/images/sec-two-img-3.jpg')}}" alt="">
-               <img class="sec-two-img-2" src="{{asset('themes/frontend/images/sec-two-img-2.jpg')}}" alt="">
+               <img class="sec-two-img-1" src="{{asset('uploads/our_philosophy/'.$philosophy->home_img1)}}" alt="">
+               <img class="sec-two-img-3" src="{{asset('uploads/our_philosophy/'.$philosophy->home_img3)}}" alt="">
+               <img class="sec-two-img-2" src="{{asset('uploads/our_philosophy/'.$philosophy->home_img2)}}" alt="">
 
             </div>
          </div>
@@ -185,10 +157,10 @@
                      <div class="cake">
                         <img class="" src="{{asset('themes/frontend/images/sec-three-img-icon.svg')}}" alt="">
                      </div>
-                     <h3>Original Signature Japanese<br> Cheesecake</h3>
+                     <h3 id="product-name">Original Signature Japanese</h3>
                      <img class="product-line" src="{{asset('themes/frontend/images/product-line.png')}}" alt="">
                   </div>
-                  <a href="javascript:void(0);">See All <svg xmlns="http://www.w3.org/2000/svg" width="37.646"
+                  <a href="{{ route('our-products')}}">See All <svg xmlns="http://www.w3.org/2000/svg" width="37.646"
                         height="19.65" viewBox="0 0 37.646 19.65">
                         <g id="Group_511" data-name="Group 511"
                            transform="translate(-989.5 1063.162) rotate(-90)">
@@ -207,21 +179,11 @@
          <div class="custom-padding-x">
             <div class="owl-slider product-slider">
                <div id="productCarousel" class="owl-carousel">
-                  <div class="item">
-                     <img class="" src="{{asset('themes/frontend/images/sec-three-img-1.png')}}" alt="">
-                  </div>
-                  <div class="item">
-                     <img class="" src="{{asset('themes/frontend/images/sec-three-img-1.png')}}" alt="">
-                  </div>
-                  <div class="item">
-                     <img class="" src="{{asset('themes/frontend/images/sec-three-img-1.png')}}" alt="">
-                  </div>
-                  <div class="item">
-                     <img class="" src="{{asset('themes/frontend/images/sec-three-img-1.png')}}" alt="">
-                  </div>
-                  <div class="item">
-                     <img class="" src="{{asset('themes/frontend/images/sec-three-img-1.png')}}" alt="">
-                  </div>
+                  @foreach($product_imgs as $image)
+                   <div class="item">
+                     <img class="" src="{{asset('uploads/products/'.$image->large_image)}}" alt="{{$image->product_name}}">
+                   </div>
+                  @endforeach
                </div>
             </div>
          </div>
@@ -238,16 +200,17 @@
             </div>
             <div class="owl-slider blog-slider">
                <div id="blogCarousel" class="owl-carousel">
+                  @foreach($blogs as $blog)
                   <div class="item">
                      <div class="content-wrap">
                         <div class="image-group">
-                           <img class="sec-four-img-1" src="{{asset('themes/frontend/images/sec-four-img-1.png')}}" alt="">
-                           <img class="sec-four-img-2" src="{{asset('themes/frontend/images/sec-four-img-2.png')}}" alt="">
-                           <img class="sec-four-img-3" src="{{asset('themes/frontend/images/sec-four-img-3.png')}}" alt="">
+                           <img class="sec-four-img-1" src="{{asset('uploads/blog/'.$blog->home_img)}}" alt="">
+                           <img class="sec-four-img-2" src="{{asset('uploads/blog/'.$blog->home_img_1)}}" alt="">
+                           <img class="sec-four-img-3" src="{{asset('uploads/blog/'.$blog->home_img_2)}}" alt="">
                         </div>
                         <div class="common-style">
-                           <span>A NEW SHOP OPENS · 16th July 2019</span>
-                           <h3>Uncle Tetsu New York officially opens on Wednesday, July 17th.</h3>
+                           <span>{{$blog->main_title}}</span>
+                           <h3>{{$blog->title}}</h3>
                            <p>Uncle Tetsu’s Japanese Cheesecake, famous internationally for its distinct soft &
                               fluffy cheesecakes, is officially Grand Opening its first store in New York on
                               Monday, July 15th at 135 W 41st Street, in New York’s Theatre District.</p>
@@ -268,96 +231,7 @@
 
                      </div>
                   </div>
-                  <div class="item">
-                     <div class="content-wrap">
-                        <div class="image-group">
-                           <img class="sec-four-img-1" src="{{asset('themes/frontend/images/sec-four-img-1.png')}}" alt="">
-                           <img class="sec-four-img-2" src="{{asset('themes/frontend/images/sec-four-img-2.png')}}" alt="">
-                           <img class="sec-four-img-3" src="{{asset('themes/frontend/images/sec-four-img-3.png')}}" alt="">
-                        </div>
-                        <div class="common-style">
-                           <span>A NEW SHOP OPENS · 16th July 2019</span>
-                           <h3>Uncle Tetsu New York officially opens on Wednesday, July 17th.</h3>
-                           <p>Uncle Tetsu’s Japanese Cheesecake, famous internationally for its distinct soft &
-                              fluffy cheesecakes, is officially Grand Opening its first store in New York on
-                              Monday, July 15th at 135 W 41st Street, in New York’s Theatre District.</p>
-                           <a href="javascript:void(0);">Read More <svg xmlns="http://www.w3.org/2000/svg"
-                                 width="37.646" height="19.65" viewBox="0 0 37.646 19.65">
-                                 <g id="Group_511" data-name="Group 511"
-                                    transform="translate(-989.5 1063.162) rotate(-90)">
-                                    <line id="Line_2" data-name="Line 2" y1="35.142"
-                                       transform="translate(1053.337 990.5)" fill="none"
-                                       stroke-linecap="round" stroke-width="2" />
-                                    <path id="Path_4660" data-name="Path 4660"
-                                       d="M2513.136,1023.974l8.411,8.411,8.411-8.411"
-                                       transform="translate(-1468.209 -6.239)" fill="none"
-                                       stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-                                 </g>
-                              </svg></a>
-                        </div>
-
-                     </div>
-                  </div>
-                  <div class="item">
-                     <div class="content-wrap">
-                        <div class="image-group">
-                           <img class="sec-four-img-1" src="{{asset('themes/frontend/images/sec-four-img-1.png')}}" alt="">
-                           <img class="sec-four-img-2" src="{{asset('themes/frontend/images/sec-four-img-2.png')}}" alt="">
-                           <img class="sec-four-img-3" src="{{asset('themes/frontend/images/sec-four-img-3.png')}}" alt="">
-                        </div>
-                        <div class="common-style">
-                           <span>A NEW SHOP OPENS · 16th July 2019</span>
-                           <h3>Uncle Tetsu New York officially opens on Wednesday, July 17th.</h3>
-                           <p>Uncle Tetsu’s Japanese Cheesecake, famous internationally for its distinct soft &
-                              fluffy cheesecakes, is officially Grand Opening its first store in New York on
-                              Monday, July 15th at 135 W 41st Street, in New York’s Theatre District.</p>
-                           <a href="javascript:void(0);">Read More <svg xmlns="http://www.w3.org/2000/svg"
-                                 width="37.646" height="19.65" viewBox="0 0 37.646 19.65">
-                                 <g id="Group_511" data-name="Group 511"
-                                    transform="translate(-989.5 1063.162) rotate(-90)">
-                                    <line id="Line_2" data-name="Line 2" y1="35.142"
-                                       transform="translate(1053.337 990.5)" fill="none"
-                                       stroke-linecap="round" stroke-width="2" />
-                                    <path id="Path_4660" data-name="Path 4660"
-                                       d="M2513.136,1023.974l8.411,8.411,8.411-8.411"
-                                       transform="translate(-1468.209 -6.239)" fill="none"
-                                       stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-                                 </g>
-                              </svg></a>
-                        </div>
-
-                     </div>
-                  </div>
-                  <div class="item">
-                     <div class="content-wrap">
-                        <div class="image-group">
-                           <img class="sec-four-img-1" src="{{asset('themes/frontend/images/sec-four-img-1.png')}}" alt="">
-                           <img class="sec-four-img-2" src="{{asset('themes/frontend/images/sec-four-img-2.png')}}" alt="">
-                           <img class="sec-four-img-3" src="{{asset('themes/frontend/images/sec-four-img-3.png')}}" alt="">
-                        </div>
-                        <div class="common-style">
-                           <span>A NEW SHOP OPENS · 16th July 2019</span>
-                           <h3>Uncle Tetsu New York officially opens on Wednesday, July 17th.</h3>
-                           <p>Uncle Tetsu’s Japanese Cheesecake, famous internationally for its distinct soft &
-                              fluffy cheesecakes, is officially Grand Opening its first store in New York on
-                              Monday, July 15th at 135 W 41st Street, in New York’s Theatre District.</p>
-                           <a href="javascript:void(0);">Read More <svg xmlns="http://www.w3.org/2000/svg"
-                                 width="37.646" height="19.65" viewBox="0 0 37.646 19.65">
-                                 <g id="Group_511" data-name="Group 511"
-                                    transform="translate(-989.5 1063.162) rotate(-90)">
-                                    <line id="Line_2" data-name="Line 2" y1="35.142"
-                                       transform="translate(1053.337 990.5)" fill="none"
-                                       stroke-linecap="round" stroke-width="2" />
-                                    <path id="Path_4660" data-name="Path 4660"
-                                       d="M2513.136,1023.974l8.411,8.411,8.411-8.411"
-                                       transform="translate(-1468.209 -6.239)" fill="none"
-                                       stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-                                 </g>
-                              </svg></a>
-                        </div>
-
-                     </div>
-                  </div>
+                  @endforeach
                </div>
             </div>
          </div>
@@ -419,22 +293,17 @@
       <!-- Franchising  section start -->
       <section id="franchising" class="franchising-section">
          <div class="marquee">
-            <span class="watermark-text">Franchising</span>
+            <span class="watermark-text">{{$franchising->title}}</span>
          </div>
          <div class="custom-padding-x">
             <div class="common-style head-top">
-               <h2>Franchising</h2>
+               <h2>{{$franchising->title}}</h2>
             </div>
             <div class="content-wrap">
-               <img class="sec-six-img-1" src="{{asset('themes/frontend/images/sec-six-img-1.png')}}" alt="">
+               <img class="sec-six-img-1" src="{{asset('uploads/franchising/'.$franchising->home_img)}}" alt="">
                <div class="common-style">
-                  <p>Originating in Japan, Uncle Tetsu has since won the affection of people all over the world
-                     and with that has come many requests and opportunities for Franchising with Uncle Tetsu.</p>
-                  <p>So that our soft & fluffy Japanese Cheesecake Shops may continue to be enjoyed by people all
-                     over the world for years to come, we are establishing key partnerships with persons who
-                     understand and share our philosophy.</p>
-                  <span>Uncle Tetsu Franchise Team</span>
-                  <a href="javascript:void(0);">Read More <svg xmlns="http://www.w3.org/2000/svg" width="37.646"
+                  {!! $franchising->home_text !!}
+                  <a href="{{ route('franchising')}}">Read More <svg xmlns="http://www.w3.org/2000/svg" width="37.646"
                         height="19.65" viewBox="0 0 37.646 19.65">
                         <g id="Group_511" data-name="Group 511"
                            transform="translate(-989.5 1063.162) rotate(-90)">
@@ -463,10 +332,10 @@
             <h2>Uncle Tetsu Global</h2>
             <p>For all other inquiries, please use the form below, and we will try to get back to you as soon as we
             </p>
-            <form class="custom-form ">
+            {!! Form::open(['url' => 'contact-form', 'class' => 'custom-form','id' => 'front-form', 'enctype' => 'multipart/form-data']) !!}
                <div class="form-inline input-group">
-                  <input type="text" class="form-control" required placeholder="NAME *">
-                  <input type="email" class="form-control" required placeholder="EMAIL *">
+                  <input type="text" class="form-control" required placeholder="NAME *" required="">
+                  <input type="text" class="form-control" required placeholder="EMAIL *" required="">
                </div>
                <div class="form-inline text-group">
                   <div class="form-check">
@@ -478,9 +347,51 @@
                   <button type="submit" class="submit-btn">Send <img src="{{asset('themes/frontend/images/black-read-more-arrow.svg')}}"
                         alt=""></button>
                </div>
-            </form>
+            {!! Form::close() !!}
          </div>
       </section>
       <!-- Uncle Tetsu Global  section end -->
    </main>
 @endsection
+@section('scripts')
+<script type="text/javascript">
+   $(document).ready(function () {
+      $("#front-form").validate();
+
+      $('#front-form').submit(function () {
+         if ($(this).valid())
+         {
+             $('#AjaxLoaderDiv').show();
+             $.ajax({
+                 type: "POST",
+                 url: '/newslatter-form',
+                 data: new FormData(this),
+                 processData: false,
+                 contentType: false,
+                 success: function (result)
+                 {
+                     $('#AjaxLoaderDiv').fadeOut('slow');
+                     if (result.status == 1)
+                     {
+                         $.bootstrapGrowl(result.msg, {type: 'success', delay: 4000});
+                         $('#newslatter_frm')[0].reset();
+                     }   
+                     else
+                     {
+                         $.bootstrapGrowl(result.msg, {type: 'danger', delay: 4000});
+                     }
+                 },
+                 error: function (error) {
+                     $('#AjaxLoaderDiv').fadeOut('slow');
+                     $.bootstrapGrowl("Internal server error !", {type: 'danger', delay: 4000});
+                 }
+             });
+         }
+         return false;
+      });
+   });
+</script>
+@stop
+
+
+

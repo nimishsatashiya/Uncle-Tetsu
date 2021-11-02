@@ -10,6 +10,8 @@ use App\Models\OurPhilosophy;
 use App\Models\FranchisingPages;
 use App\Models\Products;
 use App\Models\Blogs;
+use App\Models\Newslatter;
+use Validator;
 
 class HomeController extends Controller
 {
@@ -53,7 +55,7 @@ class HomeController extends Controller
             $is_news_check=Newslatter::where('email',$request->get('email'))->count();
             if($is_news_check==0){
                 $newslatter=new Newslatter();
-                $newslatter->name =$request->get('name');
+                $newslatter->name =$request->get('full_name');
                 $newslatter->email = $request->get('email');
                 $newslatter->save();
             }else{

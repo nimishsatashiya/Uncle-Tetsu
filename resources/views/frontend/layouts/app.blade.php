@@ -47,7 +47,10 @@ input.form-control.error{
   border-color: red!important;
 }
 label.error {
-display: none!important;
+  display: none!important;
+}
+input.form-control.error,textarea.form-control.error {
+  border: 1px solid red!important;
 }
 </style>
 </head>

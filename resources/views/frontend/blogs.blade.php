@@ -70,7 +70,7 @@
             <div class="custom-padding-x">
                 <div class="single-img">
                     <div class="item">
-                        <img class="w-100" src="{{asset('themes/frontend/images/')}}/blog-list.png" alt="">
+                        <img class="w-100" src="{{asset('uploads/blog_page/'.$blog_page->banner_path)}}" alt="">
                     </div>
                     <a class="down-arrow" href="#BlogDetail">
                         <img class="w-100" src="{{asset('themes/frontend/images/')}}/down-arrow.svg" alt="">

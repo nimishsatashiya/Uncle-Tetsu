@@ -81,7 +81,7 @@
       <!-- Who is Uncle Tetsu  section start -->
       <section id="WhoUncleTetsu" class="who-uncle-tetsu-section">
          <div class="marquee">
-            <span class="watermark-text">{{$who_uncle->home_title}}</span>
+            <span class="watermark-text">{{$who_uncle->home_title}} </span>
          </div>
          <div class="custom-padding-x">
             <div class="content-wrap">
@@ -209,12 +209,10 @@
                            <img class="sec-four-img-3" src="{{asset('uploads/blog/'.$blog->home_img_2)}}" alt="">
                         </div>
                         <div class="common-style">
-                           <span>{{$blog->main_title}}</span>
+                           <span>{{$blog->main_title}} {{$blog->blog_date}}</span>
                            <h3>{{$blog->title}}</h3>
-                           <p>Uncle Tetsu’s Japanese Cheesecake, famous internationally for its distinct soft &
-                              fluffy cheesecakes, is officially Grand Opening its first store in New York on
-                              Monday, July 15th at 135 W 41st Street, in New York’s Theatre District.</p>
-                           <a href="javascript:void(0);">Read More <svg xmlns="http://www.w3.org/2000/svg"
+                           <p>{{$blog->home_text}}</p>
+                           <a href="{{ url('blog-details/'.$blog->slug)}}">Read More <svg xmlns="http://www.w3.org/2000/svg"
                                  width="37.646" height="19.65" viewBox="0 0 37.646 19.65">
                                  <g id="Group_511" data-name="Group 511"
                                     transform="translate(-989.5 1063.162) rotate(-90)">
@@ -333,14 +331,16 @@
             <p>For all other inquiries, please use the form below, and we will try to get back to you as soon as we
             </p>
             {!! Form::open(['url' => 'contact-form', 'class' => 'custom-form','id' => 'front-form', 'enctype' => 'multipart/form-data']) !!}
+               <div class="alert alert-danger" role="alert" id="msg_danger" style="display:none;"></div>
+               <div class="alert alert-success" role="alert" id="msg_success" style="display:none;"></div>
                <div class="form-inline input-group">
-                  <input type="text" class="form-control" required placeholder="NAME *" required="">
-                  <input type="text" class="form-control" required placeholder="EMAIL *" required="">
+                  {!! Form::text('full_name',null,['class' => 'form-control','placeholder' => 'NAME *','required' => true]) !!}
+                  {!! Form::text('email',null,['class' => 'form-control','placeholder' => 'EMAIL *','required' => true]) !!}
                </div>
                <div class="form-inline text-group">
                   <div class="form-check">
                      <label class="form-check-label">
-                        <input class="form-check-input" type="checkbox"> Privacy policy applies
+                        <input class="form-check-input" type="checkbox" name="is_privacy_check"> Privacy policy applies
                      </label>
                   </div>
                   <span>Note: * is a required field</span>
@@ -370,20 +370,26 @@
                  contentType: false,
                  success: function (result)
                  {
-                     $('#AjaxLoaderDiv').fadeOut('slow');
+                     $('#AjaxLoaderDiv').hide();
                      if (result.status == 1)
                      {
-                         $.bootstrapGrowl(result.msg, {type: 'success', delay: 4000});
-                         $('#newslatter_frm')[0].reset();
+                         $("#msg_success").html(result.msg);
+                         $("#msg_success").show();
+                         $("#msg_danger").hide();
+                         $('#front-form')[0].reset();
                      }   
                      else
                      {
-                         $.bootstrapGrowl(result.msg, {type: 'danger', delay: 4000});
+                         $("#msg_danger").html(result.msg);
+                         $("#msg_danger").show();
+                         $("#msg_success").hide();
                      }
                  },
                  error: function (error) {
-                     $('#AjaxLoaderDiv').fadeOut('slow');
-                     $.bootstrapGrowl("Internal server error !", {type: 'danger', delay: 4000});
+                     $('#AjaxLoaderDiv').hide();
+                     $("#msg_danger").html("Internal server error !");
+                     $("#msg_danger").show();
+                     $("#msg_success").hide();
                  }
              });
          }

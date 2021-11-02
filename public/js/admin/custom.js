@@ -3,8 +3,10 @@ $(document).ready(function () {
         
         if ($(this).parsley('isValid'))
         {
-            for (instance in CKEDITOR.instances) {
-                CKEDITOR.instances[instance].updateElement();
+            if(typeof CKEDITOR.instances != undefined){
+                for (instance in CKEDITOR.instances) {
+                    CKEDITOR.instances[instance].updateElement();
+                }
             }
 
             $('#submitBtn').attr('disabled',true);

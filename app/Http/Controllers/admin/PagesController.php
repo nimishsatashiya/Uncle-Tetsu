@@ -792,7 +792,7 @@ class PagesController extends Controller
             
                 if($banner_path)
                 {
-                    $path = public_path().DIRECTORY_SEPARATOR.'uploads'.DIRECTORY_SEPARATOR.'store_location';
+                    $path = public_path().DIRECTORY_SEPARATOR.'uploads'.DIRECTORY_SEPARATOR.'blog_page';
                     if (!file_exists($path)){
                         mkdir($path, 0777, true);
                     }

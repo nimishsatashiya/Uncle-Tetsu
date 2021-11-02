@@ -86,10 +86,13 @@
                   </div>
                   <div>
                      <p>{!! $franchising->third_section_text !!}</p>
-                     <form class="custom-form ">
+                    
+                     {!! Form::open(['url' => 'franchising-form', 'class' => 'custom-form','id' => 'front-form', 'enctype' => 'multipart/form-data']) !!}
+                      <div class="alert alert-danger" role="alert" id="msg_danger" style="display:none;"></div>
+                      <div class="alert alert-success" role="alert" id="msg_success" style="display:none;"></div>
                         <div class="form-inline input-group">
-                           <input type="text" class="form-control" required placeholder="NAME *">
-                           <input type="email" class="form-control" required placeholder="EMAIL *">
+                           {!! Form::text('full_name',null,['class' => 'form-control','placeholder' => 'NAME *','required' => true]) !!}
+                           {!! Form::text('email',null,['class' => 'form-control','placeholder' => 'EMAIL *','required' => true]) !!}
                         </div>
                         <div class="form-inline text-group">
                            <button type="submit" class="submit-btn">Apply Now <svg
@@ -107,7 +110,7 @@
                                  </g>
                               </svg></button>
                         </div>
-                     </form>
+                      {!! Form::close() !!}
 
                   </div>
                </div>
@@ -117,3 +120,50 @@
       <!-- Franchising Page end -->
    </main>
 @endsection
+
+@section('scripts')
+<script type="text/javascript">
+   $(document).ready(function () {
+      $("#front-form").validate();
+
+      $('#front-form').submit(function () {
+         if ($(this).valid())
+         {
+             $('#AjaxLoaderDiv').show();
+             $.ajax({
+                 type: "POST",
+                 url: '/franchising-form',
+                 data: new FormData(this),
+                 processData: false,
+                 contentType: false,
+                 success: function (result)
+                 {
+                     $('#AjaxLoaderDiv').fadeOut('slow');
+                     if (result.status == 1)
+                     {
+                         $("#msg_success").html(result.msg);
+                         $("#msg_success").show();
+                         $("#msg_danger").hide();
+                         $('#front-form')[0].reset();
+                     }   
+                     else
+                     {
+                         $("#msg_danger").html(result.msg);
+                         $("#msg_danger").show();
+                         $("#msg_success").hide();
+                     }
+                 },
+                 error: function (error) {
+                     $('#AjaxLoaderDiv').fadeOut('slow');
+                     $("#msg_danger").html("Internal server error !");
+                     $("#msg_danger").show();
+                     $("#msg_success").hide();
+                 }
+             });
+         }
+         return false;
+      });
+   });
+</script>
+@stop
+

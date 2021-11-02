@@ -20,12 +20,14 @@ Route::get('clear-cache', function () {
  	Route::get('our-philosophy','Frontend\OurPhilosophyController@index')->name('our-philosophy');
  	Route::get('our-products','Frontend\OurProductsController@index')->name('our-products');
  	Route::get('blogs','Frontend\BlogsController@index')->name('blogs');
- 	Route::get('blog-details','Frontend\BlogsController@blog_details')->name('blog_details');
+ 	Route::get('blog-details/{slug}','Frontend\BlogsController@blog_details')->name('blog_details');
  	Route::get('store-location','Frontend\StoreLocationController@index')->name('store-location');
  	Route::get('franchising','Frontend\FranchisingController@index')->name('franchising');
  	Route::get('global-contact','Frontend\GlobalContactController@index')->name('global-contact');
  	Route::any('newslatter-form','Frontend\HomeController@postNewslatter')->name('newslatter-form');
+ 	Route::any('franchising-form','Frontend\FranchisingController@postFranchising')->name('franchising-form');
  	Route::any('load-products-images','Frontend\OurProductsController@loadProductsImage')->name('load-products-images');
+ 	Route::any('contact-form','Frontend\GlobalContactController@postContact')->name('contact-form');
 
 
 //*********************    ADMIN ROUTES  ******************************//

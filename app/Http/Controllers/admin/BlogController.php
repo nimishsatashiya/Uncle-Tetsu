@@ -102,6 +102,7 @@ class BlogController extends Controller
             'home_img' => 'required',
             'home_img_1' => 'required',
             'home_img_2' => 'required',
+            'home_text' => 'required',
             'main_title' => 'required',
             'title' => 'required',
             'blog_date' => 'required',
@@ -129,8 +130,11 @@ class BlogController extends Controller
             $home_img = $request->file("home_img");
             $home_img_1 = $request->file("home_img_1");
             $home_img_2 = $request->file("home_img_2");
+            $home_text = $request->get("home_text");
             $blog_date = $request->get("blog_date");
             $description = $request->get("description");
+            $delimiter="-";
+            $slug = strtolower(trim(preg_replace('/[\s-]+/', $delimiter, preg_replace('/[^A-Za-z0-9-]+/', $delimiter, preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $title))))), $delimiter));
             
             if($home_img)
             {
@@ -167,9 +171,11 @@ class BlogController extends Controller
             }
             
             $blogObj = $this->modelObj;
+            $blogObj->slug = $slug;
             $blogObj->home_img = $home_img_filename;
             $blogObj->home_img_1 = $home_img_1_filename;
             $blogObj->home_img_2 = $home_img_2_filename;
+            $blogObj->home_text = $home_text;
             $blogObj->main_title = $main_title;
             $blogObj->title = $title;
             $blogObj->blog_date = $blog_date;
@@ -271,6 +277,7 @@ class BlogController extends Controller
             'main_title' => 'required',
             'title' => 'required',
             'blog_date' => 'required',
+            'home_text' => 'required',
             'description' => 'required',            
         ]);
         
@@ -296,9 +303,12 @@ class BlogController extends Controller
         {
             $main_title = $request->get("main_title");
             $title = $request->get("title");
+            $delimiter="-";
+            $slug = strtolower(trim(preg_replace('/[\s-]+/', $delimiter, preg_replace('/[^A-Za-z0-9-]+/', $delimiter, preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $title))))), $delimiter));
             $home_img = $request->file("home_img");
             $home_img_1 = $request->file("home_img_1");
             $home_img_2 = $request->file("home_img_2");
+            $home_text = $request->get("home_text");
             $blog_date = $request->get("blog_date");
             $description = $request->get("description");
             $home_img_filename = $blogObj->home_img;
@@ -339,9 +349,11 @@ class BlogController extends Controller
                 $home_img_2->move($path, $home_img_2_filename);
             }
             
+            $blogObj->slug = $slug;
             $blogObj->home_img = $home_img_filename;
             $blogObj->home_img_1 = $home_img_1_filename;
             $blogObj->home_img_2 = $home_img_2_filename;
+            $blogObj->home_text = $home_text;
             $blogObj->main_title = $main_title;
             $blogObj->title = $title;
             $blogObj->blog_date = $blog_date;

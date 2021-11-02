@@ -126,7 +126,7 @@
         <script src="{{ asset('/js/jquery-ui.js') }}"></script>
         <script src="{{ asset('themes/admin/assets/global/fancybox/jquery.fancybox.pack.js') }}" type="text/javascript"></script>
         <link href="{{ asset('themes/admin/assets/global/fancybox/jquery.fancybox.css') }}" rel="stylesheet">
-        <script src="{{ asset('js/admin/custom.js?06789') }}" type="text/javascript"></script>
+        <script src="{{ asset('js/admin/custom.js?123456') }}" type="text/javascript"></script>
         
          <!--- Data picker -->
         

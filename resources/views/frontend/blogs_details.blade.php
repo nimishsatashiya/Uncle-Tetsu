@@ -67,7 +67,7 @@
             <div class="custom-padding-x">
                 <div class="single-img">
                     <div class="item">
-                        <img class="w-100" src="{{asset('themes/frontend/images/')}}/blog-detail-banner.png" alt="">
+                        <img class="w-100" src="{{asset('uploads/blog_page/'.$blog_page->banner_path)}}" alt="">
                     </div>
                     <a class="down-arrow" href="#BlogDetail">
                         <img class="w-100" src="{{asset('themes/frontend/images/')}}/down-arrow.svg" alt="">
@@ -79,116 +79,24 @@
         <!-- Blog Detail Page start -->
         <section id="BlogDetail" class="blog_details_page">
             <div class="marquee">
-                <span class="watermark-text">Uncle Tetsu's Blog</span>
+                <span class="watermark-text">{{$blog_details->main_title}}</span>
             </div>
             <div class="custom-padding-x">
                 <div class="row">
                     <div class="col-12">
                         <div class="blog__head">
                             <div class="common-style">
-                                <span>A NEW SHOP OPENS · 16th July 2019</span>
-                                <h1>Uncle Tetsu flies to New York City in search for what will be the first shop in Eastern USA!</h1>
+                                <span>{{$blog_details->main_title}} · {{$blog_details->blog_date}}</span>
+                                <h1>{{$blog_details->title}}</h1>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="blog-wrapper">
                     <div class="row">
-                        <div class="col-12 col-md-8">
-                            <div class="blog__content">
-                                <p class="lead-right">Uncle Tetsu departs Hong Kong and flies across the world to the Big Apple to find the ideal location for the 1st ever shop in New York, one that has the potential to be among the grandest launches in the world, given the
-                                    growing love of Uncle Tetsu’s Japanese Cheesecakes across the west. Following him is Mr. Matsui from RKB, a major broadcasting corporation in Fukuoka, which is creating a program about Uncle Tetsu’s expansion across
-                                    the planet starting from Oyafuko Street in his hometown.</p>
-                            </div>
+                        <div class="col-12">
+                        {!! $blog_details->description !!}
                         </div>
-                        <div class="col-12 col-md-4">
-                            <div class="blog__img">
-                                <img src="{{asset('themes/frontend/images/')}}/blog-head-img.png" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                    <p>And, as business assistant to Uncle Tetsu, the young and talented Luca from Team Canada meets us in New York to be a part of the search.</p>
-                    <p>But first, a Mini History of Uncle Tetsu’s recent spread across the Western World leading to this moment of New York.</p>
-                    <div class="blog__img">
-                        <img src="{{asset('themes/frontend/images/')}}/blog-img-01.png" alt="" class="img-fluid">
-                    </div>
-                    <p>Based on his experience opening in Canada, Australia & New Zealand, Uncle Tetsu intuits that New York, with its sheer size in population of locals as well as tourists, could be home to three Japanese Cheesecake Factories. And so, while
-                        we would like to determine the best place for the first shop in Manhattan, we will also be looking at areas which could work for our second and third shops.</p>
-                    <h3>Day 1:</h3>
-                    <p class=""> Now Uncle Tetsu lands in New York to begin the exploration of the city’s busiest and most fitting districts, starting with some expert advice from our corporate real estate agents.</p>
-                    <div class="blog__video">
-                        <img src="{{asset('themes/frontend/images/')}}/blog-video-thumbnail.png" alt="" class="img-fluid">
-                        <a class="video-link" href="javascript:void(0);"  data-toggle="modal" data-target="#videoModal"><img src="{{asset('themes/frontend/images/')}}/blog-video-icon.svg" alt="" class="img-fluid"></a>
-                    </div>
-                    <p>With only a few days in NYC this time, Uncle Tetsu and the team head out into the thick of the city. The first stop is one that needs no introduction…</p>
-                    <div class="row">
-                        <div class="col-12 col-md-4">
-                            <div class="blog__img">
-                                <img src="{{asset('themes/frontend/images/')}}/blog-img-02.png" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-8">
-                            <div class="blog__content">
-                                <p class="lead">Times Square…<br/><br/>Known as “The Crossroads of the World”, it is one of the busiest pedestrian areas and the world’s most visited tourist attractions. It is no doubt that Uncle Tetsu would be looking in this area, around
-                                    the famous Broadway Street in Manhattan, where eyes from New York, North America, and the world would be able to witness the performance of Uncle Tetsu’s Japanese Cheesecake, Cheese Tart, and Madeleine Production in
-                                    our open factories for </p>
-                            </div>
-                        </div>
-                    </div>
-                    <p>After seeing two possible shops, Uncle Tetsu takes a load off at the popular “Ootoya” an upscale Japanese Izakaya that started in Japan in 2005 and has since spread to countries in Asia and New York.</p>
-                    <div class="row">
-                        <div class="col-12 col-md-4">
-                            <div class="blog__img">
-                                <img src="{{asset('themes/frontend/images/')}}/blog-img-03.png" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-4">
-                            <div class="blog__img">
-                                <img src="{{asset('themes/frontend/images/')}}/blog-img-04.png" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-4">
-                            <div class="blog__img">
-                                <img src="{{asset('themes/frontend/images/')}}/blog-img-05.png" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                    <p>After lunch, Uncle Tetsu walks down broadway south toward a monumental building that ofttimes stands as one of the Symbols of NYC, the Empire State Building.</p>
-                    <div class="blog__img">
-                        <img src="{{asset('themes/frontend/images/')}}/blog-img-06.png" alt="" class="img-fluid">
-                    </div>
-                    <p>When I asked Mr. Matsui if he knew of the Empire State Building he remarked:<br/> “Of course I do. In fact, when I was a little boy, the pillow that I slept on was that of the famous King Kong on top of the Empire State Building. And
-                        sometimes—maybe as a result—I would dream of King Kong and New York.”</p>
-                    <p>Despite this however, this was Mr. Matsui’s very first time ever travelling to any Western country and surely to set his eyes on the Empire State.</p>
-
-                    <div class="blog__img">
-                        <img src="{{asset('themes/frontend/images/')}}/blog-img-07.png" alt="" class="img-fluid">
-                    </div>
-                    <h3>Day 2:</h3>
-                    <p class=""> Uncle Tetsu, Luca, and Mr. Matsui from RKB TV travel to Union Square, in the midtown of Manhattan. As we emerge from the subway we find ourselves surrounded by a beautiful patch of green—a park—bustling with Newyorkers but in a way
-                        that still feels serene.</p>
-                    <div class="blog__img">
-                        <img src="{{asset('themes/frontend/images/')}}/blog-img-08.png" alt="" class="img-fluid">
-                    </div>
-                    <p>When I asked Mr. Matsui if he knew of the Empire State Building he remarked:<br/> “Of course I do. In fact, when I was a little boy, the pillow that I slept on was that of the famous King Kong on top of the Empire State Building. And
-                        sometimes—maybe as a result—I would dream of King Kong and New York.”</p>
-                    <p>Despite this however, this was Mr. Matsui’s very first time ever travelling to any Western country and surely to set his eyes on the Empire State.</p>
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <div class="blog__img">
-                                <img src="{{asset('themes/frontend/images/')}}/blog-img-09.png" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="blog__img">
-                                <img src="{{asset('themes/frontend/images/')}}/blog-img-10.png" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                    <p> Departing the park, I spot some art on the side of a building that silently fills the neighborhood with a classic song from the 1940s… an era of music very familiar to, much-loved by, and often sung in Karaoke by Uncle Tetsu himself:</p>
-                    <p>Follow our blog here to find out more about New York, Uncle Tetsu’s travels, and to always be on the forefront of the ever-growing love of Uncle Tetsu’s Japanese Cheesecake!</p>
-                    <div class="blog__img">
-                        <img src="{{asset('themes/frontend/images/')}}/blog-img-11.png" alt="" class="img-fluid">
                     </div>
                 </div>
                 <div class="recent-blog-box">

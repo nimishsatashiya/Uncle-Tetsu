@@ -46,6 +46,13 @@
                                 {!! Form::text('blog_date',null,['class' => 'form-control blog_date','data-required' => true]) !!}
                              </div>
                         </div>
+                        <div class="clearfix">&nbsp;</div> 
+                        <div class="row ">
+                            <div class="col-md-12">
+                                <label class="control-label">Short Text:<span class="required">*</span></label>
+                                {!! Form::textarea('home_text',null,['class' => 'form-control','id' => 'editor', 'data-required' => true,'rows'=>'10','cols'=>'10']) !!}
+                            </div>
+                        </div>
                         <div class="clearfix">&nbsp;</div>
                         <div class="row ">
                             <div class="col-md-6">

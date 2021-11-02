@@ -26,7 +26,7 @@
                                     <label class="control-label">Banner:<span class="required">*</span></label>
                                     {!! Form::file('banner_path',null,['class' => 'custom-file-input form-control', 'data-required' => true]) !!}
                                     <div>&nbsp;</div>
-                                    <img src="{{asset('/uploads/store_location/')}}/{{$formObj->banner_path}}" style="width:100px;" class="img-responsive" title="Banner" />
+                                    <img src="{{asset('/uploads/product_page/')}}/{{$formObj->banner_path}}" style="width:100px;" class="img-responsive" title="Banner" />
                              </div>
                         </div>
                         <div class="clearfix">&nbsp;</div>                      
@@ -43,4 +43,7 @@
     </div>
 </div>
 
+@endsection
+@section('scripts')
+<script src="//cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
 @endsection

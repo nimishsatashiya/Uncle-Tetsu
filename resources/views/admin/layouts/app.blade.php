@@ -90,10 +90,7 @@
             </div> 
         </div>
 
-        @include('admin.includes.footer')
-        {!! Form::open(['method' => 'DELETE','id' => 'global_delete_form']) !!}
-        {!! Form::hidden('id', 0,['id' => 'delete_id']) !!}
-        {!! Form::close() !!}            
+        @include('admin.includes.footer')       
 
 
         <script src="{{ asset('themes/admin/assets/global/plugins/jquery.min.js')}}" type="text/javascript"></script>
@@ -126,7 +123,7 @@
         <script src="{{ asset('/js/jquery-ui.js') }}"></script>
         <script src="{{ asset('themes/admin/assets/global/fancybox/jquery.fancybox.pack.js') }}" type="text/javascript"></script>
         <link href="{{ asset('themes/admin/assets/global/fancybox/jquery.fancybox.css') }}" rel="stylesheet">
-        <script src="{{ asset('js/admin/custom.js?123456') }}" type="text/javascript"></script>
+        <script src="{{ asset('js/admin/custom.js?1234654') }}" type="text/javascript"></script>
         
          <!--- Data picker -->
         

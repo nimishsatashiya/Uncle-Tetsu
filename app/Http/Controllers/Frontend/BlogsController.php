@@ -13,6 +13,7 @@ class BlogsController extends Controller
    {
 		$data = array();
       $data['blog_page']=BlogPages::find(1);
+      $data['blogs']=Blogs::getBlogsList();
     	return view('frontend.blogs',$data);
    }
 

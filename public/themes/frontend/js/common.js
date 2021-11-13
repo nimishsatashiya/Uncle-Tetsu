@@ -19,7 +19,7 @@ $(document).ready(function () {
 
   $("#productCarousel").owlCarousel({
     loop: true,
-    autoplay: false,
+    autoplay: true,
     autoplayTimeout: 7000,
     smartSpeed: 800,
     nav: false,

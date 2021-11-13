@@ -110,6 +110,26 @@ $(document).ready(function () {
         var value = $( this ).val();
         $( "p" ).text( value );
     });
+
+    $(document).on('click', '.btn-delete-record', function () {
+
+                $text = 'Are you sure ?';
+
+                if ($(this).attr('title') == "delete user")
+                {
+                    $text = 'Are you sure you want to delete this user ?';
+                }
+
+                if (confirm($text))
+                {
+                    $url = $(this).attr('href');
+                    $('#global_delete_form').attr('action', $url);
+                    $('#global_delete_form #delete_id').val($(this).data('id'));
+                    $('#global_delete_form').submit();
+                }
+
+                return false;
+            });
     
 });
 

@@ -113,5 +113,18 @@ Route::group(['prefix' => $ADMIN_PREFIX, 'middleware' => 'admin_auth'], function
 //Members
 	Route::any('salespeople/data', 'admin\SalespeopleController@data')->name('salespeople.data');
 	Route::resource('salespeople', 'admin\SalespeopleController');
+
+//Franchising
+	Route::any('franchising-inquiry/data', 'admin\FranchisingController@data')->name('franchising-inquiry.data');
+	Route::resource('franchising-inquiry', 'admin\FranchisingController');
+
+//Newsletter
+	Route::any('newsletter-inquiry/data', 'admin\NewsletterController@data')->name('newsletter-inquiry.data');
+	Route::resource('newsletter-inquiry', 'admin\NewsletterController');
+
+//Contacts
+	Route::any('contacts-inquiry/data', 'admin\ContactsController@data')->name('contacts-inquiry.data');
+	Route::resource('contacts-inquiry', 'admin\ContactsController');
+
 });
 

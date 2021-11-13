@@ -359,7 +359,6 @@ class ProductsController extends Controller
      */
     public function destroy($id, Request $request)
     {
-        prd($id);
         $checkrights = \App\Models\Admin::checkPermission(\App\Models\Admin::$DETELE_BANNER);
         if($checkrights) 
         {

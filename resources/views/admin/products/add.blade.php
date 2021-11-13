@@ -44,7 +44,7 @@
                              <div class="clearfix">&nbsp;</div>
                              <div class="col-md-12">
                                 <label class="control-label">Description<span class="required">*</span></label>
-                                {!! Form::textarea('product_desc',null,['class' => 'form-control editor', 'data-required' => true]) !!}
+                                {!! Form::textarea('product_desc',null,['class' => 'form-control ckeditor', 'data-required' => true]) !!}
                              </div>
                              <div class="clearfix">&nbsp;</div>
                              <div class="col-md-6">
@@ -76,4 +76,7 @@
     </div>
 </div>
 
+@endsection
+@section('scripts')
+<script src="//cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
 @endsection

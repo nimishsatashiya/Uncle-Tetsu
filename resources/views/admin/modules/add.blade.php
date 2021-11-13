@@ -72,3 +72,7 @@
 </div>
 
 @endsection
+
+@section('scripts')
+<script src="//cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
+@endsection

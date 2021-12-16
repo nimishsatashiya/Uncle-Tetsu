@@ -93,126 +93,281 @@
                     <div class="map_box">
                         <div class="map_box-img">
                             <img src="{{asset('themes/frontend/images/')}}/map.svg" alt="" class="img-fluid">
-                            <a class="location-1" href="#">
+                            <a class="location-1 malaysia" href="#">
                                 <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
                                     <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
                                 </svg>
                             </a>
-                            <a class="location-2" href="#">
+                            <a class="location-2 malaysia" href="#">
                                 <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
                                     <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
                                 </svg>
                             </a>
-                            <a class="location-3" href="#">
+                            <a class="location-3 malaysia" href="#">
                                 <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
                                     <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
                                 </svg>
                             </a>
-                            <a class="location-4" href="#">
+                           <a class="location-4 malaysia" href="#">
                                 <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
                                     <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
                                 </svg>
                             </a>
-                            <a class="location-5" href="#">
+                            <a class="location-5 malaysia" href="#">
                                 <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
                                     <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
                                 </svg>
                             </a>
-                            <a class="location-6" href="#">
+                           <a class="location-6 malaysia" href="#">
                                 <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
                                     <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
                                 </svg>
                             </a>
-                            <a class="location-7" href="#">
+                              <a class="location-7 korea" href="#">
                                 <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
                                     <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
                                 </svg>
                             </a>
-                            <a class="location-8" href="#">
+                             <a class="location-8 newzealand" href="#">
                                 <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
                                     <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
                                 </svg>
                             </a>
-                            <a class="location-9" href="#">
+                            <a class="location-9 indonesia" href="#">
                                 <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
                                     <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
                                 </svg>
                             </a>
-                            <a class="location-10" href="#">
+                            <a class="location-10 indonesia" href="#">
                                 <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
                                     <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
                                 </svg>
                             </a>
-                            <a class="location-11" href="#">
+                            <a class="location-11 indonesia" href="#">
                                 <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
                                     <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
                                 </svg>
                             </a>
-                            <a class="location-12" href="#">
+                            <a class="location-12 indonesia" href="#">
                                 <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
                                     <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
                                 </svg>
                             </a>
-                            <a class="location-13" href="#">
+                            <a class="location-13 indonesia" href="#">
                                 <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
                                     <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
                                 </svg>
                             </a>
-                            <a class="location-14" href="#">
+                            <a class="location-14 uae" href="#">
                                 <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
                                     <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
                                 </svg>
                             </a>
-                            <a class="location-15" href="#">
+                            <a class="location-15 pakistan" href="#">
                                 <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
                                     <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
                                 </svg>
                             </a>
-                            <a class="location-16" href="#">
+                           <a class="location-16 canada" href="#">
                                 <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
                                     <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
                                 </svg>
                             </a>
-                            <a class="location-17" href="#">
+                             <a class="location-17 canada" href="#">
                                 <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
                                     <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
                                 </svg>
                             </a>
-                            <a class="location-18" href="#">
+                           <a class="location-18 canada" href="#">
                                 <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
                                     <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
                                 </svg>
                             </a>
-                            <a class="location-19" href="#">
+                            <a class="location-19 canada" href="#">
                                 <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
                                     <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
                                 </svg>
                             </a>
-                            <a class="location-20" href="#">
+                            <a class="location-20 canada" href="#">
                                 <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
                                     <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
                                 </svg>
                             </a>
-                            <a class="location-21" href="#">
+                            <a class="location-21 canada" href="#">
                                 <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
                                     <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
                                 </svg>
                             </a>
-                            <a class="location-22 active" href="#">
+                            <a class="location-22 canada" href="#">
                                 <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
                                     <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
                                 </svg>
                             </a>
-                            <a class="location-23 active" href="#">
+                            <a class="location-23 canada" href="#">
                                 <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
                                     <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
                                 </svg>
                             </a>
-                            <a class="location-24 active" href="#">
+                            <a class="location-24 canada" href="#">
                                 <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
                                     <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
                                 </svg>
-                            </a>
+                            </a> 
+                            <a class="location-25 australia" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-26 australia" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                             <a class="location-27 indonesia" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-28 usa" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-29 usa" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-30 usa" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-31 usa" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-32 usa" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-33 usa" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-34 usa" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-35 myanmar " href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-36 myanmar" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-37 myanmar" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-38 saudi-arabia" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-39 saudi-arabia" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                             <a class="location-40 saudi-arabia" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-41 taiwan" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-42 taiwan" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-43 taiwan" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-44 taiwan" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-45 taiwan" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-46 taiwan" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-47 taiwan" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-48 taiwan" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-49 canada" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-50 canada" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-51 canada" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-52 canada" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-53 canada" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-54 canada" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-55 usa" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
                         </div>
                     </div>
                     <div class="city_list">
@@ -252,19 +407,25 @@
                 <div class="row">
                     <div class="col">
                         <div class="map_flags">
-                            <a href="javascript:void(0);" class="map_flags-box" id="australia">
+                            <a href="javascript:void(0);" class="map_flags-box" id="Australia">
                                 <div class="map_flags-box-img">
                                     <img src="{{asset('themes/frontend/images/')}}/map-flag-01.svg" alt="" class="imf-fluid">
                                 </div>
                                 <p>Australia</p>
                             </a>
-                            <a href="javascript:void(0);" class="map_flags-box">
+                            <a href="javascript:void(0);" class="map_flags-box" id="malaysia">
+                                <div class="map_flags-box-img">
+                                    <img src="{{asset('themes/frontend/images/')}}/map-flag-01.svg" alt="" class="imf-fluid">
+                                </div>
+                                <p>Malaysia</p>
+                            </a>
+                            <a href="javascript:void(0);" class="map_flags-box" id="Korea">
                                 <div class="map_flags-box-img">
                                     <img src="{{asset('themes/frontend/images/')}}/map-flag-02.svg" alt="" class="imf-fluid">
                                 </div>
-                                <p>Canada</p>
+                                <p>Korea</p>
                             </a>
-                            <a href="javascript:void(0);" class="map_flags-box">
+                            <a href="javascript:void(0);" class="map_flags-box" id="China">
                                 <div class="map_flags-box-img">
                                     <img src="{{asset('themes/frontend/images/')}}/map-flag-03.svg" alt="" class="imf-fluid">
                                 </div>
@@ -276,7 +437,7 @@
                                 </div>
                                 <p>Hong Kong</p>
                             </a>
-                            <a href="javascript:void(0);" class="map_flags-box">
+                            <a href="javascript:void(0);" class="map_flags-box" id="Indonesia">
                                 <div class="map_flags-box-img">
                                     <img src="{{asset('themes/frontend/images/')}}/map-flag-05.svg" alt="" class="imf-fluid">
                                 </div>
@@ -288,31 +449,31 @@
                                 </div>
                                 <p>Japan</p>
                             </a>
-                            <a href="javascript:void(0);" class="map_flags-box">
+                            <a href="javascript:void(0);" class="map_flags-box" id="Myanmar">
                                 <div class="map_flags-box-img">
                                     <img src="{{asset('themes/frontend/images/')}}/map-flag-07.svg" alt="" class="imf-fluid">
                                 </div>
                                 <p>Myanmar</p>
                             </a>
-                            <a href="javascript:void(0);" class="map_flags-box">
+                            <a href="javascript:void(0);" class="map_flags-box" id="NewZealand">
                                 <div class="map_flags-box-img">
                                     <img src="{{asset('themes/frontend/images/')}}/map-flag-08.svg" alt="" class="imf-fluid">
                                 </div>
                                 <p>New Zealand</p>
                             </a>
-                            <a href="javascript:void(0);" class="map_flags-box">
+                            <a href="javascript:void(0);" class="map_flags-box" id="Pakistan">
                                 <div class="map_flags-box-img">
                                     <img src="{{asset('themes/frontend/images/')}}/map-flag-09.svg" alt="" class="imf-fluid">
                                 </div>
                                 <p>Pakistan</p>
                             </a>
-                            <a href="javascript:void(0);" class="map_flags-box">
+                            <a href="javascript:void(0);" class="map_flags-box" id="UAE">
                                 <div class="map_flags-box-img">
                                     <img src="{{asset('themes/frontend/images/')}}/map-flag-10.svg" alt="" class="imf-fluid">
                                 </div>
                                 <p>Saudi Arabia</p>
                             </a>
-                            <a href="javascript:void(0);" class="map_flags-box">
+                            <a href="javascript:void(0);" class="map_flags-box" id="Taiwan">
                                 <div class="map_flags-box-img">
                                     <img src="{{asset('themes/frontend/images/')}}/map-flag-11.svg" alt="" class="imf-fluid">
                                 </div>
@@ -324,11 +485,17 @@
                                 </div>
                                 <p>Thailand</p>
                             </a>
-                            <a href="javascript:void(0);" class="map_flags-box">
+                            <a href="javascript:void(0);" class="map_flags-box" id="USA">
                                 <div class="map_flags-box-img">
                                     <img src="{{asset('themes/frontend/images/')}}/map-flag-13.svg" alt="" class="imf-fluid">
                                 </div>
                                 <p>USA</p>
+                            </a>
+                            <a href="javascript:void(0);" class="map_flags-box" id="Canada">
+                                <div class="map_flags-box-img">
+                                    <img src="{{asset('themes/frontend/images/')}}/map-flag-02.svg" alt="" class="imf-fluid">
+                                </div>
+                                <p>Canada</p>
                             </a>
                             <a href="javascript:void(0);" class="map_flags-box">
                                 <div class="map_flags-box-img">

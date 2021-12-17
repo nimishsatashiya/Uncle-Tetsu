@@ -148,7 +148,7 @@
                   <h2>Our Philosophy</h2>
                   <p>At Uncle Tetsu’s Shops, we make everything fresh before your eyes in an open-concept factory…
                   </p>
-                  <a href="javascript:void(0);">Read More <svg xmlns="http://www.w3.org/2000/svg" width="37.646"
+                  <a href="{{ route('our-philosophy')}}">Read More <svg xmlns="http://www.w3.org/2000/svg" width="37.646"
                         height="19.65" viewBox="0 0 37.646 19.65">
                         <g id="Group_511" data-name="Group 511"
                            transform="translate(-989.5 1063.162) rotate(-90)">
@@ -251,7 +251,7 @@
                            <p>Uncle Tetsu’s Japanese Cheesecake, famous internationally for its distinct soft &
                               fluffy cheesecakes, is officially Grand Opening its first store in New York on
                               Monday, July 15th at 135 W 41st Street, in New York’s Theatre District.</p>
-                           <a href="javascript:void(0);">Read More <svg xmlns="http://www.w3.org/2000/svg"
+                           <a href="{{ route('franchising')}}">Read More <svg xmlns="http://www.w3.org/2000/svg"
                                  width="37.646" height="19.65" viewBox="0 0 37.646 19.65">
                                  <g id="Group_511" data-name="Group 511"
                                     transform="translate(-989.5 1063.162) rotate(-90)">
@@ -281,7 +281,7 @@
                            <p>Uncle Tetsu’s Japanese Cheesecake, famous internationally for its distinct soft &
                               fluffy cheesecakes, is officially Grand Opening its first store in New York on
                               Monday, July 15th at 135 W 41st Street, in New York’s Theatre District.</p>
-                           <a href="javascript:void(0);">Read More <svg xmlns="http://www.w3.org/2000/svg"
+                           <a href="{{ route('blogs')}}">Read More <svg xmlns="http://www.w3.org/2000/svg"
                                  width="37.646" height="19.65" viewBox="0 0 37.646 19.65">
                                  <g id="Group_511" data-name="Group 511"
                                     transform="translate(-989.5 1063.162) rotate(-90)">
@@ -311,7 +311,7 @@
                            <p>Uncle Tetsu’s Japanese Cheesecake, famous internationally for its distinct soft &
                               fluffy cheesecakes, is officially Grand Opening its first store in New York on
                               Monday, July 15th at 135 W 41st Street, in New York’s Theatre District.</p>
-                           <a href="javascript:void(0);">Read More <svg xmlns="http://www.w3.org/2000/svg"
+                           <a href="{{ route('blogs')}}">Read More <svg xmlns="http://www.w3.org/2000/svg"
                                  width="37.646" height="19.65" viewBox="0 0 37.646 19.65">
                                  <g id="Group_511" data-name="Group 511"
                                     transform="translate(-989.5 1063.162) rotate(-90)">
@@ -341,7 +341,7 @@
                            <p>Uncle Tetsu’s Japanese Cheesecake, famous internationally for its distinct soft &
                               fluffy cheesecakes, is officially Grand Opening its first store in New York on
                               Monday, July 15th at 135 W 41st Street, in New York’s Theatre District.</p>
-                           <a href="javascript:void(0);">Read More <svg xmlns="http://www.w3.org/2000/svg"
+                           <a href="{{ route('blogs')}}">Read More <svg xmlns="http://www.w3.org/2000/svg"
                                  width="37.646" height="19.65" viewBox="0 0 37.646 19.65">
                                  <g id="Group_511" data-name="Group 511"
                                     transform="translate(-989.5 1063.162) rotate(-90)">
@@ -403,7 +403,7 @@
             </div>
          </div>
          <div class="common-style head-top">
-            <a href="javascript:void(0);">SEE ALL STORES <svg xmlns="http://www.w3.org/2000/svg" width="37.646"
+            <a href="{{ route('store-location')}}">SEE ALL STORES <svg xmlns="http://www.w3.org/2000/svg" width="37.646"
                   height="19.65" viewBox="0 0 37.646 19.65">
                   <g id="Group_511" data-name="Group 511" transform="translate(-989.5 1063.162) rotate(-90)">
                      <line id="Line_2" data-name="Line 2" y1="35.142" transform="translate(1053.337 990.5)"
@@ -434,7 +434,7 @@
                      over the world for years to come, we are establishing key partnerships with persons who
                      understand and share our philosophy.</p>
                   <span>Uncle Tetsu Franchise Team</span>
-                  <a href="javascript:void(0);">Read More <svg xmlns="http://www.w3.org/2000/svg" width="37.646"
+                  <a href="{{ route('franchising')}}">Read More <svg xmlns="http://www.w3.org/2000/svg" width="37.646"
                         height="19.65" viewBox="0 0 37.646 19.65">
                         <g id="Group_511" data-name="Group 511"
                            transform="translate(-989.5 1063.162) rotate(-90)">
@@ -463,19 +463,20 @@
             <h2>Uncle Tetsu Global</h2>
             <p>For all other inquiries, please use the form below, and we will try to get back to you as soon as we
             </p>
-            <form class="custom-form ">
+            <form method="post" id="newslatter_frm" class="custom-form" enctype="multipart/form-data">
+               <input type="hidden" name="_token" value="{{ csrf_token() }}">
                <div class="form-inline input-group">
-                  <input type="text" class="form-control" required placeholder="NAME *">
-                  <input type="email" class="form-control" required placeholder="EMAIL *">
+                  {!! Form::text('full_name',null,['class' => 'form-control','placeholder' => 'NAME *','required' => true]) !!}
+                  {!! Form::text('email',null,['class' => 'form-control','placeholder' => 'EMAIL *','required' => true]) !!}
                </div>
                <div class="form-inline text-group">
                   <div class="form-check">
                      <label class="form-check-label">
-                        <input class="form-check-input" type="checkbox"> Privacy policy applies
+                        <input class="form-check-input" type="checkbox" name="is_privacy_check" value="1" data-required="true"> Privacy policy applies
                      </label>
                   </div>
                   <span>Note: * is a required field</span>
-                  <button type="submit" class="submit-btn">Send <img src="{{asset('themes/frontend/images/black-read-more-arrow.svg')}}"
+                  <button class="submit-btn" id="submit-news">Send <img src="{{asset('themes/frontend/images/black-read-more-arrow.svg')}}"
                         alt=""></button>
                </div>
             </form>
@@ -484,3 +485,40 @@
       <!-- Uncle Tetsu Global  section end -->
    </main>
 @endsection
+@section('scripts')
+<script type="text/javascript">
+$(document).ready(function () {
+$('#newslatter_frm').submit(function () {
+   if (true)
+   {
+       $('#AjaxLoaderDiv').show();
+       $.ajax({
+           type: "POST",
+           url: '/newslatter-form',
+           data: new FormData(this),
+           processData: false,
+           contentType: false,
+           success: function (result)
+           {
+               $('#AjaxLoaderDiv').fadeOut('slow');
+               if (result.status == 1)
+               {
+                   $.bootstrapGrowl(result.msg, {type: 'success', delay: 4000});
+                   $('#newslatter_frm')[0].reset();
+               }   
+               else
+               {
+                   $.bootstrapGrowl(result.msg, {type: 'danger', delay: 4000});
+               }
+           },
+           error: function (error) {
+               $('#AjaxLoaderDiv').fadeOut('slow');
+               $.bootstrapGrowl("Internal server error !", {type: 'danger', delay: 4000});
+           }
+       });
+   }
+   return false;
+});
+});
+</script>
+@stop

@@ -10,6 +10,7 @@ define("TBL_ADMIN_LOG","admin_logs");
 define("TBL_USER_TYPES", "user_types");
 define("TBL_USERS","users");
 define("TBL_BANNERS","banners");
+define("TBL_NEWSLATTER","newslatter");
 define("TBL_WHO_UNCLE_TESTU","who_uncle_tetsu");
 define("TBL_OUR_PHILOSOPHY","our_philosophy");
 define("TBL_TASK_STATUS_LIST","task_status_list");

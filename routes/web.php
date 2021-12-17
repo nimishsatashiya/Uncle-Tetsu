@@ -24,6 +24,7 @@ Route::get('clear-cache', function () {
  	Route::get('store-location','Frontend\StoreLocationController@index')->name('store-location');
  	Route::get('franchising','Frontend\FranchisingController@index')->name('franchising');
  	Route::get('global-contact','Frontend\GlobalContactController@index')->name('global-contact');
+ 	Route::any('newslatter-form','Frontend\HomeController@postNewslatter')->name('newslatter-form');
 
 
 

@@ -16,7 +16,7 @@
             <div class="portlet-body">
                 <div class="form-body">
                     {!! Form::model($formObj,['method' => $method,'files' => true, 'route' => [$action_url,$action_params],'class' => 'sky-form form form-group', 'id' => 'main-frm','redirect-url'=>$list_url]) !!}
-                        <div class="row ">
+                        <div class="row">
                             <div class="col-md-6">
                                 <label class="control-label">Banner:<span class="required">*</span></label>
                                 {!! Form::file('banner_path',null,['class' => 'custom-file-input form-control', 'data-required' => true]) !!}
@@ -24,7 +24,7 @@
                             <div class="col-md-6">
                                 <label class="control-label">Order No:<span class="required">*</span></label>
                                 {!! Form::text('display_order',null,['class' => 'form-control','data-required' => true]) !!}
-                             </div>
+                            </div>
                         </div>
                         <div class="clearfix">&nbsp;</div>                       
                         <div class="row">

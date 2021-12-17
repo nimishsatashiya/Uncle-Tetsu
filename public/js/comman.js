@@ -2,6 +2,7 @@ $(document).ready(function(){
     $('.form').parsley();
     $('.form2').parsley();
     $('.form3').parsley();
+    $('.newslatter_frm').parsley();
 });
 
     
@@ -113,9 +114,7 @@ $('.page-content').css('min-height', hCont+'px');
 $(document).ready(function(){
   contHeight();  
 });
-$( window ).load(function() {
-  contHeight();
-});
+
 $(window).resize(function(){
    contHeight();
 });

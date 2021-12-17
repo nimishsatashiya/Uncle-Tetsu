@@ -20,13 +20,15 @@ Route::get('clear-cache', function () {
  	Route::get('our-philosophy','Frontend\OurPhilosophyController@index')->name('our-philosophy');
  	Route::get('our-products','Frontend\OurProductsController@index')->name('our-products');
  	Route::get('blogs','Frontend\BlogsController@index')->name('blogs');
- 	Route::get('blog-details','Frontend\BlogsController@blog_details')->name('blog_details');
+ 	Route::get('blog-details/{slug}','Frontend\BlogsController@blog_details')->name('blog_details');
  	Route::get('store-location','Frontend\StoreLocationController@index')->name('store-location');
  	Route::get('franchising','Frontend\FranchisingController@index')->name('franchising');
  	Route::get('global-contact','Frontend\GlobalContactController@index')->name('global-contact');
  	Route::any('newslatter-form','Frontend\HomeController@postNewslatter')->name('newslatter-form');
 
-
+ 	Route::any('franchising-form','Frontend\FranchisingController@postFranchising')->name('franchising-form');
+ 	Route::any('load-products-images','Frontend\OurProductsController@loadProductsImage')->name('load-products-images');
+ 	Route::any('contact-form','Frontend\GlobalContactController@postContact')->name('contact-form');
 
 //*********************    ADMIN ROUTES  ******************************//
 
@@ -78,10 +80,21 @@ Route::group(['prefix' => $ADMIN_PREFIX, 'middleware' => 'admin_auth'], function
 	Route::any('banner/data', 'admin\BannerController@data')->name('banner.data');
 	Route::resource('banner', 'admin\BannerController');
 
+//Blogs
+	Route::any('blog/data', 'admin\BlogController@data')->name('blog.data');
+	Route::resource('blog', 'admin\BlogController');
+
+//Products
+	Route::any('products/data', 'admin\ProductsController@data')->name('products.data');
+	Route::resource('products', 'admin\ProductsController');
+
+//Product images
+	Route::any('products-images/data', 'admin\ProductImageController@data')->name('products-images.data');
+	Route::resource('products-images', 'admin\ProductImageController');
+
 //Pages
 	Route::any('pages/data', 'admin\PagesController@data')->name('pages.data');
 	Route::resource('pages', 'admin\PagesController');
-
 
 //CRM
 	Route::any('leads/data', 'admin\CrmController@data')->name('leads.data');
@@ -100,5 +113,18 @@ Route::group(['prefix' => $ADMIN_PREFIX, 'middleware' => 'admin_auth'], function
 //Members
 	Route::any('salespeople/data', 'admin\SalespeopleController@data')->name('salespeople.data');
 	Route::resource('salespeople', 'admin\SalespeopleController');
+
+//Franchising
+	Route::any('franchising-inquiry/data', 'admin\FranchisingController@data')->name('franchising-inquiry.data');
+	Route::resource('franchising-inquiry', 'admin\FranchisingController');
+
+//Newsletter
+	Route::any('newsletter-inquiry/data', 'admin\NewsletterController@data')->name('newsletter-inquiry.data');
+	Route::resource('newsletter-inquiry', 'admin\NewsletterController');
+
+//Contacts
+	Route::any('contacts-inquiry/data', 'admin\ContactsController@data')->name('contacts-inquiry.data');
+	Route::resource('contacts-inquiry', 'admin\ContactsController');
+
 });
 

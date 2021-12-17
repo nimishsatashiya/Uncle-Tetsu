@@ -1,3 +1,4 @@
+
 @extends('frontend.layouts.app')
 @section('content')
 <main>
@@ -63,38 +64,12 @@
          <div class="custom-padding-x">
             <div class="owl-slider banner-slider">
                <div id="bannerCarousel" class="owl-carousel">
+                  @foreach($banners as $banner)
                   <div class="item">
-                     <img class="w-100" src="{{asset('themes/frontend/images/banner.jpg?v=1')}}" alt="">
+                     <img class="w-100" src="{{asset('uploads/banner/'.$banner->banner_path)}}" alt="">
                      <img class="slider-center-icon" src="{{asset('themes/frontend/images/slider-center-icon.svg')}}" alt="">
                   </div>
-                  <div class="item">
-                     <img class="w-100" src="{{asset('themes/frontend/images/banner.jpg')}}" alt="">
-                     <img class="slider-center-icon" src="{{asset('themes/frontend/images/slider-center-icon.svg')}}" alt="">
-                  </div>
-                  <div class="item">
-                     <img class="w-100" src="{{asset('themes/frontend/images/banner.jpg')}}" alt="">
-                     <img class="slider-center-icon" src="{{asset('themes/frontend/images/slider-center-icon.svg')}}" alt="">
-                  </div>
-                  <div class="item">
-                     <img class="w-100" src="{{asset('themes/frontend/images/banner.jpg')}}" alt="">
-                     <img class="slider-center-icon" src="{{asset('themes/frontend/images/slider-center-icon.svg')}}" alt="">
-                  </div>
-                  <div class="item">
-                     <img class="w-100" src="{{asset('themes/frontend/images/banner.jpg')}}" alt="">
-                     <img class="slider-center-icon" src="{{asset('themes/frontend/images/slider-center-icon.svg')}}" alt="">
-                  </div>
-                  <div class="item">
-                     <img class="w-100" src="{{asset('themes/frontend/images/banner.jpg')}}" alt="">
-                     <img class="slider-center-icon" src="{{asset('themes/frontend/images/slider-center-icon.svg')}}" alt="">
-                  </div>
-                  <div class="item">
-                     <img class="w-100" src="{{asset('themes/frontend/images/banner.jpg')}}" alt="">
-                     <img class="slider-center-icon" src="{{asset('themes/frontend/images/slider-center-icon.svg')}}" alt="">
-                  </div>
-                  <div class="item">
-                     <img class="w-100" src="{{asset('themes/frontend/images/banner.jpg')}}" alt="">
-                     <img class="slider-center-icon" src="{{asset('themes/frontend/images/slider-center-icon.svg')}}" alt="">
-                  </div>
+                  @endforeach
                </div>
                <a class="down-arrow" href="#WhoUncleTetsu">
                   <img class="w-100" src="{{asset('themes/frontend/images/down-arrow.svg')}}" alt="">
@@ -106,16 +81,13 @@
       <!-- Who is Uncle Tetsu  section start -->
       <section id="WhoUncleTetsu" class="who-uncle-tetsu-section">
          <div class="marquee">
-            <span class="watermark-text">Who is Uncle Tetsu?</span>
+            <span class="watermark-text">{{$who_uncle->home_title}} </span>
          </div>
          <div class="custom-padding-x">
             <div class="content-wrap">
                <div class="common-style">
-                  <h2>Who is Uncle Tetsu?</h2>
-                  <p>Uncle Tetsu, or Tetsushi Mizokami was born and raised in Fukuoka, Hakata, Japan.</p>
-                  <p>Tetsushi learned how to bake from a very young age by helping his parents who owned a cake
-                     shop
-                     as a way to spend more time with them.</p>
+                  <h2>{{$who_uncle->home_title}}</h2>
+                  <p>{!! $who_uncle->home_text !!}</p>
                   <a href="{{ route('who-uncle-tetsu')}}">Read More <svg xmlns="http://www.w3.org/2000/svg" width="37.646"
                         height="19.65" viewBox="0 0 37.646 19.65">
                         <g id="Group_511" data-name="Group 511"
@@ -130,8 +102,8 @@
                         </g>
                      </svg></a>
                </div>
-               <img class="sec-one-img-1" src="{{asset('themes/frontend/images/sec-one-img-1.jpg')}}" alt="">
-               <img class="sec-one-img-2" src="{{asset('themes/frontend/images/sec-one-img-2.jpg')}}" alt="">
+               <img class="sec-one-img-1" src="{{asset('uploads/who_uncle_tetsu/'.$who_uncle->who_uncle_home_img1)}}" alt="">
+               <img class="sec-one-img-2" src="{{asset('uploads/who_uncle_tetsu/'.$who_uncle->who_uncle_home_img2)}}" alt="">
 
             </div>
          </div>
@@ -145,8 +117,8 @@
          <div class="custom-padding-x">
             <div class="content-wrap">
                <div class="common-style">
-                  <h2>Our Philosophy</h2>
-                  <p>At Uncle Tetsu’s Shops, we make everything fresh before your eyes in an open-concept factory…
+                  <h2>{{$philosophy->home_title}}</h2>
+                  <p>{!! $philosophy->home_text !!}
                   </p>
                   <a href="{{ route('our-philosophy')}}">Read More <svg xmlns="http://www.w3.org/2000/svg" width="37.646"
                         height="19.65" viewBox="0 0 37.646 19.65">
@@ -162,9 +134,9 @@
                         </g>
                      </svg></a>
                </div>
-               <img class="sec-two-img-1" src="{{asset('themes/frontend/images/sec-two-img-1.jpg')}}" alt="">
-               <img class="sec-two-img-3" src="{{asset('themes/frontend/images/sec-two-img-3.jpg')}}" alt="">
-               <img class="sec-two-img-2" src="{{asset('themes/frontend/images/sec-two-img-2.jpg')}}" alt="">
+               <img class="sec-two-img-1" src="{{asset('uploads/our_philosophy/'.$philosophy->home_img1)}}" alt="">
+               <img class="sec-two-img-3" src="{{asset('uploads/our_philosophy/'.$philosophy->home_img3)}}" alt="">
+               <img class="sec-two-img-2" src="{{asset('uploads/our_philosophy/'.$philosophy->home_img2)}}" alt="">
 
             </div>
          </div>
@@ -185,10 +157,10 @@
                      <div class="cake">
                         <img class="" src="{{asset('themes/frontend/images/sec-three-img-icon.svg')}}" alt="">
                      </div>
-                     <h3>Original Signature Japanese<br> Cheesecake</h3>
+                     <h3 id="product-name">Original Signature Japanese</h3>
                      <img class="product-line" src="{{asset('themes/frontend/images/product-line.png')}}" alt="">
                   </div>
-                  <a href="javascript:void(0);">See All <svg xmlns="http://www.w3.org/2000/svg" width="37.646"
+                  <a href="{{ route('our-products')}}">See All <svg xmlns="http://www.w3.org/2000/svg" width="37.646"
                         height="19.65" viewBox="0 0 37.646 19.65">
                         <g id="Group_511" data-name="Group 511"
                            transform="translate(-989.5 1063.162) rotate(-90)">
@@ -207,21 +179,11 @@
          <div class="custom-padding-x">
             <div class="owl-slider product-slider">
                <div id="productCarousel" class="owl-carousel">
-                  <div class="item">
-                     <img class="" src="{{asset('themes/frontend/images/sec-three-img-1.png')}}" alt="">
-                  </div>
-                  <div class="item">
-                     <img class="" src="{{asset('themes/frontend/images/sec-three-img-1.png')}}" alt="">
-                  </div>
-                  <div class="item">
-                     <img class="" src="{{asset('themes/frontend/images/sec-three-img-1.png')}}" alt="">
-                  </div>
-                  <div class="item">
-                     <img class="" src="{{asset('themes/frontend/images/sec-three-img-1.png')}}" alt="">
-                  </div>
-                  <div class="item">
-                     <img class="" src="{{asset('themes/frontend/images/sec-three-img-1.png')}}" alt="">
-                  </div>
+                  @foreach($product_imgs as $image)
+                   <div class="item">
+                     <img class="" src="{{asset('uploads/products/'.$image->large_image)}}" alt="{{$image->product_name}}">
+                   </div>
+                  @endforeach
                </div>
             </div>
          </div>
@@ -238,20 +200,19 @@
             </div>
             <div class="owl-slider blog-slider">
                <div id="blogCarousel" class="owl-carousel">
+                  @foreach($blogs as $blog)
                   <div class="item">
                      <div class="content-wrap">
                         <div class="image-group">
-                           <img class="sec-four-img-1" src="{{asset('themes/frontend/images/sec-four-img-1.png')}}" alt="">
-                           <img class="sec-four-img-2" src="{{asset('themes/frontend/images/sec-four-img-2.png')}}" alt="">
-                           <img class="sec-four-img-3" src="{{asset('themes/frontend/images/sec-four-img-3.png')}}" alt="">
+                           <img class="sec-four-img-1" src="{{asset('uploads/blog/'.$blog->home_img)}}" alt="">
+                           <img class="sec-four-img-2" src="{{asset('uploads/blog/'.$blog->home_img_1)}}" alt="">
+                           <img class="sec-four-img-3" src="{{asset('uploads/blog/'.$blog->home_img_2)}}" alt="">
                         </div>
                         <div class="common-style">
-                           <span>A NEW SHOP OPENS · 16th July 2019</span>
-                           <h3>Uncle Tetsu New York officially opens on Wednesday, July 17th.</h3>
-                           <p>Uncle Tetsu’s Japanese Cheesecake, famous internationally for its distinct soft &
-                              fluffy cheesecakes, is officially Grand Opening its first store in New York on
-                              Monday, July 15th at 135 W 41st Street, in New York’s Theatre District.</p>
-                           <a href="{{ route('franchising')}}">Read More <svg xmlns="http://www.w3.org/2000/svg"
+                           <span>{{$blog->main_title}} {{$blog->blog_date}}</span>
+                           <h3>{{$blog->title}}</h3>
+                           <p>{{$blog->home_text}}</p>
+                           <a href="{{ url('blog-details/'.$blog->slug)}}">Read More <svg xmlns="http://www.w3.org/2000/svg" 
                                  width="37.646" height="19.65" viewBox="0 0 37.646 19.65">
                                  <g id="Group_511" data-name="Group 511"
                                     transform="translate(-989.5 1063.162) rotate(-90)">
@@ -268,96 +229,7 @@
 
                      </div>
                   </div>
-                  <div class="item">
-                     <div class="content-wrap">
-                        <div class="image-group">
-                           <img class="sec-four-img-1" src="{{asset('themes/frontend/images/sec-four-img-1.png')}}" alt="">
-                           <img class="sec-four-img-2" src="{{asset('themes/frontend/images/sec-four-img-2.png')}}" alt="">
-                           <img class="sec-four-img-3" src="{{asset('themes/frontend/images/sec-four-img-3.png')}}" alt="">
-                        </div>
-                        <div class="common-style">
-                           <span>A NEW SHOP OPENS · 16th July 2019</span>
-                           <h3>Uncle Tetsu New York officially opens on Wednesday, July 17th.</h3>
-                           <p>Uncle Tetsu’s Japanese Cheesecake, famous internationally for its distinct soft &
-                              fluffy cheesecakes, is officially Grand Opening its first store in New York on
-                              Monday, July 15th at 135 W 41st Street, in New York’s Theatre District.</p>
-                           <a href="{{ route('blogs')}}">Read More <svg xmlns="http://www.w3.org/2000/svg"
-                                 width="37.646" height="19.65" viewBox="0 0 37.646 19.65">
-                                 <g id="Group_511" data-name="Group 511"
-                                    transform="translate(-989.5 1063.162) rotate(-90)">
-                                    <line id="Line_2" data-name="Line 2" y1="35.142"
-                                       transform="translate(1053.337 990.5)" fill="none"
-                                       stroke-linecap="round" stroke-width="2" />
-                                    <path id="Path_4660" data-name="Path 4660"
-                                       d="M2513.136,1023.974l8.411,8.411,8.411-8.411"
-                                       transform="translate(-1468.209 -6.239)" fill="none"
-                                       stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-                                 </g>
-                              </svg></a>
-                        </div>
-
-                     </div>
-                  </div>
-                  <div class="item">
-                     <div class="content-wrap">
-                        <div class="image-group">
-                           <img class="sec-four-img-1" src="{{asset('themes/frontend/images/sec-four-img-1.png')}}" alt="">
-                           <img class="sec-four-img-2" src="{{asset('themes/frontend/images/sec-four-img-2.png')}}" alt="">
-                           <img class="sec-four-img-3" src="{{asset('themes/frontend/images/sec-four-img-3.png')}}" alt="">
-                        </div>
-                        <div class="common-style">
-                           <span>A NEW SHOP OPENS · 16th July 2019</span>
-                           <h3>Uncle Tetsu New York officially opens on Wednesday, July 17th.</h3>
-                           <p>Uncle Tetsu’s Japanese Cheesecake, famous internationally for its distinct soft &
-                              fluffy cheesecakes, is officially Grand Opening its first store in New York on
-                              Monday, July 15th at 135 W 41st Street, in New York’s Theatre District.</p>
-                           <a href="{{ route('blogs')}}">Read More <svg xmlns="http://www.w3.org/2000/svg"
-                                 width="37.646" height="19.65" viewBox="0 0 37.646 19.65">
-                                 <g id="Group_511" data-name="Group 511"
-                                    transform="translate(-989.5 1063.162) rotate(-90)">
-                                    <line id="Line_2" data-name="Line 2" y1="35.142"
-                                       transform="translate(1053.337 990.5)" fill="none"
-                                       stroke-linecap="round" stroke-width="2" />
-                                    <path id="Path_4660" data-name="Path 4660"
-                                       d="M2513.136,1023.974l8.411,8.411,8.411-8.411"
-                                       transform="translate(-1468.209 -6.239)" fill="none"
-                                       stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-                                 </g>
-                              </svg></a>
-                        </div>
-
-                     </div>
-                  </div>
-                  <div class="item">
-                     <div class="content-wrap">
-                        <div class="image-group">
-                           <img class="sec-four-img-1" src="{{asset('themes/frontend/images/sec-four-img-1.png')}}" alt="">
-                           <img class="sec-four-img-2" src="{{asset('themes/frontend/images/sec-four-img-2.png')}}" alt="">
-                           <img class="sec-four-img-3" src="{{asset('themes/frontend/images/sec-four-img-3.png')}}" alt="">
-                        </div>
-                        <div class="common-style">
-                           <span>A NEW SHOP OPENS · 16th July 2019</span>
-                           <h3>Uncle Tetsu New York officially opens on Wednesday, July 17th.</h3>
-                           <p>Uncle Tetsu’s Japanese Cheesecake, famous internationally for its distinct soft &
-                              fluffy cheesecakes, is officially Grand Opening its first store in New York on
-                              Monday, July 15th at 135 W 41st Street, in New York’s Theatre District.</p>
-                           <a href="{{ route('blogs')}}">Read More <svg xmlns="http://www.w3.org/2000/svg"
-                                 width="37.646" height="19.65" viewBox="0 0 37.646 19.65">
-                                 <g id="Group_511" data-name="Group 511"
-                                    transform="translate(-989.5 1063.162) rotate(-90)">
-                                    <line id="Line_2" data-name="Line 2" y1="35.142"
-                                       transform="translate(1053.337 990.5)" fill="none"
-                                       stroke-linecap="round" stroke-width="2" />
-                                    <path id="Path_4660" data-name="Path 4660"
-                                       d="M2513.136,1023.974l8.411,8.411,8.411-8.411"
-                                       transform="translate(-1468.209 -6.239)" fill="none"
-                                       stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-                                 </g>
-                              </svg></a>
-                        </div>
-
-                     </div>
-                  </div>
+                  @endforeach
                </div>
             </div>
          </div>
@@ -376,30 +248,281 @@
             <div class="map-wrap">
                <img class="map-img" src="{{asset('themes/frontend/images/map.svg')}}" alt="">
                <!-- <img class="test-img" src="{{asset('themes/frontend/images/test.png')}}" alt=""> -->
-               <a class="location-1" href="#"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
-               <a class="location-2" href="#"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
-               <a class="location-3" href="#"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
-               <a class="location-4" href="#"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
-               <a class="location-5" href="#"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
-               <a class="location-6" href="#"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
-               <a class="location-7" href="#"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
-               <a class="location-8" href="#"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
-               <a class="location-9" href="#"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
-               <a class="location-10" href="#"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
-               <a class="location-11" href="#"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
-               <a class="location-12" href="#"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
-               <a class="location-13" href="#"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
-               <a class="location-14" href="#"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
-               <a class="location-15" href="#"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
-               <a class="location-16" href="#"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
-               <a class="location-17" href="#"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
-               <a class="location-18" href="#"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
-               <a class="location-19" href="#"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
-               <a class="location-20" href="#"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
-               <a class="location-21" href="#"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
-               <a class="location-22" href="#"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
-               <a class="location-23" href="#"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
-               <a class="location-24" href="#"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
+               <a class="location-1 malaysia" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a>
+                            <a class="location-2 malaysia" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a>
+                            <a class="location-3 malaysia" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a>
+                           <a class="location-4 malaysia" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a>
+                            <a class="location-5 malaysia" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a>
+                           <a class="location-6 malaysia" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a>
+                              <a class="location-7 korea" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a>
+                             <a class="location-8 newzealand" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a>
+                            <a class="location-9 indonesia" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a>
+                            <a class="location-10 indonesia" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a>
+                            <a class="location-11 indonesia" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a>
+                            <a class="location-12 indonesia" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a>
+                            <a class="location-13 indonesia" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a>
+                            <a class="location-14 uae" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a>
+                            <a class="location-15 pakistan" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a>
+                           <a class="location-16 canada" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a>
+                             <a class="location-17 canada" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a>
+                           <a class="location-18 canada" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a>
+                            <a class="location-19 canada" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a>
+                            <a class="location-20 canada" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a>
+                            <a class="location-21 canada" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a>
+                            <a class="location-22 canada" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a>
+                            <a class="location-23 canada" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a>
+                            <a class="location-24 canada" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-25 australia" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-26 australia" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                             <a class="location-27 indonesia" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-28 usa" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-29 usa" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-30 usa" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-31 usa" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-32 usa" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-33 usa" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-34 usa" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-35 myanmar " href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-36 myanmar" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-37 myanmar" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-38 saudi-arabia" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-39 saudi-arabia" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                             <a class="location-40 saudi-arabia" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-41 taiwan" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-42 taiwan" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-43 taiwan" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-44 taiwan" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-45 taiwan" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-46 taiwan" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-47 taiwan" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-48 taiwan" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-49 canada" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-50 canada" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-51 canada" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-52 canada" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-53 canada" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-54 canada" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
+                            <a class="location-55 usa" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
             </div>
          </div>
          <div class="common-style head-top">
@@ -419,21 +542,25 @@
       <!-- Franchising  section start -->
       <section id="franchising" class="franchising-section">
          <div class="marquee">
-            <span class="watermark-text">Franchising</span>
+            <span class="watermark-text">{{$franchising->title}}</span>
          </div>
          <div class="custom-padding-x">
             <div class="common-style head-top">
-               <h2>Franchising</h2>
+               <h2>{{$franchising->title}}</h2>
             </div>
             <div class="content-wrap">
-               <img class="sec-six-img-1" src="{{asset('themes/frontend/images/sec-six-img-1.png')}}" alt="">
+               <img class="sec-six-img-1" src="{{asset('uploads/franchising/'.$franchising->home_img)}}" alt="">
                <div class="common-style">
+<<<<<<< HEAD
                   <p>Originating in Japan, Uncle Tetsu has since won the affection of people all over the world
                      and with that has come many requests and opportunities for Franchising with Uncle Tetsu.</p>
                   <p>So that our soft & fluffy Japanese Cheesecake Shops may continue to be enjoyed by people all
                      over the world for years to come, we are establishing key partnerships with persons who
                      understand and share our philosophy.</p>
                   <span>Uncle Tetsu Franchise Team</span>
+=======
+                  {!! $franchising->home_text !!}
+>>>>>>> d1a4dcd9c9488569ca9b7f3ce0186a2cfb6c1bf8
                   <a href="{{ route('franchising')}}">Read More <svg xmlns="http://www.w3.org/2000/svg" width="37.646"
                         height="19.65" viewBox="0 0 37.646 19.65">
                         <g id="Group_511" data-name="Group 511"
@@ -463,8 +590,14 @@
             <h2>Uncle Tetsu Global</h2>
             <p>For all other inquiries, please use the form below, and we will try to get back to you as soon as we
             </p>
+<<<<<<< HEAD
             <form method="post" id="newslatter_frm" class="custom-form" enctype="multipart/form-data">
                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+=======
+            {!! Form::open(['url' => 'contact-form', 'class' => 'custom-form','id' => 'front-form', 'enctype' => 'multipart/form-data']) !!}
+               <div class="alert alert-danger" role="alert" id="msg_danger" style="display:none;"></div>
+               <div class="alert alert-success" role="alert" id="msg_success" style="display:none;"></div>
+>>>>>>> d1a4dcd9c9488569ca9b7f3ce0186a2cfb6c1bf8
                <div class="form-inline input-group">
                   {!! Form::text('full_name',null,['class' => 'form-control','placeholder' => 'NAME *','required' => true]) !!}
                   {!! Form::text('email',null,['class' => 'form-control','placeholder' => 'EMAIL *','required' => true]) !!}
@@ -472,14 +605,18 @@
                <div class="form-inline text-group">
                   <div class="form-check">
                      <label class="form-check-label">
+<<<<<<< HEAD
                         <input class="form-check-input" type="checkbox" name="is_privacy_check" value="1" data-required="true"> Privacy policy applies
+=======
+                        <input class="form-check-input" type="checkbox" name="is_privacy_check"> Privacy policy applies
+>>>>>>> d1a4dcd9c9488569ca9b7f3ce0186a2cfb6c1bf8
                      </label>
                   </div>
                   <span>Note: * is a required field</span>
                   <button class="submit-btn" id="submit-news">Send <img src="{{asset('themes/frontend/images/black-read-more-arrow.svg')}}"
                         alt=""></button>
                </div>
-            </form>
+            {!! Form::close() !!}
          </div>
       </section>
       <!-- Uncle Tetsu Global  section end -->
@@ -487,6 +624,7 @@
 @endsection
 @section('scripts')
 <script type="text/javascript">
+<<<<<<< HEAD
 $(document).ready(function () {
 $('#newslatter_frm').submit(function () {
    if (true)
@@ -522,3 +660,51 @@ $('#newslatter_frm').submit(function () {
 });
 </script>
 @stop
+=======
+   $(document).ready(function () {
+      $("#front-form").validate();
+
+      $('#front-form').submit(function () {
+         if ($(this).valid())
+         {
+             $('#AjaxLoaderDiv').show();
+             $.ajax({
+                 type: "POST",
+                 url: '/newslatter-form',
+                 data: new FormData(this),
+                 processData: false,
+                 contentType: false,
+                 success: function (result)
+                 {
+                     $('#AjaxLoaderDiv').hide();
+                     if (result.status == 1)
+                     {
+                         $("#msg_success").html(result.msg);
+                         $("#msg_success").show();
+                         $("#msg_danger").hide();
+                         $('#front-form')[0].reset();
+                     }   
+                     else
+                     {
+                         $("#msg_danger").html(result.msg);
+                         $("#msg_danger").show();
+                         $("#msg_success").hide();
+                     }
+                 },
+                 error: function (error) {
+                     $('#AjaxLoaderDiv').hide();
+                     $("#msg_danger").html("Internal server error !");
+                     $("#msg_danger").show();
+                     $("#msg_success").hide();
+                 }
+             });
+         }
+         return false;
+      });
+   });
+</script>
+@stop
+
+
+
+>>>>>>> d1a4dcd9c9488569ca9b7f3ce0186a2cfb6c1bf8

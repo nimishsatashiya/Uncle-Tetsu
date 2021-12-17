@@ -71,7 +71,7 @@
          <div class="custom-padding-x">
             <div class="single-img">
                <div class="item">
-                  <img class="w-100" src="{{asset('themes/frontend/images/')}}/our-philosophy-banner.png" alt="">
+                  <img class="w-100" src="{{asset('uploads/our_philosophy/'.$philosophy->banner_path)}}" alt="">
                </div>
                <a class="down-arrow" href="#GlobalContact">
                   <img class="w-100" src="{{asset('themes/frontend/images/')}}/down-arrow.svg" alt="">
@@ -83,17 +83,16 @@
       <!-- Our Philosophy  section start -->
       <section id="OurPhilosophy" class="our-philosophy-page">
          <div class="marquee top">
-            <span class="watermark-text">Our Philosophy</span>
+            <span class="watermark-text">{{$philosophy->title}}</span>
          </div>
          <div class="custom-padding-x before-one">
             <div class="common-style">
-               <h2>Our Philosophy</h2>
+               <h2>{{$philosophy->title}}</h2>
                <div class="section-one">
-                  <img src="{{asset('themes/frontend/images/')}}/our-philosophy-1.png" alt="">
+                  <img src="{{asset('uploads/our_philosophy/'.$philosophy->sec1_img1)}}" alt="">
                   <div class="img-text-group-one">
-                     <img src="{{asset('themes/frontend/images/')}}/our-philosophy-2.png" alt="">
-                     <h3>At Uncle Tetsu’s Shops, we make everything fresh before your eyes in an open-concept
-                        factory…</h3>
+                     <img src="{{asset('uploads/our_philosophy/'.$philosophy->sec1_img2)}}" alt="">
+                     <h3>{{$philosophy->sec1_text1}}</h3>
                   </div>
 
                </div>
@@ -102,11 +101,10 @@
          <div class="custom-padding-x">
             <div class="common-style">
                <div class="section-two">
-                  <img src="{{asset('themes/frontend/images/')}}/our-philosophy-3.png" alt="">
+                  <img src="{{asset('uploads/our_philosophy/'.$philosophy->sec2_img1)}}" alt="">
                   <div class="img-text-group-one">
-                     <h3>with all locally-sourced ingredients, to achieve the same quality & taste that is
-                        enjoyed internationally...</h3>
-                     <img src="{{asset('themes/frontend/images/')}}/our-philosophy-4.png" alt="">
+                     <h3>{{$philosophy->sec2_text1}}</h3>
+                     <img src="{{asset('uploads/our_philosophy/'.$philosophy->sec2_img2)}}" alt="">
                   </div>
                </div>
             </div>
@@ -114,10 +112,9 @@
          <div class="custom-padding-x before-two">
             <div class="common-style">
                <div class="section-three">
-                  <img src="{{asset('themes/frontend/images/')}}/our-philosophy-5.png" alt="">
+                  <img src="{{asset('uploads/our_philosophy/'.$philosophy->sec3_img1)}}" alt="">
                   <div class="img-text-group-one">
-                     <h3>...in a world-class, Japanese-inspired customer service where each individual is warmly
-                        appreciated.</h3>
+                     <h3>{{$philosophy->sec3_text1}}</h3>
                   </div>
                </div>
             </div>

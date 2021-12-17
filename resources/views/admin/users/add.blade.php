@@ -116,4 +116,5 @@ $user_id =$formObj->id;
 
 @section('scripts') 
 <script src="{{ asset('themes/admin/assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.js')}}" type="text/javascript"></script>
+<script src="//cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
 @endsection

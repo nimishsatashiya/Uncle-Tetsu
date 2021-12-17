@@ -1,5 +1,8 @@
 @extends('frontend.layouts.app')
 @section('content')
+<style type="text/css">
+
+</style>
 <main>
       <!-- Page active section start -->
       <div class="page-active-group">
@@ -99,18 +102,20 @@
             </div>
             <h2 class="contaact-title">Uncle Tetsu Global</h2>
             <h4>Contact Information</h4>
-            <form class="custom-form ">
+            {!! Form::open(['url' => 'contact-form', 'class' => 'custom-form','id' => 'front-form', 'enctype' => 'multipart/form-data']) !!}
+               <div class="alert alert-danger" role="alert" id="msg_danger" style="display:none;"></div>
+               <div class="alert alert-success" role="alert" id="msg_success" style="display:none;"></div>
                <div class="form-inline input-group">
-                  <input type="text" class="form-control" required placeholder="NAME *">
-                  <input type="email" class="form-control" required placeholder="EMAIL *">
+                  {!! Form::text('name',null,['class' => 'form-control','placeholder' => 'NAME *','required' => true]) !!}
+                  {!! Form::text('email',null,['class' => 'form-control','placeholder' => 'EMAIL *','required' => true]) !!}
                </div>
                <div class="form-inline input-group">
-                  <textarea class="form-control" placeholder="Massage*" required rows="4"></textarea>
+                  <textarea class="form-control" placeholder="Massage*" name="message" required rows="4"></textarea>
                </div>
                <div class="form-inline text-group">
                   <div class="form-check">
                      <label class="form-check-label">
-                        <input class="form-check-input" type="checkbox"> Privacy policy applies
+                        <input class="form-check-input" name="privacy_policy" type="checkbox"> Privacy policy applies
                      </label>
                   </div>
                   <span>Note: * is a required field</span>
@@ -134,3 +139,48 @@
       <!-- Uncle Tetsu Global Contact  section end -->
    </main>
 @endsection
+@section('scripts')
+<script type="text/javascript">
+   $(document).ready(function () {
+      $("#front-form").validate();
+
+      $('#front-form').submit(function () {
+         if ($(this).valid())
+         {
+             $('#AjaxLoaderDiv').show();
+             $.ajax({
+                 type: "POST",
+                 url: '/contact-form',
+                 data: new FormData(this),
+                 processData: false,
+                 contentType: false,
+                 success: function (result)
+                 {
+                     $('#AjaxLoaderDiv').hide();
+                     if (result.status == 1)
+                     {
+                         $("#msg_success").html(result.msg);
+                         $("#msg_success").show();
+                         $("#msg_danger").hide();
+                         $('#front-form')[0].reset();
+                     }   
+                     else
+                     {
+                         $("#msg_danger").html(result.msg);
+                         $("#msg_danger").show();
+                         $("#msg_success").hide();
+                     }
+                 },
+                 error: function (error) {
+                     $('#AjaxLoaderDiv').hide();
+                     $("#msg_danger").html("Internal server error !");
+                     $("#msg_danger").show();
+                     $("#msg_success").hide();
+                 }
+             });
+         }
+         return false;
+      });
+   });
+</script>
+@stop

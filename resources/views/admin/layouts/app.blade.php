@@ -81,15 +81,16 @@
 
                     @include('admin.includes.flashMsg')
 
+                    {!! Form::open(['method' => 'DELETE','id' => 'global_delete_form']) !!}
+                    {!! Form::hidden('id', 0,['id' => 'delete_id']) !!}
+                    {!! Form::close() !!}
+
                 @yield('content')
 
             </div> 
         </div>
 
-        @include('admin.includes.footer')
-        {!! Form::open(['method' => 'DELETE','id' => 'global_delete_form']) !!}
-        {!! Form::hidden('id', 0,['id' => 'delete_id']) !!}
-        {!! Form::close() !!}            
+        @include('admin.includes.footer')       
 
 
         <script src="{{ asset('themes/admin/assets/global/plugins/jquery.min.js')}}" type="text/javascript"></script>
@@ -117,12 +118,12 @@
 
         <script type="text/javascript" src="{{ asset('/js/parsley.js') }}"></script>
         <script type="text/javascript" src="{{ asset('themes/admin/assets/global/tinymce/tinymce.min.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('/js/comman.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('/js/comman.js?1234566') }}"></script>
         <script type="text/javascript" src="{{ asset('/js/jquery.bootstrap-growl.min.js') }}"></script>
         <script src="{{ asset('/js/jquery-ui.js') }}"></script>
         <script src="{{ asset('themes/admin/assets/global/fancybox/jquery.fancybox.pack.js') }}" type="text/javascript"></script>
         <link href="{{ asset('themes/admin/assets/global/fancybox/jquery.fancybox.css') }}" rel="stylesheet">
-        <script src="{{ asset('js/admin/custom.js?23102021') }}" type="text/javascript"></script>
+        <script src="{{ asset('js/admin/custom.js?1234654') }}" type="text/javascript"></script>
         
          <!--- Data picker -->
         
@@ -134,21 +135,12 @@
         <script src="{{ asset('themes/admin/assets/pages/scripts/components-date-time-pickers.min.js')}}" type="text/javascript"></script>
         
         <!--- End Data picker -->
-        
-
-        @if(\Auth::user()->user_type_id==BROKER_PARTENER || \Auth::user()->user_type_id==SALESPERSON)
-            <script src="{{ asset('themes/admin/assets/pages/scripts/dashboard.min.js') }}" type="text/javascript"></script>
-            <!-- fullcalendar -->
-            <script src="{{ asset('themes/admin/assets/global/plugins/fullcalendar/fullcalendar.min.js') }}" type="text/javascript"></script>
-            <!-- Chart -->
-            <script src="{{ asset('themes/admin/assets/global/plugins/flot/jquery.flot.min.js') }}" type="text/javascript"></script>
-            <script src="{{ asset('themes/admin/assets/global/plugins/flot/jquery.flot.categories.min.js') }}" type="text/javascript"></script>
-
-            <!-- Crop count -->
-            <script src=" {{ asset('themes/admin/assets/global/plugins/counterup/jquery.waypoints.min.js') }}" type="text/javascript"></script>
-            <script src=" {{ asset('themes/admin/assets/global/plugins/counterup/jquery.counterup.min.js') }}" type="text/javascript"></script>
-        @endif
+       
         <script src="{{ asset('themes/admin/assets/global/plugins/jquery-file-upload/dropzone.min.js')}}" type="text/javascript"></script>
+
+        <!-- <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script> -->
+
+        
 
         @yield('scripts')
     </body>

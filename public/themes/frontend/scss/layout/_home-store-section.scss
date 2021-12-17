@@ -106,137 +106,319 @@
       }
       a {
         width: 1.65%;
-        img {
+        svg {
           width: 100%;
+          height: 100%;
+          .locationIconColor {
+            fill: #f30a00;
+          }
+        }
+        &.active {
+          -moz-animation: bounce 2s infinite;
+          -webkit-animation: bounce 2s infinite;
+          animation: bounce 2s infinite;
+          @keyframes bounce {
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+              transform: translateY(0);
+            }
+            40% {
+              transform: translateY(-20px);  
+            } 
+            60% {
+              transform: translateY(-10px);
+            }
+          }
+          svg {
+            .locationIconColor {
+              fill: #000000;
+            }
+          }
+        }
+        img {
+          width: 100%; 
           height: 100%;
         }
       }
       .location-1 {
         position: absolute;
-        top: 46.5%;
-        left: 13.8%;
-        // @media screen and (max-width: 1680px) {
-        //  
-        // }
+        top: 66%;
+        left: 74.5%;       
       }
       .location-2 {
         position: absolute;
-        top: 51%;
-        left: 20.95%;
-      
+        top: 65%;
+        left: 74.2%;       
       }
       .location-3 {
-        position: absolute;      
-        top: 51.2%;
-        left: 24.5%;      
+        position: absolute;
+        top: 66.5%;
+        left: 74.6%; 
       }
       .location-4 {
         position: absolute;
-        top: 47.8%;
-        left: 26.8%;
-      
+        top: 64.5%;
+        left: 74.8%; 
       }
       .location-5 {
         position: absolute;
-        top: 44.4%;
-        left: 30.8%;
-      
+        top: 66.3%;
+        left: 74.5%;     
       }
       .location-6 {
         position: absolute;
-        top: 39%;
-        left: 28.5%;      
+        top: 66.7%;
+        left: 75%;
       }
       .location-7 {
         position: absolute;
-        top: 33.5%;
-        left: 34%;      
+        top: 50.5%;
+        left: 81.8%;
       }
       .location-8 {
         position: absolute;
-        top: 38%;
-        left: 60.5%;      
+        top: 83%;
+        left: 92.2%;
       }
       .location-9 {
         position: absolute;
-        top: 55.3%;
-        left: 64.9%;     
+        top: 70.7%;
+        left: 76%;
       }
       .location-10 {
         position: absolute;
-        top: 49%;
-        left: 65%;      
+        top: 70.9%;
+        left: 76.4%;
       }
       .location-11 {
         position: absolute;
-        top: 49%;
-        left: 65%;      
+        top: 70.8%;
+        left: 76.2%;
       }
       .location-12 {
         position: absolute;
-        top: 48.6%;
-        left: 66.9%;     
+        top: 71%;
+        left: 76.4%;
       }
       .location-13 {
         position: absolute;
-        top: 49.5%;
-        left: 68.6%;      
+        top: 69%;
+        left: 75.2%;
       }
       .location-14 {
         position: absolute;
-        top: 29%;
-        left: 68.2%;      
+        top: 57.5%;
+        left: 61.5%;
       }
       .location-15 {
         position: absolute;
-        top: 44.5%;
-        left: 75.5%;     
+        top: 54%;
+        left: 66.5%;
       }
       .location-16 {
         position: absolute;
-        top: 31.5%;
-        left: 77.7%;   
+        top: 45%;
+        left: 25.5%;
       }
       .location-17 {
         position: absolute;
-        top: 53.5%;
-        left: 77%;    
+        top: 46.3%;
+    left: 24.3%;
       }
       .location-18 {
         position: absolute;
-        top: 48%;
-        left: 81.5%;        
+        top: 46.8%;
+        left: 23.8%;
       }
       .location-19 {
         position: absolute;
-        top: 41%;
-        left: 84%;      
+        top: 46%;
+        left: 24.3%;
       }
       .location-20 {
         position: absolute;
-        top: 51.2%;
-        left: 85.6%;     
+        top: 43.5%;
+    left: 11.6%;
       }
       .location-21 {
-        position: absolute;       
-        top: 38.8%;
-        left: 91.6%;     
-      }
+        position: absolute;
+        top: 43%;
+        left: 12%; 
+      }  
       .location-22 {
         position: absolute;
-        top: 81.2%;
-        left: 81.2%;     
+        top: 46%;
+        left: 25%;
       }
       .location-23 {
         position: absolute;
-        top: 76.5%;
-        left: 86%;      
-      }
+        top: 45%;
+        left: 24.5%; 
+      } 
       .location-24 {
         position: absolute;
         top: 87%;
-        left: 91.2%;      
+        left: 91.2%;
       }
+       .location-25 {
+        position: absolute;
+        top: 84%;
+        left: 88.5%;
+      }
+      .location-26 {
+        position: absolute;        
+        top: 83%;
+        left: 85%;
+      }
+      .location-27 {
+        position: absolute;        
+        top: 69.5%;
+        left: 79.5%;
+      }
+      .location-28 {
+        position: absolute;        
+        top: 57.5%;
+        left: 1%;
+      }
+      .location-29 {
+        position: absolute;        
+        top: 51.5%;
+        left: 12.8%;
+      }
+      .location-30 {
+        position: absolute;        
+        top: 50%;
+        left: 12%;
+      }
+      .location-31 {
+        position: absolute;        
+        top: 53%;
+        left: 13.5%;
+      }
+      .location-32 {
+        position: absolute;        
+        top: 49%;
+        left: 12%;
+      }
+      .location-33 {
+        position: absolute;        
+        top: 48%;
+        left: 12.7%;
+      }
+      .location-34 {
+        position: absolute;        
+        top: 47%;
+        left: 12%;
+      }
+      .location-35 {
+        position: absolute;        
+        top: 60.8%;
+        left: 72.25%;
+      }
+      .location-36 {
+        position: absolute;        
+        top: 60.1%;
+        left: 72.75%;
+      }
+      .location-37 {
+        position: absolute;        
+        top: 60.1%;
+        left: 72.75%;
+      }
+      .location-38 {
+        position: absolute;        
+        top: 56.5%;
+    left: 59.6%;
+      }
+      .location-39 {
+        position: absolute;        
+        top: 58.5%;
+        left: 57.5%;
+      }
+      .location-40 {
+        position: absolute;        
+        top: 58%;
+        left: 59%;
+      }
+      .location-41 {
+        position: absolute;        
+        top: 57.1%;
+        left: 79.7%;
+      }
+      .location-42 {
+        position: absolute;        
+        top: 56.1%;
+        left: 79.8%;
+      }
+       .location-43 {
+        position: absolute;        
+        top: 55.8%;
+        left: 79.7%;
+      }
+      .location-44 {
+        position: absolute;        
+        top: 55.7%;
+        left: 79.6%;
+      }
+      .location-45 {
+        position: absolute;        
+        top: 55.9%;
+        left: 79.8%;
+      }
+      .location-46 {
+        position: absolute;        
+        top: 54%;
+        left: 80%;
+      }
+      .location-47 {
+        position: absolute;        
+        top: 54.5%;
+        left: 79.5%;
+      }
+      .location-48 {
+        position: absolute;        
+        top: 56%;
+        left: 79.5%;
+      }
+       .location-49 {
+        position: absolute;        
+        top: 45.5%;
+    left: 24.5%;
+      }
+      .location-50 {
+        position: absolute;        
+        top: 45.8%;
+    left: 23.5%;
+      }
+      .location-51 {
+        position: absolute;        
+        top: 45.8%;
+    left: 23.6%;
+      }
+      .location-52 {
+        position: absolute;        
+        top: 46.5%;
+    left: 22.5%;
+      }
+      .location-53 {
+        position: absolute;        
+        top: 45.8%;
+    left: 23.5%;
+      }
+      .location-54 {
+        position: absolute;        
+        top: 46.5%;
+        left: 23%;
+      }
+       .location-55 {
+        position: absolute;        
+        top: 49.5%;
+        left: 24.7%;
+      }
+
     }
   }
 }

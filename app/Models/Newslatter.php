@@ -6,5 +6,5 @@ class Newslatter extends Model
 {    
     public $table = TBL_NEWSLATTER;
 	public $timestamps = true;
-	protected $fillable = [];	
+	protected $fillable = [];
 }

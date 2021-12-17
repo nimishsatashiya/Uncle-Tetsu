@@ -14,6 +14,10 @@ use App\Models\AdminAction;
 use App\Models\Banner;
 use App\Models\WhoUncleTetsu;
 use App\Models\OurPhilosophy;
+use App\Models\StoreLocation;
+use App\Models\ProductsPage;
+use App\Models\BlogPages;
+use App\Models\FranchisingPages;
 
 
 class PagesController extends Controller
@@ -104,6 +108,7 @@ class PagesController extends Controller
             return $checkrights;
         }
         $html_file="";
+
         if($id=='who_uncle_tetsu'){
             $formObj = WhoUncleTetsu::where('page_slug',$id)->first();
             if(!$formObj)
@@ -136,6 +141,71 @@ class PagesController extends Controller
             $data['method'] = "PUT";
             $data["action_show_hidde"] = 1; 
             $html_file="our_philosophy";
+        }else if($id=='store_location'){
+            $formObj = StoreLocation::where('page_slug',$id)->first();
+            if(!$formObj)
+            {
+                abort(404);
+            }  
+
+            $data = array();
+            $data['formObj'] = $formObj;
+            $data['page_title'] = "Edit ".$this->module;
+            $data['buttonText'] = "Update";
+            $data['action_url'] = $this->moduleRouteText.".update";
+            $data['action_params'] = $formObj->page_slug;
+            $data['method'] = "PUT";
+            $data["action_show_hidde"] = 1; 
+            $html_file="store_location";
+        }
+        else if($id=='our_products'){
+            $formObj = ProductsPage::where('page_slug',$id)->first();
+            if(!$formObj)
+            {
+                abort(404);
+            }  
+
+            $data = array();
+            $data['formObj'] = $formObj;
+            $data['page_title'] = "Edit ".$this->module;
+            $data['buttonText'] = "Update";
+            $data['action_url'] = $this->moduleRouteText.".update";
+            $data['action_params'] = $formObj->page_slug;
+            $data['method'] = "PUT";
+            $data["action_show_hidde"] = 1; 
+            $html_file="our_products";
+        }else if($id=='franchising'){
+            $formObj = FranchisingPages::where('page_slug',$id)->first();
+            if(!$formObj)
+            {
+                abort(404);
+            }  
+
+            $data = array();
+            $data['formObj'] = $formObj;
+            $data['page_title'] = "Edit ".$this->module;
+            $data['buttonText'] = "Update";
+            $data['action_url'] = $this->moduleRouteText.".update";
+            $data['action_params'] = $formObj->page_slug;
+            $data['method'] = "PUT";
+            $data["action_show_hidde"] = 1; 
+            $html_file="franchising";
+        }else if($id=='our_blogs'){
+            $formObj = BlogPages::where('page_slug',$id)->first();
+            if(!$formObj)
+            {
+                abort(404);
+            }
+
+            $data = array();
+            $data['formObj'] = $formObj;
+            $data['page_title'] = "Edit ".$this->module;
+            $data['buttonText'] = "Update";
+            $data['action_url'] = $this->moduleRouteText.".update";
+            $data['action_params'] = $formObj->page_slug;
+            $data['method'] = "PUT";
+            $data["action_show_hidde"] = 1; 
+            $html_file="our_blogs";
         }
         return view($this->moduleViewName.'.'.$html_file, $data);
     
@@ -541,13 +611,310 @@ class PagesController extends Controller
                 
                 session()->flash('success_message', $msg);
             }
+        }else if($id=='store_location'){
+            $formObj = StoreLocation::where('page_slug',$id)->first();
+            if(!$formObj)
+            {
+                abort(404);
+            }  
+            $data = array();        
+            $status = 1;
+            $msg = $this->updateMsg;
+            $goto = $this->list_url;   
+
+            $validator = Validator::make($request->all(), [
+                'title' => 'required'            
+            ]);
+        
+            // check validations
+            if(!$formObj)
+            {
+                $status = 0;
+                $msg = "Record not found !";
+            }
+            else if ($validator->fails()) 
+            {
+                $messages = $validator->messages();
+                
+                $status = 0;
+                $msg = "";
+                
+                foreach ($messages->all() as $message) 
+                {
+                    $msg .= $message . "<br />";
+                }
+            }         
+            else
+            {
+                $title = $request->get("title");
+                $banner_path = $request->file("banner_path");
+                $banner_filename=$formObj->banner_path;
+            
+                if($banner_path)
+                {
+                    $path = public_path().DIRECTORY_SEPARATOR.'uploads'.DIRECTORY_SEPARATOR.'store_location';
+                    if (!file_exists($path)){
+                        mkdir($path, 0777, true);
+                    }
+
+                    $originalFile = $banner_path->getClientOriginalName();
+                    $banner_filename=date('YmdHis').$originalFile;
+                    $banner_path->move($path, $banner_filename);
+                }
+                
+                
+
+                $formObj->title = $title;
+                $formObj->banner_path = $banner_filename;
+                $formObj->save();
+                $page_id = $formObj->id;
+                
+                //store logs detail
+                $params=array();    
+                                        
+                $params['adminuserid']  = \Auth::user()->id;
+                $params['actionid']     = $this->adminAction->EDIT_BANNER ;
+                $params['actionvalue']  = $id;
+                $params['remark']       = "Edit Page::".$id;
+                                        
+                $logs=\App\Models\AdminLog::writeadminlog($params);
+                
+                session()->flash('success_message', $msg);
+            }
+        }else if($id=='our_products'){
+            $formObj = ProductsPage::where('page_slug',$id)->first();
+            if(!$formObj)
+            {
+                abort(404);
+            }  
+            $data = array();        
+            $status = 1;
+            $msg = $this->updateMsg;
+            $goto = $this->list_url;   
+
+            $validator = Validator::make($request->all(), [
+                'title' => 'required'            
+            ]);
+        
+            // check validations
+            if(!$formObj)
+            {
+                $status = 0;
+                $msg = "Record not found !";
+            }
+            else if ($validator->fails()) 
+            {
+                $messages = $validator->messages();
+                
+                $status = 0;
+                $msg = "";
+                
+                foreach ($messages->all() as $message) 
+                {
+                    $msg .= $message . "<br />";
+                }
+            }         
+            else
+            {
+                $title = $request->get("title");
+                $banner_path = $request->file("banner_path");
+                $banner_filename=$formObj->banner_path;
+            
+                if($banner_path)
+                {
+                    $path = public_path().DIRECTORY_SEPARATOR.'uploads'.DIRECTORY_SEPARATOR.'product_page';
+                    if (!file_exists($path)){
+                        mkdir($path, 0777, true);
+                    }
+
+                    $originalFile = $banner_path->getClientOriginalName();
+                    $banner_filename=date('YmdHis').$originalFile;
+                    $banner_path->move($path, $banner_filename);
+                }
+                
+                
+
+                $formObj->title = $title;
+                $formObj->banner_path = $banner_filename;
+                $formObj->save();
+                $page_id = $formObj->id;
+                
+                //store logs detail
+                $params=array();    
+                                        
+                $params['adminuserid']  = \Auth::user()->id;
+                $params['actionid']     = $this->adminAction->EDIT_BANNER ;
+                $params['actionvalue']  = $id;
+                $params['remark']       = "Edit Page::".$id;
+                                        
+                $logs=\App\Models\AdminLog::writeadminlog($params);
+                
+                session()->flash('success_message', $msg);
+            }
+        }else if($id=='our_blogs'){
+            $formObj = BlogPages::where('page_slug',$id)->first();
+            if(!$formObj)
+            {
+                abort(404);
+            }  
+            $data = array();        
+            $status = 1;
+            $msg = $this->updateMsg;
+            $goto = $this->list_url;   
+
+            $validator = Validator::make($request->all(), [
+                'title' => 'required'            
+            ]);
+        
+            // check validations
+            if(!$formObj)
+            {
+                $status = 0;
+                $msg = "Record not found !";
+            }
+            else if ($validator->fails()) 
+            {
+                $messages = $validator->messages();
+                
+                $status = 0;
+                $msg = "";
+                
+                foreach ($messages->all() as $message) 
+                {
+                    $msg .= $message . "<br />";
+                }
+            }         
+            else
+            {
+                $title = $request->get("title");
+                $banner_path = $request->file("banner_path");
+                $banner_filename=$formObj->banner_path;
+            
+                if($banner_path)
+                {
+                    $path = public_path().DIRECTORY_SEPARATOR.'uploads'.DIRECTORY_SEPARATOR.'blog_page';
+                    if (!file_exists($path)){
+                        mkdir($path, 0777, true);
+                    }
+                    $originalFile = $banner_path->getClientOriginalName();
+                    $banner_filename=date('YmdHis').$originalFile;
+                    $banner_path->move($path, $banner_filename);
+                }
+                
+                
+
+                $formObj->title = $title;
+                $formObj->banner_path = $banner_filename;
+                $formObj->save();
+                $page_id = $formObj->id;
+                
+                //store logs detail
+                $params=array();    
+                                        
+                $params['adminuserid']  = \Auth::user()->id;
+                $params['actionid']     = $this->adminAction->EDIT_BANNER ;
+                $params['actionvalue']  = $id;
+                $params['remark']       = "Edit Page::".$id;
+                                        
+                $logs=\App\Models\AdminLog::writeadminlog($params);
+                
+                session()->flash('success_message', $msg);
+            }
+        }else if($id=='franchising'){
+            $formObj = FranchisingPages::where('page_slug',$id)->first();
+            if(!$formObj)
+            {
+                abort(404);
+            }  
+            $data = array();        
+            $status = 1;
+            $msg = $this->updateMsg;
+            $goto = $this->list_url;   
+
+            $validator = Validator::make($request->all(), [
+                'title' => 'required',
+                'first_section_text' => 'required',              
+                'second_section_text' => 'required',            
+                'third_section_text' => 'required',            
+                'home_text' => 'required',            
+            ]);
+        
+            // check validations
+            if(!$formObj)
+            {
+                $status = 0;
+                $msg = "Record not found !";
+            }
+            else if ($validator->fails()) 
+            {
+                $messages = $validator->messages();
+                
+                $status = 0;
+                $msg = "";
+                
+                foreach ($messages->all() as $message) 
+                {
+                    $msg .= $message . "<br />";
+                }
+            }         
+            else
+            {
+                $title = $request->get("title");
+                $home_text = $request->get("home_text");
+                $first_section_text = $request->get("first_section_text");
+                $second_section_text = $request->get("second_section_text");
+                $third_section_text = $request->get("third_section_text");
+                $banner_path = $request->file("banner_path");
+                $home_img = $request->file("home_img");
+                $banner_filename=$formObj->banner_path;
+                $home_img_filename=$formObj->home_img;
+            
+                if($banner_path)
+                {
+                    $path = public_path().DIRECTORY_SEPARATOR.'uploads'.DIRECTORY_SEPARATOR.'franchising';
+                    if (!file_exists($path)){
+                        mkdir($path, 0777, true);
+                    }
+                    $originalFile = $banner_path->getClientOriginalName();
+                    $banner_filename=date('YmdHis').$originalFile;
+                    $banner_path->move($path, $banner_filename);
+                }
+                if($home_img)
+                {
+                    $path = public_path().DIRECTORY_SEPARATOR.'uploads'.DIRECTORY_SEPARATOR.'franchising';
+                    if (!file_exists($path)){
+                        mkdir($path, 0777, true);
+                    }
+                    $originalFile = $home_img->getClientOriginalName();
+                    $home_img_filename=date('YmdHis').'2'.$originalFile;
+                    $home_img->move($path, $home_img_filename);
+                }
+
+                $formObj->title = $title;
+                $formObj->first_section_text = $first_section_text;
+                $formObj->second_section_text = $second_section_text;
+                $formObj->third_section_text = $third_section_text;
+                $formObj->title = $title;
+                $formObj->banner_path = $banner_filename;
+                $formObj->home_img = $home_img_filename;
+                $formObj->home_text = $home_text;
+                $formObj->save();
+                $page_id = $formObj->id;
+                
+                //store logs detail
+                $params=array();    
+                                        
+                $params['adminuserid']  = \Auth::user()->id;
+                $params['actionid']     = $this->adminAction->EDIT_BANNER ;
+                $params['actionvalue']  = $id;
+                $params['remark']       = "Edit Page::".$id;
+                                        
+                $logs=\App\Models\AdminLog::writeadminlog($params);
+                
+                session()->flash('success_message', $msg);
+            }
         }
 
-         
-        
-
-        
-        
         return ['status' => $status, 'msg' => $msg, 'data' => $data,'goto' => $goto];
     
     }
@@ -664,9 +1031,21 @@ class PagesController extends Controller
         $second = DB::table('our_philosophy')
                 ->selectRaw('our_philosophy.page_slug,our_philosophy.title as title,"our_philosophy" as page_name');
 
-        $second = $second->union($first);
+        $third = DB::table('blog_pages')
+                ->selectRaw('blog_pages.page_slug,blog_pages.title as title,"our_blogs" as page_name');
 
-        $query = DB::table(DB::raw("({$second->toSql()}) as x"))->selectRaw("*");
+        $four = DB::table('franchising_pages')
+                ->selectRaw('franchising_pages.page_slug,franchising_pages.title as title,"franchising" as page_name');
+
+        $five = DB::table('store_location_page')
+                ->selectRaw('store_location_page.page_slug,store_location_page.title as title,"store_location" as page_name');
+
+        $pages = DB::table('products_page')
+                ->selectRaw('products_page.page_slug,products_page.title as title,"our_products" as page_name');
+
+        $pages = $pages->union($first)->union($second)->union($third)->union($four)->union($five);
+
+        $query = DB::table(DB::raw("({$pages->toSql()}) as x"))->selectRaw("*");
 
         return Datatables::of($query)
         ->editColumn('title', function($row) {

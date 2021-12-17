@@ -62,7 +62,7 @@
          <div class="custom-padding-x">
             <div class="single-img">
                <div class="item">
-                  <img class="w-100" src="{{asset('themes/frontend/images/')}}/franchising-page.png" alt="">
+                  <img class="w-100" src="{{asset('uploads/franchising/'.$franchising->banner_path)}}" alt="">
                </div>
                <a class="down-arrow" href="#FranchisingPage">
                   <img class="w-100" src="{{asset('themes/frontend/images/')}}/down-arrow.svg" alt="">
@@ -74,46 +74,25 @@
       <!-- Franchising Page start -->
       <section id="FranchisingPage" class="franchising-page">
          <div class="marquee">
-            <span class="watermark-text">Franchising</span>
+            <span class="watermark-text">{{$franchising->title}}</span>
          </div>
          <div class="common-style">
             <h2>Franchising</h2>
             <div class="text-wrap">
-               <p>Originating in Japan, Uncle Tetsu has since won the affection of people
-                  all over the world and with that has come many requests and opportunities for Franchising with
-                  Uncle Tetsu.</p>
-               <p class="custom-padding-b">So that our soft & fluffy Japanese Cheesecake Shops may continue to be enjoyed by people all over
-                  the world for years to come, we are establishing key partnerships with persons who understand
-                  and share our philosophy.</p>
+               <p>{!! $franchising->first_section_text !!}</p>
                <div class="franchising-step">
                   <div>
-                     <p>01. Information Request.
-                        APPLY NOW to be directed to a form for submitting
-                        your information.</p>
-
-                     <p>02. Confirmation of Submitted Information.</p>
-
-                     <p>03. Internet Meeting</p>
-
-                     <p>04. In-person Interview</p>
-
-                     <p>05. Consideration of Business Proposal and Terms of
-                        the Contract.</p>
-
-                     <p>06. Contractual agreement, site excavation, training,
-                        pre-open, and open.</p>
-
-                     <span>※ The above steps are an approximation.</span>
+                     {!! $franchising->second_section_text !!}
                   </div>
                   <div>
-                     <p>First, please click the APPLY NOW button above to submit the information & required
-                        documents of your application.</p>
-
-                     <p class="team">Uncle Tetsu Franchise Team</p>
-                     <form class="custom-form ">
+                     <p>{!! $franchising->third_section_text !!}</p>
+                    
+                     {!! Form::open(['url' => 'franchising-form', 'class' => 'custom-form','id' => 'front-form', 'enctype' => 'multipart/form-data']) !!}
+                      <div class="alert alert-danger" role="alert" id="msg_danger" style="display:none;"></div>
+                      <div class="alert alert-success" role="alert" id="msg_success" style="display:none;"></div>
                         <div class="form-inline input-group">
-                           <input type="text" class="form-control" required placeholder="NAME *">
-                           <input type="email" class="form-control" required placeholder="EMAIL *">
+                           {!! Form::text('full_name',null,['class' => 'form-control','placeholder' => 'NAME *','required' => true]) !!}
+                           {!! Form::text('email',null,['class' => 'form-control','placeholder' => 'EMAIL *','required' => true]) !!}
                         </div>
                         <div class="form-inline text-group">
                            <button type="submit" class="submit-btn">Apply Now <svg
@@ -131,7 +110,7 @@
                                  </g>
                               </svg></button>
                         </div>
-                     </form>
+                      {!! Form::close() !!}
 
                   </div>
                </div>
@@ -141,3 +120,50 @@
       <!-- Franchising Page end -->
    </main>
 @endsection
+
+@section('scripts')
+<script type="text/javascript">
+   $(document).ready(function () {
+      $("#front-form").validate();
+
+      $('#front-form').submit(function () {
+         if ($(this).valid())
+         {
+             $('#AjaxLoaderDiv').show();
+             $.ajax({
+                 type: "POST",
+                 url: '/franchising-form',
+                 data: new FormData(this),
+                 processData: false,
+                 contentType: false,
+                 success: function (result)
+                 {
+                     $('#AjaxLoaderDiv').fadeOut('slow');
+                     if (result.status == 1)
+                     {
+                         $("#msg_success").html(result.msg);
+                         $("#msg_success").show();
+                         $("#msg_danger").hide();
+                         $('#front-form')[0].reset();
+                     }   
+                     else
+                     {
+                         $("#msg_danger").html(result.msg);
+                         $("#msg_danger").show();
+                         $("#msg_success").hide();
+                     }
+                 },
+                 error: function (error) {
+                     $('#AjaxLoaderDiv').fadeOut('slow');
+                     $("#msg_danger").html("Internal server error !");
+                     $("#msg_danger").show();
+                     $("#msg_success").hide();
+                 }
+             });
+         }
+         return false;
+      });
+   });
+</script>
+@stop
+

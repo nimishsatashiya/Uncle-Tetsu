@@ -11,8 +11,20 @@ define("TBL_USER_TYPES", "user_types");
 define("TBL_USERS","users");
 define("TBL_BANNERS","banners");
 define("TBL_NEWSLATTER","newslatter");
+define("TBL_PRODUCT","products");
+define("TBL_PRODUCT_IMAGES","product_images");
 define("TBL_WHO_UNCLE_TESTU","who_uncle_tetsu");
 define("TBL_OUR_PHILOSOPHY","our_philosophy");
+define("TBL_STORE_LOCATION_PAGE","store_location_page");
+define("TBL_PRODUCTS_PAGE","products_page");
+define("TBL_FRANCHISING_PAGES","franchising_pages");
+define("TBL_BLOG_PAGES","blog_pages");
+define("TBL_BLOGS","blogs");
+
+
+
+
+
 define("TBL_TASK_STATUS_LIST","task_status_list");
 define("TBL_TASK_STATUS","task_status");
 

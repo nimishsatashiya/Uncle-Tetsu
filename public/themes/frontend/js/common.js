@@ -1,7 +1,10 @@
 //=========================================================================================================================
 
 $(document).ready(function () {
+  
 
+
+ 
 
   $("#bannerCarousel").owlCarousel({
     loop: true,
@@ -34,84 +37,14 @@ $(document).ready(function () {
             nav:false
         },
     }
+  }).on('changed.owl.carousel', function(e) {
+    
+     var title = $(this).find('.active').find('img').attr('alt');
+     $("#product-name").html(title);
+     
   });
 
-  $("#JapaneseCheesecakesCarousel").owlCarousel({
-    loop: true,
-    autoplay: true,
-    autoplayTimeout: 7000,
-    smartSpeed: 800,
-    nav: false,
-    dots: true,
-    items: 1,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            nav:true,
-            dots: false,
-        },
-        767:{
-            nav:false
-        },
-    }
-  });
-  $("#MadeleinesCarousel").owlCarousel({
-    loop: true,
-    autoplay: true,
-    autoplayTimeout: 7000,
-    smartSpeed: 800,
-    nav: false,
-    dots: true,
-    items: 1,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            nav:true,
-            dots: false,
-        },
-        767:{
-            nav:false
-        },
-    }
-  });  
-  $("#CheesetartsCarousel").owlCarousel({
-    loop: true,
-    autoplay: true,
-    autoplayTimeout: 7000,
-    smartSpeed: 800,
-    nav: false,
-    dots: true,
-    items: 1,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            nav:true,
-            dots: false,
-        },
-        767:{
-            nav:false
-        },
-    }
-  }); 
-  $("#AngelHatsCarousel").owlCarousel({
-    loop: true,
-    autoplay: true,
-    autoplayTimeout: 7000,
-    smartSpeed: 800,
-    nav: false,
-    dots: true,
-    items: 1,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            nav:true,
-            dots: false,
-        },
-        767:{
-            nav:false
-        },
-    }
-  });
+  
   $("#blogCarousel").owlCarousel({
     loop: true,
     autoplay: true,
@@ -203,10 +136,10 @@ $(document).ready(function () {
   }
 });
 
-// $(window).scroll(function () {
-//   if ($(this).scrollTop() >= 50) {
-//     $("header .navbar").addClass("fixed-top");
-//   } else {
-//     $("header .navbar").removeClass("fixed-top");
-//   }
-// });
+$(window).scroll(function () {
+  if ($(this).scrollTop() >= 50) {
+    $("header.header").addClass("fixed-top");
+  } else {
+    $("header.header").removeClass("fixed-top");
+  }
+});

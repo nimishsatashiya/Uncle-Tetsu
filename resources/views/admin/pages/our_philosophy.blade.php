@@ -25,23 +25,23 @@
                              </div>
                              <div class="col-md-6">
                                 <label class="control-label">Home Page Text:<span class="required">*</span></label>
-                                {!! Form::textarea('home_text',null,['class' => 'custom-file-input form-control', 'data-required' => true]) !!}
+                                {!! Form::textarea('home_text',null,['class' => 'form-control ckeditor', 'data-required' => true]) !!}
                             </div>
                              <div class="col-md-6">
                                 <label class="control-label">Home Page Image 1:<span class="required">*</span></label>
-                                {!! Form::file('home_img1',null,['class' => 'custom-file-input form-control', 'data-required' => true]) !!}
+                                {!! Form::file('home_img1',null,['class' => 'form-control', 'data-required' => true]) !!}
                                 <div>&nbsp;</div>
                                 <img src="{{asset('/uploads/our_philosophy/')}}/{{$formObj->home_img1}}" style="width:100px;" class="img-responsive" title="Banner" />
                             </div>
                             <div class="col-md-6">
                                 <label class="control-label">Home Page Image 2:<span class="required">*</span></label>
-                                {!! Form::file('home_img2',null,['class' => 'custom-file-input form-control', 'data-required' => true]) !!}
+                                {!! Form::file('home_img2',null,['class' => 'form-control', 'data-required' => true]) !!}
                                 <div>&nbsp;</div>
                                 <img src="{{asset('/uploads/our_philosophy/')}}/{{$formObj->home_img2}}" style="width:100px;" class="img-responsive" title="Banner" />
                             </div>
                             <div class="col-md-6">
                                 <label class="control-label">Home Page Image 3:<span class="required">*</span></label>
-                                {!! Form::file('home_img3',null,['class' => 'custom-file-input form-control', 'data-required' => true]) !!}
+                                {!! Form::file('home_img3',null,['class' => 'form-control', 'data-required' => true]) !!}
                                 <div>&nbsp;</div>
                                 <img src="{{asset('/uploads/our_philosophy/')}}/{{$formObj->home_img3}}" style="width:100px;" class="img-responsive" title="Banner" />
                             </div>
@@ -50,7 +50,7 @@
                         <div class="row ">
                             <div class="col-md-6">
                                 <label class="control-label">Banner:<span class="required">*</span></label>
-                                {!! Form::file('banner_path',null,['class' => 'custom-file-input form-control', 'data-required' => true]) !!}
+                                {!! Form::file('banner_path',null,['class' => 'form-control', 'data-required' => true]) !!}
                                 <div>&nbsp;</div>
                                 <img src="{{asset('/uploads/our_philosophy/')}}/{{$formObj->banner_path}}" style="width:100px;" class="img-responsive" title="Banner" />
                             </div>
@@ -63,20 +63,20 @@
                         <div class="row ">
                             <div class="col-md-6">
                                 <label class="control-label">Section 1 Image 1:<span class="required">*</span></label>
-                                {!! Form::file('sec1_img1',null,['class' => 'custom-file-input form-control', 'data-required' => true]) !!}
+                                {!! Form::file('sec1_img1',null,['class' => 'form-control', 'data-required' => true]) !!}
                                 <div>&nbsp;</div>
                                 <img src="{{asset('/uploads/our_philosophy/')}}/{{$formObj->sec1_img1}}" style="width:100px;" class="img-responsive" title="Banner" />
                             </div>
                             <div class="col-md-6">
                                 <label class="control-label">Section 1 Image 2:<span class="required">*</span></label>
-                                {!! Form::file('sec1_img2',null,['class' => 'custom-file-input form-control', 'data-required' => true]) !!}
+                                {!! Form::file('sec1_img2',null,['class' => 'form-control', 'data-required' => true]) !!}
                                 <div>&nbsp;</div>
                                 <img src="{{asset('/uploads/our_philosophy/')}}/{{$formObj->sec1_img2}}" style="width:100px;" class="img-responsive" title="Banner" />
                             </div>
                             
                             <div class="col-md-12">
                                 <label class="control-label">Section 1 Text 1:<span class="required">*</span></label>
-                                {!! Form::textarea('sec1_text1',null,['class' => 'custom-file-input form-control', 'data-required' => true]) !!}
+                                {!! Form::textarea('sec1_text1',null,['class' => 'form-control ckeditor', 'data-required' => true]) !!}
                             </div>
                             
                         </div>
@@ -84,20 +84,20 @@
                         <div class="row ">
                             <div class="col-md-6">
                                 <label class="control-label">Section 2 Image 1:<span class="required">*</span></label>
-                                {!! Form::file('sec2_img1',null,['class' => 'custom-file-input form-control', 'data-required' => true]) !!}
+                                {!! Form::file('sec2_img1',null,['class' => 'form-control', 'data-required' => true]) !!}
                                 <div>&nbsp;</div>
                                 <img src="{{asset('/uploads/our_philosophy/')}}/{{$formObj->sec2_img1}}" style="width:100px;" class="img-responsive" title="Banner" />
                             </div>
                             <div class="col-md-6">
                                 <label class="control-label">Section 2 Text 1:<span class="required">*</span></label>
-                                {!! Form::textarea('sec2_text1',null,['class' => 'custom-file-input form-control', 'data-required' => true]) !!}
+                                {!! Form::textarea('sec2_text1',null,['class' => 'form-control ckeditor', 'data-required' => true]) !!}
                             </div>
                         </div>
                         <div class="clearfix">&nbsp;</div>
                         <div class="row ">
                             <div class="col-md-6">
                                 <label class="control-label">Section 2 Image 2:<span class="required">*</span></label>
-                                {!! Form::file('sec2_img2',null,['class' => 'custom-file-input form-control', 'data-required' => true]) !!}
+                                {!! Form::file('sec2_img2',null,['class' => 'form-control', 'data-required' => true]) !!}
                                 <div>&nbsp;</div>
                                 <img src="{{asset('/uploads/our_philosophy/')}}/{{$formObj->sec2_img2}}" style="width:100px;" class="img-responsive" title="Banner" />
                             </div>
@@ -106,14 +106,14 @@
                         <div class="row ">
                             <div class="col-md-6">
                                 <label class="control-label">Section 3 Image 1:<span class="required">*</span></label>
-                                {!! Form::file('sec3_img1',null,['class' => 'custom-file-input form-control', 'data-required' => true]) !!}
+                                {!! Form::file('sec3_img1',null,['class' => 'form-control', 'data-required' => true]) !!}
                                 <div>&nbsp;</div>
                                 <img src="{{asset('/uploads/our_philosophy/')}}/{{$formObj->sec3_img1}}" style="width:100px;" class="img-responsive" title="Banner" />
                                 
                             </div>
                             <div class="col-md-6">
                                 <label class="control-label">Section 3 Text 1:<span class="required">*</span></label>
-                                {!! Form::textarea('sec3_text1',null,['class' => 'custom-file-input form-control', 'data-required' => true]) !!}
+                                {!! Form::textarea('sec3_text1',null,['class' => 'form-control ckeditor', 'data-required' => true]) !!}
                             </div>
                         </div>
                         <div class="clearfix">&nbsp;</div>                       
@@ -130,4 +130,7 @@
     </div>
 </div>
 
+@endsection
+@section('scripts')
+<script src="//cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
 @endsection

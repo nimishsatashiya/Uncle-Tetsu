@@ -50,6 +50,9 @@ input.form-control.error{
 label.error {
 display: none!important;
 }
+input.form-control.error,textarea.form-control.error {
+  border: 1px solid red!important;
+}
 </style>
 </head>
 <body>
@@ -57,6 +60,7 @@ display: none!important;
     @yield('content')
   <div class="clearfix"></div>
   @include('frontend.includes.footer')
+  <!-- <script type="text/javascript" src="{{ asset('themes/frontend/js/jquery-3.5.1.slim.min.js')}}"></script> -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script type="text/javascript" src="{{ asset('themes/frontend/js/popper.min.js')}}"></script>
   <script type="text/javascript" src="{{ asset('themes/frontend/js/bootstrap.min.js')}}"></script>
@@ -65,6 +69,8 @@ display: none!important;
   <script type="text/javascript" src="{{ asset('themes/frontend/js/gsap.min.js')}}"></script>
   <script type="text/javascript" src="{{ asset('themes/frontend/js/MotionPathPlugin.min.js')}}"></script>
   <script type="text/javascript" src="{{ asset('themes/frontend/js/common.js?v=123')}}"></script>
+  <script type="text/javascript" src="{{ asset('js/jquery.validate.min.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('js/additional-methods.min.js') }}"></script>
   <!-- <script type="text/javascript" src="{{ asset('themes/frontend/js/custom-js.js')}}"></script> -->
   @yield('scripts')
 </body>

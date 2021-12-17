@@ -7,10 +7,10 @@
         <div class="page-logo">
             <a href="{{ url('admin/dashboard') }}">
             <img src="{{ asset('themes/admin/assets/layouts/layout4/img/admin-logo.png')}}" alt="logo" class="logo-default" /> </a>
-            <div class="menu-toggler sidebar-toggler">
-            </div>
+            <!-- <div class="menu-toggler sidebar-toggler">
+            </div> -->
         </div>
-        <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse"> </a>
+        <!-- <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse"> </a> -->
         <!-- <div class="page-actions">
             <div class="btn-group">
                 <button type="button" class="btn red-haze btn-sm dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">

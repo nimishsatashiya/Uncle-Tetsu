@@ -25,7 +25,7 @@
                              </div>
                              <div class="col-md-6">
                                 <label class="control-label">Home Page Text:<span class="required">*</span></label>
-                                {!! Form::textarea('home_text',null,['class' => 'custom-file-input form-control', 'data-required' => true]) !!}
+                                {!! Form::textarea('home_text',null,['class' => 'form-control ckeditor', 'data-required' => true]) !!}
                             </div>
                              <div class="col-md-6">
                                 <label class="control-label">Home Page Image 1:<span class="required">*</span></label>
@@ -57,7 +57,7 @@
                         <div class="row ">
                             <div class="col-md-12">
                                 <label class="control-label">Section 1 Full Text:<span class="required">*</span></label>
-                                {!! Form::textarea('sec1_full_text',null,['class' => 'custom-file-input form-control', 'data-required' => true]) !!}
+                                {!! Form::textarea('sec1_full_text',null,['class' => 'form-control ckeditor', 'data-required' => true]) !!}
                             </div>
                             
                         </div>
@@ -65,24 +65,24 @@
                         <div class="row ">
                             <div class="col-md-6">
                                 <label class="control-label">Section 1 Left Image 1:<span class="required">*</span></label>
-                                {!! Form::file('sec1_left_img1',null,['class' => 'custom-file-input form-control', 'data-required' => true]) !!}
+                                {!! Form::file('sec1_left_img1',null,['class' => 'form-control', 'data-required' => true]) !!}
                                 <div>&nbsp;</div>
                                 <img src="{{asset('/uploads/who_uncle_tetsu/')}}/{{$formObj->sec1_left_img1}}" style="width:100px;" class="img-responsive" title="Banner" />
                             </div>
                             <div class="col-md-6">
                                 <label class="control-label">Section 1 Right Text 1:<span class="required">*</span></label>
-                                {!! Form::textarea('sec1_right_text1',null,['class' => 'custom-file-input form-control', 'data-required' => true]) !!}
+                                {!! Form::textarea('sec1_right_text1',null,['class' => 'form-control ckeditor', 'data-required' => true]) !!}
                             </div>
                         </div>
                         <div class="clearfix">&nbsp;</div>
                         <div class="row ">
                             <div class="col-md-6">
                                 <label class="control-label">Section 1 Left Text 2:<span class="required">*</span></label>
-                                {!! Form::textarea('sec1_left_text2',null,['class' => 'custom-file-input form-control', 'data-required' => true]) !!}
+                                {!! Form::textarea('sec1_left_text2',null,['class' => 'form-control ckeditor', 'data-required' => true]) !!}
                             </div>
                             <div class="col-md-6">
                                 <label class="control-label">Section 1 Right Image 2:<span class="required">*</span></label>
-                                {!! Form::file('sec1_right_img2',null,['class' => 'custom-file-input form-control', 'data-required' => true]) !!}
+                                {!! Form::file('sec1_right_img2',null,['class' => 'form-control', 'data-required' => true]) !!}
                                 <div>&nbsp;</div>
                                 <img src="{{asset('/uploads/who_uncle_tetsu/')}}/{{$formObj->sec1_right_img2}}" style="width:100px;" class="img-responsive" title="Banner" />
                             </div>
@@ -91,18 +91,18 @@
                         <div class="row ">
                             <div class="col-md-6">
                                 <label class="control-label">Section 1 Right Text 3:<span class="required">*</span></label>
-                                {!! Form::textarea('sec1_left_text3',null,['class' => 'custom-file-input form-control', 'data-required' => true]) !!}
+                                {!! Form::textarea('sec1_left_text3',null,['class' => 'form-control ckeditor', 'data-required' => true]) !!}
                             </div>
                         </div>
                         <div class="clearfix">&nbsp;</div>
                         <div class="row ">
                             <div class="col-md-6">
                                 <label class="control-label">Section 2 Left Text 1:<span class="required">*</span></label>
-                                {!! Form::textarea('sec2_left_text1',null,['class' => 'custom-file-input form-control', 'data-required' => true]) !!}
+                                {!! Form::textarea('sec2_left_text1',null,['class' => 'form-control ckeditor', 'data-required' => true]) !!}
                             </div>
                             <div class="col-md-6">
                                 <label class="control-label">Section 2 Right Image 1:<span class="required">*</span></label>
-                                {!! Form::file('sec2_right_img1',null,['class' => 'custom-file-input form-control', 'data-required' => true]) !!}
+                                {!! Form::file('sec2_right_img1',null,['class' => 'form-control', 'data-required' => true]) !!}
                                 <div>&nbsp;</div>
                                 <img src="{{asset('/uploads/who_uncle_tetsu/')}}/{{$formObj->sec2_right_img1}}" style="width:100px;" class="img-responsive" title="Banner" />
                                 
@@ -110,18 +110,18 @@
                             <div class="clearfix">&nbsp;</div>
                             <div class="col-md-6">
                                 <label class="control-label">Section 2 Left Image 2:<span class="required">*</span></label>
-                                {!! Form::file('sec2_left_img2',null,['class' => 'custom-file-input form-control', 'data-required' => true]) !!}
+                                {!! Form::file('sec2_left_img2',null,['class' => 'form-control', 'data-required' => true]) !!}
                                 <div>&nbsp;</div>
                                 <img src="{{asset('/uploads/who_uncle_tetsu/')}}/{{$formObj->sec2_left_img2}}" style="width:100px;" class="img-responsive" title="Banner" />
                             </div>
                             <div class="col-md-6">
                                 <label class="control-label">Section 2 Left Text 2:<span class="required">*</span></label>
-                                {!! Form::textarea('sec2_left_text2',null,['class' => 'custom-file-input form-control', 'data-required' => true]) !!}
+                                {!! Form::textarea('sec2_left_text2',null,['class' => 'form-control ckeditor', 'data-required' => true]) !!}
                             </div>
                             <div class="clearfix">&nbsp;</div>
                              <div class="col-md-6">
                                 <label class="control-label">Section 2 Left Text 3:<span class="required">*</span></label>
-                                {!! Form::textarea('sec2_left_text3',null,['class' => 'custom-file-input form-control', 'data-required' => true]) !!}
+                                {!! Form::textarea('sec2_left_text3',null,['class' => 'form-control ckeditor', 'data-required' => true]) !!}
                             </div>
                         </div>
                         <div class="clearfix">&nbsp;</div>                       
@@ -138,4 +138,7 @@
     </div>
 </div>
 
+@endsection
+@section('scripts')
+<script src="//cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
 @endsection

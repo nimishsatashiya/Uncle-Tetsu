@@ -136,10 +136,10 @@ $(document).ready(function () {
   }
 });
 
-// $(window).scroll(function () {
-//   if ($(this).scrollTop() >= 50) {
-//     $("header .navbar").addClass("fixed-top");
-//   } else {
-//     $("header .navbar").removeClass("fixed-top");
-//   }
-// });
+$(window).scroll(function () {
+  if ($(this).scrollTop() >= 50) {
+    $("header.header").addClass("fixed-top");
+  } else {
+    $("header.header").removeClass("fixed-top");
+  }
+});

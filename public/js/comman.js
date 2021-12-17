@@ -59,6 +59,12 @@ function contHeight(){
 }
 $(document).ready(function(){
   contHeight();  
+  $('#malaysia').click(function () {
+      $('.malaysia').toggleClass('active');
+  });
+  $('#Korea').click(function () {
+    $('.korea').toggleClass('active');
+});
 });
 $( window ).load(function() {
   contHeight();

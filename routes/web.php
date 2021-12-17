@@ -126,5 +126,9 @@ Route::group(['prefix' => $ADMIN_PREFIX, 'middleware' => 'admin_auth'], function
 	Route::any('contacts-inquiry/data', 'admin\ContactsController@data')->name('contacts-inquiry.data');
 	Route::resource('contacts-inquiry', 'admin\ContactsController');
 
+//Store Locations
+	Route::any('store-locations/data', 'admin\StoreLocationsController@data')->name('store-locations.data');
+	Route::resource('store-locations', 'admin\StoreLocationsController');
+
 });
 

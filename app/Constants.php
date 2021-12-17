@@ -10,6 +10,8 @@ define("TBL_ADMIN_LOG","admin_logs");
 define("TBL_USER_TYPES", "user_types");
 define("TBL_USERS","users");
 define("TBL_BANNERS","banners");
+define("TBL_COUNTRIES","store_country");
+define("TBL_STORE_LOCATION","store_location");
 define("TBL_PRODUCT","products");
 define("TBL_PRODUCT_IMAGES","product_images");
 define("TBL_WHO_UNCLE_TESTU","who_uncle_tetsu");

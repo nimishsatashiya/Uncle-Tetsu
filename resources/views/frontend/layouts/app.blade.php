@@ -68,7 +68,7 @@ input.form-control.error,textarea.form-control.error {
   <script type="text/javascript" src="{{ asset('themes/frontend/js/owl.carousel.min.js')}}"></script>
   <script type="text/javascript" src="{{ asset('themes/frontend/js/gsap.min.js')}}"></script>
   <script type="text/javascript" src="{{ asset('themes/frontend/js/MotionPathPlugin.min.js')}}"></script>
-  <script type="text/javascript" src="{{ asset('themes/frontend/js/common.js?v=123')}}"></script>
+  <script type="text/javascript" src="{{ asset('themes/frontend/js/common.js?v=323')}}"></script>
   <script type="text/javascript" src="{{ asset('js/jquery.validate.min.js') }}"></script>
   <script type="text/javascript" src="{{ asset('js/additional-methods.min.js') }}"></script>
   <!-- <script type="text/javascript" src="{{ asset('themes/frontend/js/custom-js.js')}}"></script> -->

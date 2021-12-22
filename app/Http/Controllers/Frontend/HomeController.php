@@ -66,7 +66,7 @@ class HomeController extends Controller
         return ['status' => $status, 'msg' => $msg];
     } 
    
-   public function postNewslatter(Request $request)
+   public function BkpostNewslatter(Request $request)
     {        
         $status = 1;
         $msg = "You've successfully subscribed to our newslatter.";

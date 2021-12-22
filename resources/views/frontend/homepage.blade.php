@@ -556,16 +556,7 @@
             <div class="content-wrap">
                <img class="sec-six-img-1" src="{{asset('uploads/franchising/'.$franchising->home_img)}}" alt="">
                <div class="common-style">
-<<<<<<< HEAD
-                  <p>Originating in Japan, Uncle Tetsu has since won the affection of people all over the world
-                     and with that has come many requests and opportunities for Franchising with Uncle Tetsu.</p>
-                  <p>So that our soft & fluffy Japanese Cheesecake Shops may continue to be enjoyed by people all
-                     over the world for years to come, we are establishing key partnerships with persons who
-                     understand and share our philosophy.</p>
-                  <span>Uncle Tetsu Franchise Team</span>
-=======
                   {!! $franchising->home_text !!}
->>>>>>> d1a4dcd9c9488569ca9b7f3ce0186a2cfb6c1bf8
                   <a href="{{ route('franchising')}}">Read More <svg xmlns="http://www.w3.org/2000/svg" width="37.646"
                         height="19.65" viewBox="0 0 37.646 19.65">
                         <g id="Group_511" data-name="Group 511"
@@ -580,8 +571,6 @@
                         </g>
                      </svg></a>
                </div>
-
-
             </div>
          </div>
       </section>
@@ -595,14 +584,11 @@
             <h2>Uncle Tetsu Global</h2>
             <p>For all other inquiries, please use the form below, and we will try to get back to you as soon as we
             </p>
-<<<<<<< HEAD
             <form method="post" id="newslatter_frm" class="custom-form" enctype="multipart/form-data">
                <input type="hidden" name="_token" value="{{ csrf_token() }}">
-=======
-            {!! Form::open(['url' => 'contact-form', 'class' => 'custom-form','id' => 'front-form', 'enctype' => 'multipart/form-data']) !!}
+            <!-- {!! Form::open(['url' => 'contact-form', 'class' => 'custom-form','id' => 'front-form', 'enctype' => 'multipart/form-data']) !!} -->
                <div class="alert alert-danger" role="alert" id="msg_danger" style="display:none;"></div>
                <div class="alert alert-success" role="alert" id="msg_success" style="display:none;"></div>
->>>>>>> d1a4dcd9c9488569ca9b7f3ce0186a2cfb6c1bf8
                <div class="form-inline input-group">
                   {!! Form::text('full_name',null,['class' => 'form-control','placeholder' => 'NAME *','required' => true]) !!}
                   {!! Form::text('email',null,['class' => 'form-control','placeholder' => 'EMAIL *','required' => true]) !!}
@@ -610,11 +596,7 @@
                <div class="form-inline text-group">
                   <div class="form-check">
                      <label class="form-check-label">
-<<<<<<< HEAD
                         <input class="form-check-input" type="checkbox" name="is_privacy_check" value="1" data-required="true"> Privacy policy applies
-=======
-                        <input class="form-check-input" type="checkbox" name="is_privacy_check"> Privacy policy applies
->>>>>>> d1a4dcd9c9488569ca9b7f3ce0186a2cfb6c1bf8
                      </label>
                   </div>
                   <span>Note: * is a required field</span>
@@ -629,7 +611,6 @@
 @endsection
 @section('scripts')
 <script type="text/javascript">
-<<<<<<< HEAD
 $(document).ready(function () {
 $('#newslatter_frm').submit(function () {
    if (true)
@@ -665,51 +646,4 @@ $('#newslatter_frm').submit(function () {
 });
 </script>
 @stop
-=======
-   $(document).ready(function () {
-      $("#front-form").validate();
 
-      $('#front-form').submit(function () {
-         if ($(this).valid())
-         {
-             $('#AjaxLoaderDiv').show();
-             $.ajax({
-                 type: "POST",
-                 url: '/newslatter-form',
-                 data: new FormData(this),
-                 processData: false,
-                 contentType: false,
-                 success: function (result)
-                 {
-                     $('#AjaxLoaderDiv').hide();
-                     if (result.status == 1)
-                     {
-                         $("#msg_success").html(result.msg);
-                         $("#msg_success").show();
-                         $("#msg_danger").hide();
-                         $('#front-form')[0].reset();
-                     }   
-                     else
-                     {
-                         $("#msg_danger").html(result.msg);
-                         $("#msg_danger").show();
-                         $("#msg_success").hide();
-                     }
-                 },
-                 error: function (error) {
-                     $('#AjaxLoaderDiv').hide();
-                     $("#msg_danger").html("Internal server error !");
-                     $("#msg_danger").show();
-                     $("#msg_success").hide();
-                 }
-             });
-         }
-         return false;
-      });
-   });
-</script>
-@stop
-
-
-
->>>>>>> d1a4dcd9c9488569ca9b7f3ce0186a2cfb6c1bf8

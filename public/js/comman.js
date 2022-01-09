@@ -2,6 +2,7 @@ $(document).ready(function(){
     $('.form').parsley();
     $('.form2').parsley();
     $('.form3').parsley();
+    $('.newslatter_frm').parsley();
     // CKEDITOR.replace( 'ckeditor' );
 });
 
@@ -66,9 +67,7 @@ $(document).ready(function(){
     $('.korea').toggleClass('active');
 });
 });
-$( window ).load(function() {
-  contHeight();
-});
+
 $(window).resize(function(){
    contHeight();
 });

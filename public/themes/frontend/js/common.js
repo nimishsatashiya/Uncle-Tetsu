@@ -74,14 +74,25 @@ $(document).ready(function () {
     $(".fullscreen").removeClass("active").toggleClass("reverse_anim");
     $("body").removeClass("menu-active");
   });
-  $(".map_flags a").on("click", () => {
-    if ($(".city_list").hasClass("active")) {
-      $(".city_list").removeClass("active");
-    }
-    $(".city_list").addClass("active");
+  $('.map_flags-box').each(function () {
+      var $this = $(this);
+      $this.on("click", function () {
+        var country_name=$(this).data('id');
+        $(".city_list-box").addClass("d-none");
+        if ($("#"+country_name+"-box").hasClass("d-none")){
+          $("#"+country_name+"-box").removeClass("d-none");
+        }
+        if ($(".map-pin").hasClass("active")){
+         $(".map-pin").removeClass("active");
+        }
+        $("."+country_name).addClass("active");
+        $(".city_list").addClass("active");
+      });
   });
   $(".box-close").on("click", () => {    
-    $(".city_list").removeClass("active");
+    if ($(".city_list").hasClass("active")){
+          $(".city_list").removeClass("active");
+    }
   });
   // ------------------------------------------------------------------------------------plan js ---------------------------------------------------------------------------------------
   gsap.registerPlugin(MotionPathPlugin);

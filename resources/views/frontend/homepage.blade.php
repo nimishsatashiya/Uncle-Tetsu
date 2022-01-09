@@ -212,7 +212,7 @@
                            <span>{{$blog->main_title}} {{$blog->blog_date}}</span>
                            <h3>{{$blog->title}}</h3>
                            <p>{{$blog->home_text}}</p>
-                           <a href="{{ url('blog-details/'.$blog->slug)}}">Read More <svg xmlns="http://www.w3.org/2000/svg"
+                           <a href="{{ url('blog-details/'.$blog->slug)}}">Read More <svg xmlns="http://www.w3.org/2000/svg" 
                                  width="37.646" height="19.65" viewBox="0 0 37.646 19.65">
                                  <g id="Group_511" data-name="Group 511"
                                     transform="translate(-989.5 1063.162) rotate(-90)">
@@ -378,6 +378,11 @@
                                     <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
                                 </svg>
                             </a> 
+                            <a class="location-26-1 australia" href="#">
+                                <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
+                                    <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
+                                </svg>
+                            </a> 
                              <a class="location-27 indonesia" href="#">
                                 <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
                                     <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
@@ -526,7 +531,7 @@
             </div>
          </div>
          <div class="common-style head-top">
-            <a href="javascript:void(0);">SEE ALL STORES <svg xmlns="http://www.w3.org/2000/svg" width="37.646"
+            <a href="{{ route('store-location')}}">SEE ALL STORES <svg xmlns="http://www.w3.org/2000/svg" width="37.646"
                   height="19.65" viewBox="0 0 37.646 19.65">
                   <g id="Group_511" data-name="Group 511" transform="translate(-989.5 1063.162) rotate(-90)">
                      <line id="Line_2" data-name="Line 2" y1="35.142" transform="translate(1053.337 990.5)"
@@ -566,8 +571,6 @@
                         </g>
                      </svg></a>
                </div>
-
-
             </div>
          </div>
       </section>
@@ -581,7 +584,9 @@
             <h2>Uncle Tetsu Global</h2>
             <p>For all other inquiries, please use the form below, and we will try to get back to you as soon as we
             </p>
-            {!! Form::open(['url' => 'contact-form', 'class' => 'custom-form','id' => 'front-form', 'enctype' => 'multipart/form-data']) !!}
+            <form method="post" id="newslatter_frm" class="custom-form" enctype="multipart/form-data">
+               <input type="hidden" name="_token" value="{{ csrf_token() }}">
+            <!-- {!! Form::open(['url' => 'contact-form', 'class' => 'custom-form','id' => 'front-form', 'enctype' => 'multipart/form-data']) !!} -->
                <div class="alert alert-danger" role="alert" id="msg_danger" style="display:none;"></div>
                <div class="alert alert-success" role="alert" id="msg_success" style="display:none;"></div>
                <div class="form-inline input-group">
@@ -591,11 +596,11 @@
                <div class="form-inline text-group">
                   <div class="form-check">
                      <label class="form-check-label">
-                        <input class="form-check-input" type="checkbox" name="is_privacy_check"> Privacy policy applies
+                        <input class="form-check-input" type="checkbox" name="is_privacy_check" value="1" data-required="true"> Privacy policy applies
                      </label>
                   </div>
                   <span>Note: * is a required field</span>
-                  <button type="submit" class="submit-btn">Send <img src="{{asset('themes/frontend/images/black-read-more-arrow.svg')}}"
+                  <button class="submit-btn" id="submit-news">Send <img src="{{asset('themes/frontend/images/black-read-more-arrow.svg')}}"
                         alt=""></button>
                </div>
             {!! Form::close() !!}
@@ -606,49 +611,39 @@
 @endsection
 @section('scripts')
 <script type="text/javascript">
-   $(document).ready(function () {
-      $("#front-form").validate();
-
-      $('#front-form').submit(function () {
-         if ($(this).valid())
-         {
-             $('#AjaxLoaderDiv').show();
-             $.ajax({
-                 type: "POST",
-                 url: '/newslatter-form',
-                 data: new FormData(this),
-                 processData: false,
-                 contentType: false,
-                 success: function (result)
-                 {
-                     $('#AjaxLoaderDiv').hide();
-                     if (result.status == 1)
-                     {
-                         $("#msg_success").html(result.msg);
-                         $("#msg_success").show();
-                         $("#msg_danger").hide();
-                         $('#front-form')[0].reset();
-                     }   
-                     else
-                     {
-                         $("#msg_danger").html(result.msg);
-                         $("#msg_danger").show();
-                         $("#msg_success").hide();
-                     }
-                 },
-                 error: function (error) {
-                     $('#AjaxLoaderDiv').hide();
-                     $("#msg_danger").html("Internal server error !");
-                     $("#msg_danger").show();
-                     $("#msg_success").hide();
-                 }
-             });
-         }
-         return false;
-      });
-   });
+$(document).ready(function () {
+$('#newslatter_frm').submit(function () {
+   if (true)
+   {
+       $('#AjaxLoaderDiv').show();
+       $.ajax({
+           type: "POST",
+           url: '/newslatter-form',
+           data: new FormData(this),
+           processData: false,
+           contentType: false,
+           success: function (result)
+           {
+               $('#AjaxLoaderDiv').fadeOut('slow');
+               if (result.status == 1)
+               {
+                   $.bootstrapGrowl(result.msg, {type: 'success', delay: 4000});
+                   $('#newslatter_frm')[0].reset();
+               }   
+               else
+               {
+                   $.bootstrapGrowl(result.msg, {type: 'danger', delay: 4000});
+               }
+           },
+           error: function (error) {
+               $('#AjaxLoaderDiv').fadeOut('slow');
+               $.bootstrapGrowl("Internal server error !", {type: 'danger', delay: 4000});
+           }
+       });
+   }
+   return false;
+});
+});
 </script>
 @stop
-
-
 

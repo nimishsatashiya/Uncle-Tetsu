@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" href="{{ asset('themes/frontend/css/style.css')}}" />
   <link rel="icon" href="{{ asset('themes/frontend/images/favicon.ico')}}" type="image/x-icon"/>
   <link rel="shortcut icon" href="{{ asset('themes/frontend/images/favicon.ico')}}" type="image/x-icon"/>
+  <meta name="csrf-token" content="{{ csrf_token() }}" />
   <style type="text/css">
   .dual-ring {
   display: inline-block;
@@ -47,7 +48,7 @@ input.form-control.error{
   border-color: red!important;
 }
 label.error {
-  display: none!important;
+display: none!important;
 }
 input.form-control.error,textarea.form-control.error {
   border: 1px solid red!important;
@@ -63,13 +64,13 @@ input.form-control.error,textarea.form-control.error {
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script type="text/javascript" src="{{ asset('themes/frontend/js/popper.min.js')}}"></script>
   <script type="text/javascript" src="{{ asset('themes/frontend/js/bootstrap.min.js')}}"></script>
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-growl/1.0.0/jquery.bootstrap-growl.min.js"></script>
   <script type="text/javascript" src="{{ asset('themes/frontend/js/owl.carousel.min.js')}}"></script>
   <script type="text/javascript" src="{{ asset('themes/frontend/js/gsap.min.js')}}"></script>
   <script type="text/javascript" src="{{ asset('themes/frontend/js/MotionPathPlugin.min.js')}}"></script>
+  <script type="text/javascript" src="{{ asset('themes/frontend/js/common.js?v=323')}}"></script>
   <script type="text/javascript" src="{{ asset('js/jquery.validate.min.js') }}"></script>
   <script type="text/javascript" src="{{ asset('js/additional-methods.min.js') }}"></script>
-  <script type="text/javascript" type="text/javascript" src="{{ asset('themes/frontend/js/common.js?v=456789')}}"></script>
-
   <!-- <script type="text/javascript" src="{{ asset('themes/frontend/js/custom-js.js')}}"></script> -->
   @yield('scripts')
 </body>

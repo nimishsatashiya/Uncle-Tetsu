@@ -14,32 +14,7 @@
         </div>
         <!-- Page active section end -->
         <!-- Social group section start -->
-        <ul class="social-group">
-            <li>
-                <a href="javascript:void(0);" class="social-icon">
-                    <img class="img-red" src="{{asset('themes/frontend/images/')}}/facebook.svg" alt="">
-                    <img class="img-hover" src="{{asset('themes/frontend/images/')}}/facebook-active.svg" alt="">
-                </a>
-            </li>
-            <li>
-                <a href="javascript:void(0);" class="social-icon">
-                    <img class="img-red" src="{{asset('themes/frontend/images/')}}/mail.svg" alt="">
-                    <img class="img-hover" src="{{asset('themes/frontend/images/')}}/mail-active.svg" alt="">
-                </a>
-            </li>
-            <li>
-                <a href="javascript:void(0);" class="social-icon">
-                    <img class="img-red" src="{{asset('themes/frontend/images/')}}/youtube.svg" alt="">
-                    <img class="img-hover" src="{{asset('themes/frontend/images/')}}/youtube-active.svg" alt="">
-                </a>
-            </li>
-            <li>
-                <a href="javascript:void(0);" class="social-icon">
-                    <img class="img-red" src="{{asset('themes/frontend/images/')}}/instagram.svg" alt="">
-                    <img class="img-hover" src="{{asset('themes/frontend/images/')}}/instagram-active.svg" alt="">
-                </a>
-            </li>
-        </ul>
+        @extends('frontend.includes.social_icon')
         <!-- Social group section end -->
         <!-- Line Animation- section start -->
         <div class="line-group">
@@ -103,27 +78,27 @@
                                     <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
                                 </svg>
                             </a>
-                            <a class="map-pin location-3 malaysia" href="#">
+                            <a class="map-pin location-3 malaysia" style="display: none;" href="#">
                                 <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
                                     <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
                                 </svg>
                             </a>
-                           <a class="map-pin location-4 malaysia" href="#">
+                           <a class="map-pin location-4 malaysia" style="display: none;" href="#">
                                 <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
                                     <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
                                 </svg>
                             </a>
-                            <a class="map-pin location-5 malaysia" href="#">
+                            <a class="map-pin location-5 malaysia" style="display: none;" href="#">
                                 <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
                                     <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
                                 </svg>
                             </a>
-                           <a class="map-pin location-6 malaysia" href="#">
+                           <a class="map-pin location-6 malaysia" style="display: none;" href="#">
                                 <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
                                     <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
                                 </svg>
                             </a>
-                              <a class="map-pin location-7 korea" href="#">
+                              <a class="map-pin location-7 korea" href="#" style="display:none;">
                                 <svg width="20.623" height="27.318" viewBox="0 0 20.623 27.318">
                                     <path class="locationIconColor" id="Path_4463" data-name="Path 4463" d="M415.8,664.609a10.312,10.312,0,0,0-10.312,10.311c0,5.7,10.312,17.007,10.312,17.007s10.311-11.312,10.311-17.007A10.312,10.312,0,0,0,415.8,664.609Zm0,16.7a6.385,6.385,0,1,1,6.385-6.385A6.386,6.386,0,0,1,415.8,681.306Z" transform="translate(-405.492 -664.609)" />
                                 </svg>
@@ -565,61 +540,68 @@
                             <h3 class="heading-title">CANADA</h3>
                             <div class="city_list-box-item-group">
                                 <div class="city_list-box-item">
-                                    <h4>Ontario</h4>
+                                    <h4>Uncle Tetsu's Pacific Mall </h4>
                                     <p>Location Address :4300 Steeles Avenue East Unit A30 Markham, Ontario L3R 0Y5</p>
                                 </div>
                                 <div class="city_list-box-item">
-                                    <h4>Toronto</h4>
+                                    <h4>Uncle Tetsu Factory </h4>
                                     <p>Location Address : 39 Orfus Road, Unit C, Toronto, ON M6A 1L7</p>
                                 </div>
                                 <div class="city_list-box-item">
-                                    <h4>North York</h4>
+                                    <h4>Uncle Tetsu Yorkdale Mall </h4>
                                     <p>Location Address : 3401 Dufferin St, Unit 226B, North York, ON M6A 2T9</p>
                                 </div>
                                 <div class="city_list-box-item">
-                                    <h4>Richmond Hill</h4>
+                                    <h4>Uncle Tetsu Hillcrest Mall </h4>
                                     <p>Location Address : 9350 Yonge Street, Unit E1, Richmond Hill, ON L4C 5G20</p>
                                 </div>
                                 <div class="city_list-box-item">
-                                    <h4>Burnaby</h4>
+                                    <h4>Uncle Tetsu Metrotown </h4>
                                     <p>Location Address : 4700 Kingsway, Unit M16, Burnaby, BC V5H 4N2</p>
                                 </div>
                                 <div class="city_list-box-item">
-                                    <h4>Vancouver</h4>
+                                    <h4>Uncle Tetsu Robson </h4>
                                     <p>Location Address : 1151 Robson St, Vancouver, BC V6E 1B5</p>
                                 </div>
                                 <div class="city_list-box-item">
-                                    <h4>Montreal</h4>
+                                    <h4>Uncle Tetsu Montreal </h4>
                                     <p>Location Address : 1408 Rue Pierce Montreal QC H3H 2K2</p>
                                 </div>
                                 <div class="city_list-box-item">
-                                    <h4>Ontario</h4>
+                                    <h4>Uncle Tetsu Ottawa </h4>
                                     <p>Location Address : 280D Elgin Street, Ottawa, Ontario K2P1M2</p>
                                 </div>  
+                                
                                 <div class="city_list-box-item">
-                                    <h4>Toronto</h4>
-                                    <p>Location Address : 191 Dundas St W, Toronto, Ontario, Canada</p>
-                                </div> 
+                                    <h4>Uncle Tetsu's Japanese Cheesecake</h4>
+                                    <p>Location Address : 598 Bay St, Toronto, Ontario M5G 1M5</p>
+                                </div>  
                                 <div class="city_list-box-item">
-                                    <h4>Toronto</h4>
-                                    <p>Location Address : 598 Bay St, Toronto, Ontario</p>
-                                </div> 
-                                <div class="city_list-box-item">
-                                    <h4>Toronto</h4>
-                                    <p>Location Address : 596 Bay St, Toronto, Ontario</p>
-                                </div> 
-                                <div class="city_list-box-item">
-                                    <h4>Toronto</h4>
-                                    <p>Location Address : 65 Front Street West, York Concourse #222, Toronto, Ontario</p>
-                                </div> 
-                                <div class="city_list-box-item">
-                                    <h4>Toronto</h4>
-                                    <p>Location Address : 191 Dundas St W. Toronto, Ontario　CLOSED</p>
+                                    <h4>Uncle Tetsu's Japanese Cheesecake at Union Station </h4>
+                                    <p>Location Address : 65 Front Street West, York Concourse #222, Toronto, Ontario M5J 1E6</p>
                                 </div> 
                                 <div class="city_list-box-item">
                                     <h4>Toronto</h4>
                                     <p>Location Address : 610 Bay Street, lower level, Toronto, Ontario</p>
-                                </div>                               
+                                </div>
+
+                                <div class="city_list-box-item">
+                                    <h4>Uncle Tetsu Dufferin Mall (Pop-up Shop)</h4>
+                                    <p>Location Address : 900 Dufferin St, Toronto, Ontario M6H 4A9</p>
+                                </div>
+                                <div class="city_list-box-item">
+                                    <h4>Uncle Tetsu Square One Shopping Centre</h4>
+                                    <p>Location Address : 100 City Centre Dr, Mississauga, ON L5B 2C9</p>
+                                </div>
+                                <div class="city_list-box-item">
+                                    <h4>Uncle Tetsu Vaughan Mills </h4>
+                                    <p>Location Address : 1 Bass Pro Mills Dr Unit 421, Vaughan, ON L4K 5W4</p>
+                                </div>
+                                <div class="city_list-box-item">
+                                    <h4>Uncle Tetsu Montreal Plaza Côte-des-Neiges</h4>
+                                    <p>Location Address : 6700 Ch. de la Côte-des-Neiges, Montréal, QC H3S 2A8</p>
+                                </div>
+                                                              
                             </div>
                             <!-- <a href="javascript:void(0);">View More <svg xmlns="http://www.w3.org/2000/svg" width="37.646"
                                 height="19.65" viewBox="0 0 37.646 19.65">
@@ -707,20 +689,7 @@
                                     <p>Location Address : 135 w 41st st, New york, ny 10036, usa</p>
                                 </div>
                             </div>
-                            <!-- <a href="javascript:void(0);">View More <svg xmlns="http://www.w3.org/2000/svg" width="37.646"
-                                height="19.65" viewBox="0 0 37.646 19.65">
-                                    <g id="Group_511" data-name="Group 511"
-                                    transform="translate(-989.5 1063.162) rotate(-90)">
-                                    <line id="Line_2" data-name="Line 2" y1="35.142"
-                                        transform="translate(1053.337 990.5)" fill="none" stroke-linecap="round"
-                                        stroke-width="2" />
-                                    <path id="Path_4660" data-name="Path 4660"
-                                        d="M2513.136,1023.974l8.411,8.411,8.411-8.411"
-                                        transform="translate(-1468.209 -6.239)" fill="none" stroke-linecap="round"
-                                        stroke-linejoin="round" stroke-width="2" />
-                                    </g>
-                                </svg>
-                            </a> -->
+                            
                         </div>
                         <div id="myanmar-box" class="city_list-box common-style d-none">
                             <h3 class="heading-title">MYANMAR</h3>
@@ -840,31 +809,37 @@
                 <div class="row">
                     <div class="col">
                         <div class="map_flags">
+                            <a href="javascript:void(0);" class="map_flags-box" data-id="canada">
+                                <div class="map_flags-box-img">
+                                    <img src="{{asset('themes/frontend/images/')}}/map-flag-02.svg" alt="" class="imf-fluid">
+                                </div>
+                                <p>Canada</p>
+                            </a>
                             <a href="javascript:void(0);" class="map_flags-box" data-id="australia" >
                                 <div class="map_flags-box-img">
                                     <img src="{{asset('themes/frontend/images/')}}/map-flag-01.svg" alt="" class="imf-fluid">
                                 </div>
                                 <p>Australia</p>
                             </a>
-                            <a href="javascript:void(0);" class="map_flags-box" data-id="malaysia">
+                            <a href="javascript:void(0);" class="map_flags-box" data-id="malaysia" style="display: none;">
                                 <div class="map_flags-box-img">
                                     <img src="{{asset('themes/frontend/images/')}}/map-flag-01.svg" alt="" class="imf-fluid">
                                 </div>
                                 <p>Malaysia</p>
                             </a>
-                            <a href="javascript:void(0);" class="map_flags-box" data-id="korea">
+                            <a href="javascript:void(0);" class="map_flags-box" data-id="korea" style="display: none;">
                                 <div class="map_flags-box-img">
                                     <img src="{{asset('themes/frontend/images/')}}/map-flag-02.svg" alt="" class="imf-fluid">
                                 </div>
                                 <p>Korea</p>
                             </a>
-                            <a href="javascript:void(0);" class="map_flags-box" data-id="china">
+                            <a href="javascript:void(0);" class="map_flags-box" data-id="china" style="display: none;">
                                 <div class="map_flags-box-img">
                                     <img src="{{asset('themes/frontend/images/')}}/map-flag-03.svg" alt="" class="imf-fluid">
                                 </div>
                                 <p>China</p>
                             </a>
-                            <a href="javascript:void(0);" class="map_flags-box" data-id="china">
+                            <a href="javascript:void(0);" class="map_flags-box" data-id="china" style="display: none;">
                                 <div class="map_flags-box-img">
                                     <img src="{{asset('themes/frontend/images/')}}/map-flag-04.svg" alt="" class="imf-fluid">
                                 </div>
@@ -912,7 +887,7 @@
                                 </div>
                                 <p>Taiwan</p>
                             </a>
-                            <a href="javascript:void(0);" class="map_flags-box" data-id="thailand">
+                            <a href="javascript:void(0);" class="map_flags-box" data-id="thailand" style="display:none;">
                                 <div class="map_flags-box-img">
                                     <img src="{{asset('themes/frontend/images/')}}/map-flag-12.svg" alt="" class="imf-fluid">
                                 </div>
@@ -923,12 +898,6 @@
                                     <img src="{{asset('themes/frontend/images/')}}/map-flag-13.svg" alt="" class="imf-fluid">
                                 </div>
                                 <p>USA</p>
-                            </a>
-                            <a href="javascript:void(0);" class="map_flags-box" data-id="canada">
-                                <div class="map_flags-box-img">
-                                    <img src="{{asset('themes/frontend/images/')}}/map-flag-02.svg" alt="" class="imf-fluid">
-                                </div>
-                                <p>Canada</p>
                             </a>
                             <a href="javascript:void(0);" class="map_flags-box">
                                 <div class="map_flags-box-img">

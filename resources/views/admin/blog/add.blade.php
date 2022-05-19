@@ -50,7 +50,7 @@
                         <div class="row ">
                             <div class="col-md-12">
                                 <label class="control-label">Short Text:<span class="required">*</span></label>
-                                {!! Form::textarea('home_text',null,['class' => 'form-control','id' => 'editor', 'data-required' => true,'rows'=>'10','cols'=>'10']) !!}
+                                {!! Form::textarea('home_text',null,['class' => 'form-control','id' => 'home_text', 'data-required' => true,'rows'=>'10','cols'=>'10']) !!}
                             </div>
                         </div>
                         <div class="clearfix">&nbsp;</div>
@@ -69,7 +69,7 @@
                         <div class="row ">
                             <div class="col-md-12">
                                 <label class="control-label">Text:<span class="required">*</span></label>
-                                {!! Form::textarea('description',null,['class' => 'form-control editor','id' => 'editor', 'data-required' => true,'rows'=>'10','cols'=>'10']) !!}
+                                {!! Form::textarea('description',null,['class' => 'form-control ckeditor','id' => 'ckeditor', 'data-required' => true,'rows'=>'10','cols'=>'10']) !!}
                             </div>
                         </div>
                         <div class="clearfix">&nbsp;</div>                       
@@ -88,19 +88,37 @@
 
 @endsection
 @section('scripts')
-<script src="{{ asset('js/admin/ckeditor.js?0111202') }}"></script>
-
+<!-- <script src="{{ asset('js/admin/ckeditor.js?0111202') }}"></script> -->
+<script src="https://cdn.ckeditor.com/4.12.1/standard/ckeditor.js"></script>
+<!-- <script src="https://cdn.ckeditor.com/ckeditor5/34.0.0/classic/ckeditor.js"></script> -->
 <script type="text/javascript">
-            ClassicEditor
-                .create( document.querySelector( '.editor' ), {
-                    // toolbar: [ 'heading', '|', 'bold', 'italic', 'link' ]
-                } )
-                .then( editor => {
-                    window.editor = editor;
-                } )
-                .catch( err => {
-                    console.error( err.stack );
-                } );
+            // ClassicEditor
+            //     .create( document.querySelector( '.ckeditor' ), {
+            //         ckfinder: {
+            //             uploadUrl: "{{route('ckeditor.upload', ['_token' => csrf_token() ])}}"
+            //         }
+            //     } )
+            //     .then( editor => {
+            //         window.editor = editor;
+            //     } )
+            //     .catch( err => {
+            //         console.error( err.stack );
+            //     } );
+
+
+
+            // CKEDITOR.replace('editor', {
+            //     filebrowserUploadUrl: "{{route('ckeditor.upload', ['_token' => csrf_token() ])}}",
+            //     filebrowserUploadMethod: 'form'
+            // });
+
+            $(".ckeditor").each(function (){
+                CKEDITOR.replace($(this).attr('id'),{
+                    extraPlugins: 'uploadimage',
+                    filebrowserUploadUrl: "{{route('ckeditor.upload', ['_token' => csrf_token() ])}}",
+                    filebrowserUploadMethod: 'form'
+                });
+            });
 
             $(document).on('click', '.btn-delete-record', function () {
 
@@ -132,8 +150,8 @@
         
         if ($(this).parsley('isValid'))
         {
-            for (instance in ClassicEditor.instances) {
-                ClassicEditor.instances[instance].updateElement();
+            for (instance in CKEDITOR.instances) {
+                CKEDITOR.instances[instance].updateElement();
             }
 
             $('#submitBtn').attr('disabled',true);

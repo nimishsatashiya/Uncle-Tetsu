@@ -17,24 +17,7 @@
       </div>
       <!-- Page active section end -->
       <!-- Social group section start -->
-      <ul class="social-group">
-         <li><a href="javascript:void(0);" class="social-icon">
-               <img class="img-red" src="{{asset('themes/frontend/images/')}}/facebook.svg" alt="">
-               <img class="img-hover" src="{{asset('themes/frontend/images/')}}/facebook-active.svg" alt="">
-            </a></li>
-         <li><a href="javascript:void(0);" class="social-icon">
-               <img class="img-red" src="{{asset('themes/frontend/images/')}}/mail.svg" alt="">
-               <img class="img-hover" src="{{asset('themes/frontend/images/')}}/mail-active.svg" alt="">
-            </a></li>
-         <li><a href="javascript:void(0);" class="social-icon">
-               <img class="img-red" src="{{asset('themes/frontend/images/')}}/youtube.svg" alt="">
-               <img class="img-hover" src="{{asset('themes/frontend/images/')}}/youtube-active.svg" alt="">
-            </a></li>
-         <li><a href="javascript:void(0);" class="social-icon">
-               <img class="img-red" src="{{asset('themes/frontend/images/')}}/instagram.svg" alt="">
-               <img class="img-hover" src="{{asset('themes/frontend/images/')}}/instagram-active.svg" alt="">
-            </a></li>
-      </ul>
+      @extends('frontend.includes.social_icon')
       <!-- Social group section end -->
       <!-- Line Animation- section start -->
       <div class="line-group">
@@ -86,7 +69,7 @@
       <!-- Uncle Tetsu Global  Contact section start -->
       <section id="GlobalContact" class="global-contact-page">
          <div class="marquee">
-            <span class="watermark-text">Global Contact</span>
+            <span class="watermark-text">Contact</span>
          </div>
          <div class="common-style">
             <h2>Inquiries</h2>
@@ -100,7 +83,7 @@
                   we
                   can..</p>
             </div>
-            <h2 class="contaact-title">Uncle Tetsu Global</h2>
+            <h2 class="contaact-title">Uncle Tetsu Canada</h2>
             <h4>Contact Information</h4>
             {!! Form::open(['url' => 'contact-form', 'class' => 'custom-form','id' => 'front-form', 'enctype' => 'multipart/form-data']) !!}
                <div class="alert alert-danger" role="alert" id="msg_danger" style="display:none;"></div>

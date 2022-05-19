@@ -1,0 +1,8 @@
+[16-Apr-2022 19:05:59 America/Boise] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home1/uncletet/public_html/app/Models/AdminLog.php:8
+Stack trace:
+#0 {main}
+  thrown in /home1/uncletet/public_html/app/Models/AdminLog.php on line 8
+[17-Apr-2022 16:51:38 America/Boise] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home1/uncletet/public_html/app/Models/Task.php:5
+Stack trace:
+#0 {main}
+  thrown in /home1/uncletet/public_html/app/Models/Task.php on line 5

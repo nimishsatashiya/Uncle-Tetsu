@@ -45,7 +45,6 @@ $(document).ready(function(){
             $('.menu').toggleClass('clicked');
             $('#nav').toggleClass('show');
         });
-       
 
         $('#category-tabs li a').click(function () {
             $(this).next('ul').slideToggle('500');
@@ -54,5 +53,4 @@ $(document).ready(function(){
          $(".navbar-toggler").click(function check() {
             $(this).toggleClass("burgeractive");
         });
-      
 });

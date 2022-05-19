@@ -1,5 +1,5 @@
 <footer>
    <div class="footer-content">
-      <p><a href="">Uncle Tetsu Global Ltd.</a><br />All rights reserved ®</p>
+      <p><a href="">Uncle Tetsu Canada.</a><br />All rights reserved ®</p>
    </div>
 </footer>

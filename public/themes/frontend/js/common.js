@@ -21,7 +21,7 @@ $(document).ready(function () {
     loop: true,
     autoplay: true,
     autoplayTimeout: 7000,
-    smartSpeed: 800,
+    smartSpeed: 2000,
     nav: false,
     dots: true,
     items: 2,
@@ -39,8 +39,12 @@ $(document).ready(function () {
     }
   }).on('changed.owl.carousel', function(e) {
     
-     var title = $(this).find('.active').find('img').attr('alt');
-     $("#product-name").html(title);
+    
+   
+     //  var title = $(this).find('.active').first().find('img').attr('alt');
+         var title = $(this).find('.active:first').find('img').attr('alt');
+         $("#product-name").html(title);
+     
      
   });
 

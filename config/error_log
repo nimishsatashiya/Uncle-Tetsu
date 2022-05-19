@@ -1,0 +1,28 @@
+[17-Apr-2022 02:26:21 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home1/uncletet/public_html/config/session.php:21
+Stack trace:
+#0 {main}
+  thrown in /home1/uncletet/public_html/config/session.php on line 21
+[06-May-2022 14:25:36 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home1/uncletet/public_html/config/filesystems.php:16
+Stack trace:
+#0 {main}
+  thrown in /home1/uncletet/public_html/config/filesystems.php on line 16
+[07-May-2022 21:54:41 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home1/uncletet/public_html/config/datatables.php:73
+Stack trace:
+#0 {main}
+  thrown in /home1/uncletet/public_html/config/datatables.php on line 73
+[13-May-2022 23:52:58 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home1/uncletet/public_html/config/debugbar.php:17
+Stack trace:
+#0 {main}
+  thrown in /home1/uncletet/public_html/config/debugbar.php on line 17
+[15-May-2022 16:59:05 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home1/uncletet/public_html/config/queue.php:16
+Stack trace:
+#0 {main}
+  thrown in /home1/uncletet/public_html/config/queue.php on line 16
+[15-May-2022 23:32:35 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home1/uncletet/public_html/config/logging.php:19
+Stack trace:
+#0 {main}
+  thrown in /home1/uncletet/public_html/config/logging.php on line 19
+[16-May-2022 02:47:18 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home1/uncletet/public_html/config/cache.php:21
+Stack trace:
+#0 {main}
+  thrown in /home1/uncletet/public_html/config/cache.php on line 21

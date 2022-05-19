@@ -127,7 +127,7 @@ class ProductImageController extends Controller
             $name = $request->get("name");
             $product_image = $request->file("product_image");
             
-            if($product_image)
+            if($request->hasFile('product_image'))
             {
                 $path = public_path().DIRECTORY_SEPARATOR.'uploads'.DIRECTORY_SEPARATOR.'product_images';
                 if (!file_exists($path)){

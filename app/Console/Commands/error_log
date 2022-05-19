@@ -1,0 +1,8 @@
+[17-Apr-2022 07:01:57 America/Boise] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Console\Command' not found in /home1/uncletet/public_html/app/Console/Commands/ImportImage.php:11
+Stack trace:
+#0 {main}
+  thrown in /home1/uncletet/public_html/app/Console/Commands/ImportImage.php on line 11
+[17-Apr-2022 07:01:59 America/Boise] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Console\Command' not found in /home1/uncletet/public_html/app/Console/Commands/ImportImage.php:11
+Stack trace:
+#0 {main}
+  thrown in /home1/uncletet/public_html/app/Console/Commands/ImportImage.php on line 11

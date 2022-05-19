@@ -1,0 +1,24 @@
+[16-Apr-2022 17:02:02 America/Boise] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Seeder' not found in /home1/uncletet/public_html/database/seeds/UserRightsTableSeeder.php:5
+Stack trace:
+#0 {main}
+  thrown in /home1/uncletet/public_html/database/seeds/UserRightsTableSeeder.php on line 5
+[16-Apr-2022 19:10:19 America/Boise] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Seeder' not found in /home1/uncletet/public_html/database/seeds/UsersTableSeeder.php:5
+Stack trace:
+#0 {main}
+  thrown in /home1/uncletet/public_html/database/seeds/UsersTableSeeder.php on line 5
+[16-Apr-2022 23:42:01 America/Boise] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Seeder' not found in /home1/uncletet/public_html/database/seeds/MlsMasterTableSeeder.php:5
+Stack trace:
+#0 {main}
+  thrown in /home1/uncletet/public_html/database/seeds/MlsMasterTableSeeder.php on line 5
+[17-Apr-2022 16:05:19 America/Boise] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Seeder' not found in /home1/uncletet/public_html/database/seeds/ParametersTableSeeder.php:5
+Stack trace:
+#0 {main}
+  thrown in /home1/uncletet/public_html/database/seeds/ParametersTableSeeder.php on line 5
+[17-Apr-2022 16:21:05 America/Boise] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Seeder' not found in /home1/uncletet/public_html/database/seeds/AdminGroupPagesTableSeeder.php:5
+Stack trace:
+#0 {main}
+  thrown in /home1/uncletet/public_html/database/seeds/AdminGroupPagesTableSeeder.php on line 5
+[18-Apr-2022 03:03:54 America/Boise] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Seeder' not found in /home1/uncletet/public_html/database/seeds/MlsClassTableSeeder.php:5
+Stack trace:
+#0 {main}
+  thrown in /home1/uncletet/public_html/database/seeds/MlsClassTableSeeder.php on line 5

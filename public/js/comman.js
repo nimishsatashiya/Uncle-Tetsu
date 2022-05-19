@@ -2,7 +2,6 @@ $(document).ready(function(){
     $('.form').parsley();
     $('.form2').parsley();
     $('.form3').parsley();
-    $('.newslatter_frm').parsley();
     // CKEDITOR.replace( 'ckeditor' );
 });
 
@@ -60,14 +59,10 @@ function contHeight(){
 }
 $(document).ready(function(){
   contHeight();  
-  $('#malaysia').click(function () {
-      $('.malaysia').toggleClass('active');
-  });
-  $('#Korea').click(function () {
-    $('.korea').toggleClass('active');
 });
+$( window ).load(function() {
+  contHeight();
 });
-
 $(window).resize(function(){
    contHeight();
 });

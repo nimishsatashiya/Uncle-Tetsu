@@ -14,6 +14,8 @@ Route::get('clear-cache', function () {
 	return ["status" => 1, "msg" => "Cache cleared successfully!"];
 });
 
+Route::post('ckeditor/upload', 'Frontend\CkeditorController@upload')->name('ckeditor.upload');
+
 //*********************    FRONTEND ROUTES  ******************************//
  	Route::get('/', 'Frontend\HomeController@index')->name('frontend-homepage');
  	Route::get('who-uncle-tetsu','Frontend\WhoUncleController@index')->name('who-uncle-tetsu');
@@ -25,10 +27,10 @@ Route::get('clear-cache', function () {
  	Route::get('franchising','Frontend\FranchisingController@index')->name('franchising');
  	Route::get('global-contact','Frontend\GlobalContactController@index')->name('global-contact');
  	Route::any('newslatter-form','Frontend\HomeController@postNewslatter')->name('newslatter-form');
-
  	Route::any('franchising-form','Frontend\FranchisingController@postFranchising')->name('franchising-form');
  	Route::any('load-products-images','Frontend\OurProductsController@loadProductsImage')->name('load-products-images');
  	Route::any('contact-form','Frontend\GlobalContactController@postContact')->name('contact-form');
+
 
 //*********************    ADMIN ROUTES  ******************************//
 
@@ -125,10 +127,6 @@ Route::group(['prefix' => $ADMIN_PREFIX, 'middleware' => 'admin_auth'], function
 //Contacts
 	Route::any('contacts-inquiry/data', 'admin\ContactsController@data')->name('contacts-inquiry.data');
 	Route::resource('contacts-inquiry', 'admin\ContactsController');
-
-//Store Locations
-	Route::any('store-locations/data', 'admin\StoreLocationsController@data')->name('store-locations.data');
-	Route::resource('store-locations', 'admin\StoreLocationsController');
 
 });
 

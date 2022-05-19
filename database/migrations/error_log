@@ -1,0 +1,16 @@
+[17-Apr-2022 14:25:27 America/Boise] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home1/uncletet/public_html/database/migrations/2019_05_20_060820_create_mls_fields_mapping_table.php:6
+Stack trace:
+#0 {main}
+  thrown in /home1/uncletet/public_html/database/migrations/2019_05_20_060820_create_mls_fields_mapping_table.php on line 6
+[17-Apr-2022 21:20:25 America/Boise] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home1/uncletet/public_html/database/migrations/2019_05_21_065504_create_cron_log_detail_table.php:6
+Stack trace:
+#0 {main}
+  thrown in /home1/uncletet/public_html/database/migrations/2019_05_21_065504_create_cron_log_detail_table.php on line 6
+[17-Apr-2022 21:20:28 America/Boise] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home1/uncletet/public_html/database/migrations/2019_05_21_065504_create_cron_log_detail_table.php:6
+Stack trace:
+#0 {main}
+  thrown in /home1/uncletet/public_html/database/migrations/2019_05_21_065504_create_cron_log_detail_table.php on line 6
+[18-Apr-2022 02:58:11 America/Boise] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home1/uncletet/public_html/database/migrations/2019_05_20_060822_add_foreign_keys_to_admin_user_rights_table.php:6
+Stack trace:
+#0 {main}
+  thrown in /home1/uncletet/public_html/database/migrations/2019_05_20_060822_add_foreign_keys_to_admin_user_rights_table.php on line 6

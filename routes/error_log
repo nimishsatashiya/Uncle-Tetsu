@@ -1,0 +1,24 @@
+[17-Apr-2022 22:21:54 America/Boise] PHP Fatal error:  Uncaught Error: Class 'Route' not found in /home1/uncletet/public_html/routes/web.php:8
+Stack trace:
+#0 {main}
+  thrown in /home1/uncletet/public_html/routes/web.php on line 8
+[27-Apr-2022 05:10:40 America/Boise] PHP Fatal error:  Uncaught Error: Class 'Broadcast' not found in /home1/uncletet/public_html/routes/channels.php:14
+Stack trace:
+#0 {main}
+  thrown in /home1/uncletet/public_html/routes/channels.php on line 14
+[04-May-2022 23:36:54 America/Boise] PHP Fatal error:  Uncaught Error: Class 'Route' not found in /home1/uncletet/public_html/routes/web.php:8
+Stack trace:
+#0 {main}
+  thrown in /home1/uncletet/public_html/routes/web.php on line 8
+[08-May-2022 07:33:51 America/Boise] PHP Fatal error:  Uncaught Error: Class 'Broadcast' not found in /home1/uncletet/public_html/routes/channels.php:14
+Stack trace:
+#0 {main}
+  thrown in /home1/uncletet/public_html/routes/channels.php on line 14
+[11-May-2022 14:01:25 America/Boise] PHP Fatal error:  Uncaught Error: Class 'Broadcast' not found in /home1/uncletet/public_html/routes/channels.php:14
+Stack trace:
+#0 {main}
+  thrown in /home1/uncletet/public_html/routes/channels.php on line 14
+[15-May-2022 20:34:02 America/Boise] PHP Fatal error:  Uncaught Error: Class 'Route' not found in /home1/uncletet/public_html/routes/web.php:8
+Stack trace:
+#0 {main}
+  thrown in /home1/uncletet/public_html/routes/web.php on line 8

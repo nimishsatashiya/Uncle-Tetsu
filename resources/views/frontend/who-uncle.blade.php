@@ -14,24 +14,7 @@
       </div>
       <!-- Page active section end -->
       <!-- Social group section start -->
-      <ul class="social-group">
-         <li><a href="javascript:void(0);" class="social-icon">
-               <img class="img-red" src="{{asset('themes/frontend/images/')}}/facebook.svg" alt="">
-               <img class="img-hover" src="{{asset('themes/frontend/images/')}}/facebook-active.svg" alt="">
-            </a></li>
-         <li><a href="javascript:void(0);" class="social-icon">
-               <img class="img-red" src="{{asset('themes/frontend/images/')}}/mail.svg" alt="">
-               <img class="img-hover" src="{{asset('themes/frontend/images/')}}/mail-active.svg" alt="">
-            </a></li>
-         <li><a href="javascript:void(0);" class="social-icon">
-               <img class="img-red" src="{{asset('themes/frontend/images/')}}/youtube.svg" alt="">
-               <img class="img-hover" src="{{asset('themes/frontend/images/')}}/youtube-active.svg" alt="">
-            </a></li>
-         <li><a href="javascript:void(0);" class="social-icon">
-               <img class="img-red" src="{{asset('themes/frontend/images/')}}/instagram.svg" alt="">
-               <img class="img-hover" src="{{asset('themes/frontend/images/')}}/instagram-active.svg" alt="">
-            </a></li>
-      </ul>
+      @extends('frontend.includes.social_icon')
       <!-- Social group section end -->
       <!-- Line Animation- section start -->
       <div class="line-group">

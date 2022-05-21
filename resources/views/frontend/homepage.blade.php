@@ -323,6 +323,7 @@
                </div>
                <div class="form-inline input-group">
                   {!! Form::textarea('message',null,['class' => 'form-control', 'rows' => 2, 'placeholder' => 'Message *','required' => true]) !!}
+               </div>
                <div class="form-inline text-group">
                   <div class="form-check">
                      <label class="form-check-label">

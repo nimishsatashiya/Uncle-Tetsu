@@ -74,7 +74,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="recent-blog-box">
+                <div class="recent-blog-box" style="display:none;">
                     <div class="row">
                         <div class="col-12 col-md-6">
                             <div class="blog-card">

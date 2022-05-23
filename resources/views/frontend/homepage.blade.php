@@ -140,7 +140,7 @@
                      <div class="cake">
                         <img class="" src="{{asset('themes/frontend/images/sec-three-img-icon.svg')}}" alt="">
                      </div>
-                     <h3 id="product-name">Original Signature Japanese</h3>
+                     <h3 id="product-name">MATCHA CHEESECAKE</h3>
                      <img class="product-line" src="{{asset('themes/frontend/images/product-line.png')}}" alt="">
                   </div>
                   <a href="{{ route('our-products')}}">See All <svg xmlns="http://www.w3.org/2000/svg" width="37.646"
@@ -232,21 +232,21 @@
             <div class="map-wrap">
                <img class="map-img" src="{{asset('themes/frontend/images/map.svg')}}" alt="">
                <!-- <img class="test-img" src="{{asset('themes/frontend/images/test.png')}}" alt=""> -->
-               <a class="location-1" href="#"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
-               <a class="location-2" href="#"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
-               <a class="location-3" href="#"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
-               <a class="location-4" href="#"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
-               <a class="location-5" href="#"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
-               <a class="location-6" href="#"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
-               <a class="location-7" href="#"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
-               <a class="location-8" href="#"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
-               <a class="location-9" href="#"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
-               <a class="location-10" href="#"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
-               <a class="location-11" href="#"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
-               <a class="location-12" href="#"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
-               <a class="location-13" href="#"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
-               <a class="location-14" href="#"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
-               <a class="location-15" href="#"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
+               <a class="location-1" href="#" style="display:none;"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
+               <a class="location-2" href="#" style="display:none;"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
+               <a class="location-3" href="#" style="display:none;"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
+               <a class="location-4" href="#" style="display:none;"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
+               <a class="location-5" href="#" style="display:none;"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
+               <a class="location-6" href="#" style="display:none;"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
+               <a class="location-7" href="#" style="display:none;"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
+               <a class="location-8" href="#" style="display:none;"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
+               <a class="location-9" href="#" style="display:none;"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
+               <a class="location-10" href="#" style="display:none;"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
+               <a class="location-11" href="#" style="display:none;"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
+               <a class="location-12" href="#" style="display:none;"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
+               <a class="location-13" href="#" style="display:none;"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
+               <a class="location-14" href="#" style="display:none;"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
+               <a class="location-15" href="#" style="display:none;"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
                <a class="location-16" href="#"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
                <a class="location-17" href="#"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
                <a class="location-18" href="#"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
@@ -255,7 +255,7 @@
                <a class="location-21" href="#"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
                <a class="location-22" href="#"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
                <a class="location-23" href="#"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
-               <a class="location-24" href="#"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
+               <a class="location-24" href="#" style="display:none;"> <img src="{{asset('themes/frontend/images/map-location.svg')}}" alt=""></a>
             </div>
          </div>
          <div class="common-style head-top">

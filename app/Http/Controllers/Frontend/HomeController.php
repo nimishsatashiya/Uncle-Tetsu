@@ -58,6 +58,7 @@ class HomeController extends Controller
                 $newslatter=new Newslatter();
                 $newslatter->name =$request->get('full_name');
                 $newslatter->email = $request->get('email');
+                $newslatter->message = $request->get('message');
                 $newslatter->save();
             }else{
                 $status = 0;

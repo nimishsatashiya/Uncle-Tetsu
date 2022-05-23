@@ -23,7 +23,7 @@
             <li class="{{ \Request::route()->getName()=='blogs' ? 'active':'' }}"><a href="{{ route('blogs')}}">Uncle Tetsu's Blog</a></li>
             <li class="{{ \Request::route()->getName()=='store-location' ? 'active':'' }}"><a href="{{ route('store-location')}}">Store Locations</a></li>
             <li class="{{ \Request::route()->getName()=='franchising' ? 'active':'' }}"><a href="{{ route('franchising')}}">Franchising</a></li>
-            <li class="{{ \Request::route()->getName()=='global-contact' ? 'active':'' }}"><a href="{{ route('global-contact')}}">Inquiry</a></li>
+            <li class="{{ \Request::route()->getName()=='inquiry' ? 'active':'' }}"><a href="{{ route('inquiry')}}">Inquiry</a></li>
 
         </ul>
         <div class="close">

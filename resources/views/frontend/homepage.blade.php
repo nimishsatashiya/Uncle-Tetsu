@@ -312,8 +312,7 @@
          </div>
          <div class="common-style">
             <h2>Uncle Tetsu Canada</h2>
-            <p>For all other inquiries, please use the form below, and we will try to get back to you as soon as we can.
-            </p>
+            <p>For all other inquiries, please use the form below, and we will try to get back to you as soon as we can.</p>
             {!! Form::open(['url' => 'contact-form', 'class' => 'custom-form','id' => 'front-form', 'enctype' => 'multipart/form-data']) !!}
                <div class="alert alert-danger" role="alert" id="msg_danger" style="display:none;"></div>
                <div class="alert alert-success" role="alert" id="msg_success" style="display:none;"></div>

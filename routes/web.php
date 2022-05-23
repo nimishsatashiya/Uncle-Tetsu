@@ -25,7 +25,7 @@ Route::post('ckeditor/upload', 'Frontend\CkeditorController@upload')->name('cked
  	Route::get('blog-details/{slug}','Frontend\BlogsController@blog_details')->name('blog_details');
  	Route::get('store-location','Frontend\StoreLocationController@index')->name('store-location');
  	Route::get('franchising','Frontend\FranchisingController@index')->name('franchising');
- 	Route::get('global-contact','Frontend\GlobalContactController@index')->name('global-contact');
+ 	Route::get('inquiry','Frontend\GlobalContactController@index')->name('inquiry');
  	Route::any('newslatter-form','Frontend\HomeController@postNewslatter')->name('newslatter-form');
  	Route::any('franchising-form','Frontend\FranchisingController@postFranchising')->name('franchising-form');
  	Route::any('load-products-images','Frontend\OurProductsController@loadProductsImage')->name('load-products-images');

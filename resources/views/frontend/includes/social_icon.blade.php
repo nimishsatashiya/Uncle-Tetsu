@@ -3,7 +3,7 @@
        <img class="img-red" src="{{asset('themes/frontend/images/facebook.svg')}}" alt="">
        <img class="img-hover" src="{{asset('themes/frontend/images/facebook-active.svg')}}" alt="">
     </a></li>
- <li><a href="javascript:void(0);" class="social-icon">
+ <li><a href="mailto:customersupport@uncletetsucanada.com" class="social-icon">
        <img class="img-red" src="{{asset('themes/frontend/images/mail.svg')}}" alt="">
        <img class="img-hover" src="{{asset('themes/frontend/images/mail-active.svg')}}" alt="">
     </a></li>

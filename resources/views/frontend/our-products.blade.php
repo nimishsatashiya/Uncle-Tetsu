@@ -170,13 +170,14 @@ $(document).ready(function () {
                          $('#productCarousels').owlCarousel('destroy'); 
                          $("#productCarousels").owlCarousel({
                             loop: true,
-                            autoplay: false,
+                            autoplay: true,
                             autoplayTimeout: 7000,
-                            smartSpeed: 800,
+                            smartSpeed: 2000,
                             nav: false,
                             dots: true,
                             items: 2,
                             responsiveClass:true,
+                            onDragged: setOwlTitel,
                             responsive:{
                                 0:{
                                     items:1,
@@ -189,9 +190,7 @@ $(document).ready(function () {
                                 },
                             }
                           }).on('changed.owl.carousel', function(e) {
-                            
-                             var title = $(this).find('.active').find('img').attr('alt');
-                             $("#product-name").html(title);
+                            setOwlTitel(e, true);
                              
                           });
                      }   
@@ -203,5 +202,7 @@ $(document).ready(function () {
              });
              return false;
       }
+
+      
 </script>
 @stop
